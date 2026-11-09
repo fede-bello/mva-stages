@@ -68,7 +68,7 @@ export const ORG_TYPE_LABELS: Record<string, string> = {
   startup: 'Startup',
   big_tech: 'Big tech',
   academic_lab: 'Academic lab',
-  public_agency: 'Public agency',
+  public_agency: 'Public institute',
 }
 
 export const APRIL_LABELS: Record<string, string> = {

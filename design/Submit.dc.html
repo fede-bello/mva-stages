@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MVA Stages: add an offer</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F5F1}
+a{color:#2747C7}a:hover{color:#1A3296}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid #2747C7;outline-offset:2px}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F6F5F1; color: #16181D; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.5;">
+
+  <header style="background: #16181D; color: #F6F5F1;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between;">
+      <div style="display: flex; align-items: baseline; gap: 12px;">
+        <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.01em;">MVA Stages</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B9BCC4;">internships 2027</span>
+      </div>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">
+        <a href="Main.dc.html" style="color: #F6F5F1; text-decoration: none; padding: 10px 12px; font-weight: 500;">Board</a>
+        <a href="Submit.dc.html" style="color: #16181D; background: #F6F5F1; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: 600;">+ Add an offer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width: 820px; margin: 0 auto; padding: 32px 24px 64px; display: flex; flex-direction: column; gap: 20px;">
+    <div>
+      <h1 style="margin: 0 0 6px; font-size: 30px; letter-spacing: -0.015em;">Add an offer</h1>
+      <p style="margin: 0; color: #5A5F69;">Found something that is not on the board? Paste the link and fill what the posting says. It shows up right away, marked as unverified until a maintainer checks it.</p>
+    </div>
+
+    <div role="note" style="display: flex; gap: 12px; background: #E7EBFA; color: #1A3296; border-radius: 10px; padding: 14px 16px; font-size: 14px;">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 1px;"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+      <span><strong>Only facts about the offer.</strong> Leave out your own application, interviews, and names or emails of recruiters. Use an email only if the posting says to apply there.</span>
+    </div>
+
+    <sc-if value="{{done}}" hint-placeholder-val="{{false}}">
+      <div role="status" style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+        <p style="margin: 0; font-size: 18px; font-weight: 600; color: #1D5A34;">Thanks, the offer is on the board.</p>
+        <p style="margin: 0; color: #5A5F69;">It shows as "Unverified · added by a student" until a maintainer checks it against the posting. To fix something later, use "Something is wrong" on the offer.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <a href="Main.dc.html" style="display: inline-flex; align-items: center; background: #16181D; color: #FFFFFF; text-decoration: none; font-weight: 600; padding: 12px 18px; border-radius: 6px; min-height: 44px; box-sizing: border-box;">Back to the board</a>
+          <button type="button" onClick="{{again}}" style="font: inherit; font-weight: 500; background: #FFFFFF; color: #16181D; border: 1px solid #C9C6BD; border-radius: 6px; padding: 12px 18px; min-height: 44px; cursor: pointer;">Add another</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{editing}}" hint-placeholder-val="{{true}}">
+      <form style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 10px; padding: 28px; display: flex; flex-direction: column; gap: 24px;">
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <label for="url" style="font-weight: 600;">Link to the posting <span style="color: #A94A0A;">*</span></label>
+          <input id="url" type="url" required placeholder="https://" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          <span style="font-size: 13px; color: #5A5F69;">The original page, not a repost. If it came as a PDF by mail, pick "Mailing list" below and leave this empty.</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="org" style="font-weight: 600;">Organization <span style="color: #A94A0A;">*</span></label>
+            <input id="org" type="text" required style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="title" style="font-weight: 600;">Title, as posted <span style="color: #A94A0A;">*</span></label>
+            <input id="title" type="text" required style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="city" style="font-weight: 600;">City</label>
+            <input id="city" type="text" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="country" style="font-weight: 600;">Country</label>
+            <input id="country" type="text" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="stipend" style="font-weight: 600;">Stipend, as written</label>
+            <input id="stipend" type="text" placeholder="e.g. 1,500 €/month" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="deadline" style="font-weight: 600;">Deadline</label>
+            <input id="deadline" type="date" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="start" style="font-weight: 600;">Start</label>
+            <input id="start" type="text" placeholder="e.g. April 2027, flexible" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <label for="duration" style="font-weight: 600;">Duration</label>
+            <input id="duration" type="text" placeholder="e.g. 5 to 6 months" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; min-height: 44px; box-sizing: border-box;">
+          </div>
+        </div>
+
+        <fieldset style="border: 0; padding: 0; margin: 0;">
+          <legend style="font-weight: 600; margin-bottom: 8px;">Work mode</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <sc-for list="{{modes}}" as="m" hint-placeholder-count="4">
+              <button type="button" aria-pressed="{{m.pressed}}" onClick="{{m.pick}}" style="{{m.style}}">{{m.label}}</button>
+            </sc-for>
+          </div>
+        </fieldset>
+
+        <fieldset style="border: 0; padding: 0; margin: 0;">
+          <legend style="font-weight: 600; margin-bottom: 4px;">Topics</legend>
+          <p style="margin: 0 0 10px; font-size: 13px; color: #5A5F69;">Up to 3.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <sc-for list="{{topics}}" as="t" hint-placeholder-count="12">
+              <button type="button" aria-pressed="{{t.pressed}}" onClick="{{t.toggle}}" style="{{t.style}}">{{t.label}}</button>
+            </sc-for>
+          </div>
+        </fieldset>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <label for="source" style="font-weight: 600;">Where you found it</label>
+          <select id="source" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; background: #FFFFFF; min-height: 44px;">
+            <option>Company or lab website</option>
+            <option>MVA Drive</option>
+            <option>LinkedIn</option>
+            <option>Job board (WTTJ, Indeed, JobTeaser...)</option>
+            <option>Mailing list</option>
+          </select>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <label for="notes" style="font-weight: 600;">Anything else useful</label>
+          <textarea id="notes" rows="3" placeholder="e.g. French B2 required; there is a twin posting in Grenoble" style="font: inherit; padding: 12px; border: 1px solid #C9C6BD; border-radius: 6px; resize: vertical;"></textarea>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; border-top: 1px solid #E2E0D9; padding-top: 20px;">
+          <button type="button" onClick="{{submit}}" style="font: inherit; font-weight: 600; background: #2747C7; color: #FFFFFF; border: 0; border-radius: 6px; padding: 12px 20px; min-height: 44px; cursor: pointer;">Add to the board</button>
+          <span style="font-size: 13px; color: #5A5F69;">We check for duplicates by link and reference.</span>
+        </div>
+      </form>
+    </sc-if>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1500}}'>
+var TOPICS = ['computer-vision', '3d-vision', 'llm', 'agents', 'nlp', 'rl', 'time-series', 'foundation-models', 'generative-models', 'health', 'neuro', 'bio-chem', 'robotics', 'earth-observation', 'climate-energy', 'physics-sim', 'speech-audio', 'graphs', 'optimization', 'theory', 'recsys-ir', 'efficiency', 'other'];
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { done: false, mode: 'unknown', topics: [] };
+  }
+  renderVals() {
+    var self = this, s = this.state;
+    var pill = 'font: inherit; font-size: 13px; border-radius: 999px; padding: 6px 12px; min-height: 32px; cursor: pointer; border: 1px solid ';
+    var box = 'font: inherit; font-size: 14px; border-radius: 6px; padding: 10px 14px; min-height: 44px; cursor: pointer; border: 1px solid ';
+    return {
+      done: s.done,
+      editing: !s.done,
+      submit: function () { self.setState({ done: true }); },
+      again: function () { self.setState({ done: false, mode: 'unknown', topics: [] }); },
+      modes: [['onsite', 'On site'], ['hybrid', 'Hybrid'], ['remote', 'Remote'], ['unknown', 'Not stated']].map(function (m) {
+        var on = s.mode === m[0];
+        return { label: m[1], pressed: on ? 'true' : 'false', pick: function () { self.setState({ mode: m[0] }); },
+          style: box + (on ? '#16181D; background: #16181D; color: #FFFFFF;' : '#C9C6BD; background: #FFFFFF; color: #16181D;') };
+      }),
+      topics: TOPICS.map(function (t) {
+        var on = s.topics.indexOf(t) >= 0;
+        var full = !on && s.topics.length >= 3;
+        return { label: t, pressed: on ? 'true' : 'false',
+          toggle: function () { if (full) return; self.setState({ topics: on ? s.topics.filter(function (x) { return x !== t; }) : s.topics.concat([t]) }); },
+          style: pill + (on ? '#2747C7; background: #2747C7; color: #FFFFFF;' : (full ? '#E2E0D9; background: #F6F5F1; color: #767B84; cursor: not-allowed;' : '#C9C6BD; background: #FFFFFF; color: #16181D;')) };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

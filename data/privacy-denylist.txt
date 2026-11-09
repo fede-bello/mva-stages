@@ -1,0 +1,16 @@
+# Regexes (case-insensitive) that must never appear in data/offers.json.
+# build_seed.py refuses to write the seed if any offer matches.
+# Personal names and identifiers go in privacy-denylist.local.txt (gitignored).
+
+# Someone's application history leaking into an offer
+\b(postulad[oa]s?|aplicad[oa]|rechazad[oa]|descartad[oa]|retirad[oa] por)\b
+\b(i|we|he|she) applied\b
+\bmy (application|cv|interview)\b
+\b(rejected|shortlisted|interviewed) (me|him|her)\b
+\bfit\s*[:=]?\s*[0-5]\b
+\bcv_[a-z]+\b
+\bcover ?letter_\w+
+
+# Mail metadata from someone's inbox
+\bacuse\b
+\b\d{1,2}:\d{2} (de París|UTC)\b

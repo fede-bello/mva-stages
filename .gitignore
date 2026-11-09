@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+data/privacy-denylist.local.txt
+data/incoming/
+supabase/.branches
+supabase/.temp
+.DS_Store
+__pycache__/
+.vercel
+.env*.local
+docs/oneshot-build.md

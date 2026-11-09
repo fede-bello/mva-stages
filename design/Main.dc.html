@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>MVA Stages: board</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F5F1}
+a{color:#2747C7}a:hover{color:#1A3296}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid #2747C7;outline-offset:2px}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #F6F5F1; color: #16181D; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.45;">
+
+  <header style="background: #16181D; color: #F6F5F1;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: space-between;">
+      <div style="display: flex; align-items: baseline; gap: 12px;">
+        <span style="font-weight: 700; font-size: 20px; letter-spacing: -0.01em;">MVA Stages</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #B9BCC4;">internships 2027</span>
+      </div>
+      <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">
+        <a href="Main.dc.html" style="color: #F6F5F1; text-decoration: none; padding: 10px 12px; font-weight: 500; border-bottom: 2px solid #F6F5F1;">Board</a>
+        <a href="Submit.dc.html" style="color: #16181D; background: #F6F5F1; text-decoration: none; padding: 10px 16px; border-radius: 6px; font-weight: 600;">+ Add an offer</a>      </nav>
+    </div>
+  </header>
+
+  <div role="note" style="background: #FBEADB; border-bottom: 1px solid #F0D3B8;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 14px; color: #5C2B06;">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"></path><path d="M12 17h.01"></path><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path></svg>
+      <span><strong>This information may be wrong or out of date.</strong> It is collected from public postings, the MVA Drive and other students. Always check the original posting before applying.</span>
+    </div>
+  </div>
+
+  <main style="max-width: 1240px; margin: 0 auto; padding: 28px 24px 64px;">
+
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 20px;">
+      <div>
+        <h1 style="margin: 0 0 6px; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em;">Research internships for the MVA</h1>
+        <p style="margin: 0; color: #5A5F69;">Every offer we found, from every source. Filter by what you need, then go to the original posting.</p>
+      </div>
+      <dl style="display: flex; flex-wrap: wrap; gap: 8px; margin: 0;">
+        <div style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 8px; padding: 8px 14px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5A5F69; text-transform: uppercase; letter-spacing: 0.04em;">Open</dt>
+          <dd style="margin: 0; font-size: 20px; font-weight: 600;">{{stats.open}}</dd>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 8px; padding: 8px 14px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5A5F69; text-transform: uppercase; letter-spacing: 0.04em;">Closing in 3 weeks</dt>
+          <dd style="margin: 0; font-size: 20px; font-weight: 600; color: #A94A0A;">{{stats.soon}}</dd>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 8px; padding: 8px 14px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5A5F69; text-transform: uppercase; letter-spacing: 0.04em;">Stipend stated</dt>
+          <dd style="margin: 0; font-size: 20px; font-weight: 600;">{{stats.paid}}</dd>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 8px; padding: 8px 14px;">
+          <dt style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5A5F69; text-transform: uppercase; letter-spacing: 0.04em;">Last sweep</dt>
+          <dd style="margin: 0; font-size: 20px; font-weight: 600;">06 Nov</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start;">
+
+      <aside aria-label="Filters" style="flex: 1 1 260px; max-width: 100%; background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 20px; box-sizing: border-box;">
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <label for="q" style="font-weight: 600; font-size: 13px;">Search</label>
+          <input id="q" type="search" placeholder="Organization, title, city" value="{{q}}" onInput="{{onSearch}}" style="font: inherit; padding: 10px 12px; border: 1px solid #C9C6BD; border-radius: 6px; background: #FFFFFF; color: #16181D; min-height: 44px; box-sizing: border-box;">
+        </div>
+
+        <fieldset style="border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px;">
+          <legend style="font-weight: 600; font-size: 13px; margin-bottom: 6px;">Show</legend>
+          <sc-for list="{{toggles}}" as="t" hint-placeholder-count="4">
+            <label style="display: flex; align-items: center; gap: 10px; min-height: 36px; cursor: pointer;">
+              <input type="checkbox" checked="{{t.on}}" onChange="{{t.flip}}" style="width: 18px; height: 18px; accent-color: #2747C7;">
+              <span>{{t.label}}</span>
+            </label>
+          </sc-for>
+        </fieldset>
+
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <label for="country" style="font-weight: 600; font-size: 13px;">Country</label>
+          <select id="country" value="{{country}}" onChange="{{onCountry}}" style="font: inherit; padding: 10px 12px; border: 1px solid #C9C6BD; border-radius: 6px; background: #FFFFFF; color: #16181D; min-height: 44px;">
+            <sc-for list="{{countries}}" as="c" hint-placeholder-count="5">
+              <option value="{{c.value}}">{{c.label}}</option>
+            </sc-for>
+          </select>
+        </div>
+
+        <fieldset style="border: 0; padding: 0; margin: 0;">
+          <legend style="font-weight: 600; font-size: 13px; margin-bottom: 8px;">Topics</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <sc-for list="{{topicChips}}" as="chip" hint-placeholder-count="10">
+              <button type="button" aria-pressed="{{chip.pressed}}" onClick="{{chip.toggle}}" style="{{chip.style}}">{{chip.label}}</button>
+            </sc-for>
+          </div>
+        </fieldset>
+
+        <button type="button" onClick="{{reset}}" style="font: inherit; font-size: 14px; background: transparent; border: 1px solid #C9C6BD; color: #16181D; border-radius: 6px; padding: 10px; min-height: 44px; cursor: pointer;">Clear filters</button>
+      </aside>
+
+      <section aria-label="Offers" style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px;">
+          <p style="margin: 0; color: #5A5F69;" aria-live="polite"><strong style="color: #16181D;">{{count}}</strong> offers</p>
+          <div role="group" aria-label="Sort" style="display: flex; gap: 4px; background: #ECEAE3; padding: 3px; border-radius: 8px;">
+            <sc-for list="{{sorts}}" as="s" hint-placeholder-count="3">
+              <button type="button" aria-pressed="{{s.pressed}}" onClick="{{s.pick}}" style="{{s.style}}">{{s.label}}</button>
+            </sc-for>
+          </div>
+        </div>
+
+        <sc-if value="{{empty}}" hint-placeholder-val="{{false}}">
+          <div style="background: #FFFFFF; border: 1px dashed #C9C6BD; border-radius: 10px; padding: 40px 24px; text-align: center; color: #5A5F69;">
+            <p style="margin: 0 0 12px; font-weight: 600; color: #16181D;">No offers match these filters.</p>
+            <p style="margin: 0;">Clear a filter, or <a href="Submit.dc.html">add an offer you found</a>.</p>
+          </div>
+        </sc-if>
+
+        <sc-for list="{{results}}" as="o" hint-placeholder-count="6">
+          <article style="{{o.cardStyle}}">
+            <div style="flex: 999 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 8px;">
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">
+                <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; color: #3E424B;">{{o.org}}</span>
+                <sc-if value="{{o.ref}}" hint-placeholder-val="{{true}}">
+                  <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5F69;">{{o.ref}}</span>
+                </sc-if>
+                <sc-if value="{{o.unverified}}" hint-placeholder-val="{{false}}">
+                  <span style="font-size: 12px; font-weight: 500; color: #5C2B06; background: #FBEADB; border-radius: 4px; padding: 2px 6px;">Unverified · added by a student</span>
+                </sc-if>
+              </div>
+              <h2 style="margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600;"><a href="Offer.dc.html" style="color: #16181D; text-decoration: none;">{{o.title}}</a></h2>
+              <p style="margin: 0; color: #3E424B; font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 14px;">
+                <span>{{o.place}}</span>
+                <span>{{o.duration}}</span>
+                <span>{{o.start}}</span>
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                <sc-for list="{{o.topics}}" as="tp" hint-placeholder-count="2">
+                  <span style="font-size: 12px; color: #2747C7; background: #E7EBFA; border-radius: 999px; padding: 3px 10px;">{{tp}}</span>
+                </sc-for>
+                <span style="font-size: 12px; color: #5A5F69; padding-left: 4px;">via <a href="Offer.dc.html" style="color: #3E424B;">{{o.source}}</a></span>
+              </div>
+            </div>
+            <div style="flex: 1 1 180px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <span style="{{o.statusStyle}}">{{o.statusLabel}}</span>
+              <div>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5A5F69; text-transform: uppercase; letter-spacing: 0.04em;">Stipend</div>
+                <div style="{{o.stipendStyle}}">{{o.stipend}}</div>
+              </div>
+              <div>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5A5F69; text-transform: uppercase; letter-spacing: 0.04em;">Deadline</div>
+                <div style="{{o.deadlineStyle}}">{{o.deadline}}</div>
+              </div>
+            </div>
+          </article>
+        </sc-for>
+      </section>
+    </div>
+  </main>
+
+  <footer style="border-top: 1px solid #E2E0D9;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 13px; color: #5A5F69;">
+      <span>Run by MVA students, not by the program. Not an official ENS Paris-Saclay service.</span>
+      <a href="Submit.dc.html">Add an offer</a>
+      <a href="Offer.dc.html">Report a mistake</a>
+      <a href="Legal.dc.html">Legal notice and contact</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1900}}'>
+var TODAY = new Date('2026-11-09T00:00:00Z');
+var OFFERS = [
+  { org: 'EDF R&D', title: 'Modèles de fondation pour la prévision de production des énergies renouvelables', ref: '2026-184893', city: 'Saint-Denis', country: 'France', mode: 'On site', topics: ['time-series', 'foundation-models', 'climate-energy'], min: 935, max: 1682, stipend: '935 to 1,682 €/mo', start: 'As soon as possible', april: 'unknown', duration: '6 months', deadline: '2026-12-03', status: 'open', source: 'LinkedIn', verified: true },
+  { org: 'ESA ESTEC', title: 'Intern in the Systems Department, AI and Data Science Section', ref: 'Req 21053', city: 'Noordwijk', country: 'Netherlands', mode: 'On site', topics: ['agents', 'llm'], min: null, stipend: 'Not stated', start: '2027 cycle', april: 'unknown', duration: '3 to 6 months', deadline: '2026-11-30', status: 'open', source: 'jobs.esa.int', verified: true },
+  { org: 'EDF Lab Paris-Saclay', title: 'Causal foundation models pour séries temporelles de consommation électrique', ref: '2026-186120', city: 'Palaiseau', country: 'France', mode: 'On site', topics: ['time-series', 'foundation-models'], min: 1201, max: 1520, stipend: '1,201 to 1,520 €/mo', start: 'Feb or Mar 2027, flexible', april: 'flexible', duration: '6 months', deadline: '2026-12-03', status: 'open', source: 'LinkedIn', verified: true },
+  { org: 'Schneider Electric', title: 'Time series foundation models pour optimisation prédictive', ref: '136641', city: 'Rueil-Malmaison', country: 'France', mode: 'On site', topics: ['time-series', 'foundation-models', 'optimization'], min: null, stipend: 'Company scale, no amount', start: 'Not stated', april: 'unknown', duration: 'Not stated', deadline: '2026-12-03', status: 'open', source: 'LinkedIn', verified: true },
+  { org: 'Google', title: 'Student Researcher, 2027 (EMEA)', ref: null, city: 'Paris, Zurich, Berlin +6', country: 'Multiple', mode: 'On site', topics: ['llm', 'computer-vision', 'rl'], min: 4500, max: 5917, stipend: '54k to 71k €/yr', start: 'Flexible', april: 'flexible', duration: 'Varies', deadline: '2026-12-13', status: 'open', source: 'Google Careers', verified: true },
+  { org: 'Ekimetrics', title: 'Stage IA/ML Engineer 100% R&D, agentic AI', ref: null, city: 'Paris', country: 'France', mode: 'Hybrid', topics: ['agents', 'llm'], min: 1800, max: 1800, stipend: '1,800 €/mo', start: 'Not stated', april: 'unknown', duration: '6 months', deadline: null, status: 'open', source: 'Lever', verified: true },
+  { org: 'Karavela', title: 'Research Scientist / Engineer Intern', ref: null, city: 'Paris', country: 'France', mode: 'Hybrid', topics: ['neuro', 'foundation-models', 'health'], min: 1670, max: 2500, stipend: '20k to 30k €/yr', start: 'Not stated', april: 'unknown', duration: 'Not stated', deadline: null, status: 'open', source: 'Dover', verified: true },
+  { org: 'Sigma Nova', title: 'Research Internship: Foundation Models for Brain Data', ref: null, city: 'Paris', country: 'France', mode: 'On site', topics: ['neuro', 'foundation-models'], min: null, stipend: 'Not stated', start: 'Q1 or early Q2 2027', april: 'yes', duration: '6 months', deadline: null, status: 'open', source: 'Welcome to the Jungle', verified: false },
+  { org: 'NVIDIA', title: 'Relational Foundation Model Intern, Modern Data Stack, 2027', ref: 'JR2027829', city: 'Remote', country: 'France', mode: 'Remote', topics: ['graphs', 'foundation-models'], min: null, stipend: 'Not stated', start: 'Not stated', april: 'unknown', duration: 'Not stated', deadline: null, status: 'open', source: 'Workday', verified: true },
+  { org: 'Parrot Drones', title: 'Internship Machine Learning, Foundation Model', ref: null, city: 'Paris 10e', country: 'France', mode: 'On site', topics: ['computer-vision', 'foundation-models'], min: null, stipend: 'Not stated', start: 'Not stated', april: 'unknown', duration: '6 months', deadline: null, status: 'open', source: 'Talentview', verified: true },
+  { org: 'Thales Alenia Space', title: 'Vers un modèle de fondation multimodal optique / SAR / IR pour l’observation de la Terre', ref: 'R0343229', city: 'Cannes', country: 'France', mode: 'On site', topics: ['earth-observation', 'foundation-models'], min: null, stipend: 'Not stated', start: 'Not stated', april: 'unknown', duration: '6 months', deadline: null, status: 'open', source: 'Workday', verified: true },
+  { org: 'Google DeepMind', title: 'Master Level Intern, France', ref: null, city: 'Paris or Grenoble', country: 'France', mode: 'On site', topics: ['llm', 'rl'], min: null, stipend: 'Not stated', start: 'Spring', april: 'yes', duration: '6 months', deadline: null, status: 'expected', source: 'last cycle', verified: true },
+  { org: 'CERN', title: 'Technical Studentship, IT, Mathematics & Robotics 2027-1', ref: 'TSC-2027-1/CO', city: 'Geneva', country: 'Switzerland', mode: 'On site', topics: ['other'], min: null, stipend: '3,486 CHF/mo', start: '1 Apr 2027', april: 'yes', duration: '6 months', deadline: '2026-10-16', status: 'closed', source: 'SmartRecruiters', verified: true },
+  { org: 'Alpic + MICS', title: 'Benchmarking and optimization of tool usage by language models', ref: null, city: 'Paris', country: 'France', mode: 'Hybrid', topics: ['llm', 'agents'], min: null, stipend: 'Not stated', start: 'Not stated', april: 'unknown', duration: '5+ months', deadline: null, status: 'removed', source: 'Ashby', verified: true }
+];
+var TOPICS = ['llm', 'agents', 'computer-vision', 'time-series', 'foundation-models', 'neuro', 'health', 'earth-observation', 'climate-energy', 'graphs', 'rl', 'optimization'];
+var MS_DAY = 86400000;
+
+function daysLeft(iso) { return iso ? Math.round((new Date(iso + 'T00:00:00Z') - TODAY) / MS_DAY) : null; }
+function fmt(iso) {
+  var d = new Date(iso + 'T00:00:00Z');
+  return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+var PILL = 'display: inline-block; font-size: 12px; font-weight: 600; border-radius: 4px; padding: 3px 8px; ';
+
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { q: '', topics: [], country: 'all', april: false, paid: false, openOnly: true, verifiedOnly: false, sort: 'deadline' };
+  }
+  renderVals() {
+    var s = this.state;
+    var self = this;
+    var set = function (patch) { self.setState(patch); };
+
+    var q = s.q.trim().toLowerCase();
+    var list = OFFERS.filter(function (o) {
+      if (s.openOnly && !(o.status === 'open' || o.status === 'expected')) return false;
+      if (s.april && !(o.april === 'yes' || o.april === 'flexible')) return false;
+      if (s.paid && o.min == null) return false;
+      if (s.verifiedOnly && !o.verified) return false;
+      if (s.country !== 'all' && o.country !== s.country) return false;
+      if (s.topics.length && !s.topics.some(function (t) { return o.topics.indexOf(t) >= 0; })) return false;
+      if (q && (o.org + ' ' + o.title + ' ' + o.city).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    var rank = { open: 0, expected: 1, unknown: 2, closed: 3, removed: 4 };
+    list.sort(function (a, b) {
+      if (s.sort === 'stipend') return (b.max || b.min || -1) - (a.max || a.min || -1);
+      if (s.sort === 'org') return a.org.localeCompare(b.org);
+      var r = rank[a.status] - rank[b.status];
+      if (r) return r;
+      var da = daysLeft(a.deadline), db = daysLeft(b.deadline);
+      return (da == null ? 9999 : da) - (db == null ? 9999 : db);
+    });
+
+    var results = list.map(function (o) {
+      var dl = daysLeft(o.deadline);
+      var soon = o.status === 'open' && dl != null && dl >= 0 && dl <= 21;
+      var statusLabel = { open: soon ? 'Closes in ' + dl + ' days' : 'Open', expected: 'Expected, not published yet', closed: 'Closed', removed: 'Posting removed', unknown: 'Status unknown' }[o.status];
+      var statusStyle = PILL + ({
+        open: soon ? 'color: #5C2B06; background: #FBEADB;' : 'color: #1D5A34; background: #E2F0E6;',
+        expected: 'color: #1A3296; background: #E7EBFA;',
+        closed: 'color: #4A4F57; background: #ECECEA;',
+        removed: 'color: #4A4F57; background: #ECECEA;',
+        unknown: 'color: #4A4F57; background: #ECECEA;'
+      })[o.status];
+      var dim = o.status === 'closed' || o.status === 'removed';
+      return {
+        org: o.org, ref: o.ref, title: o.title, topics: o.topics, source: o.source,
+        unverified: !o.verified,
+        place: o.city + (o.country !== 'Multiple' && o.city !== 'Remote' ? ', ' + o.country : '') + ' · ' + o.mode,
+        duration: o.duration, start: 'Start: ' + o.start,
+        stipend: o.stipend,
+        stipendStyle: o.min != null ? 'font-weight: 600; font-size: 15px;' : 'color: #5A5F69; font-size: 14px;',
+        deadline: o.deadline ? fmt(o.deadline) : 'Rolling or not stated',
+        deadlineStyle: soon ? 'font-weight: 600; color: #A94A0A; font-size: 15px;' : (o.deadline ? 'font-size: 15px;' : 'color: #5A5F69; font-size: 14px;'),
+        statusLabel: statusLabel, statusStyle: statusStyle,
+        cardStyle: 'display: flex; flex-wrap: wrap; gap: 16px 24px; background: #FFFFFF; border: 1px solid #E2E0D9; border-radius: 10px; padding: 18px 20px;' + (dim ? ' opacity: 0.62;' : '')
+      };
+    });
+
+    var countries = ['all'].concat(Array.from(new Set(OFFERS.map(function (o) { return o.country; }))).sort());
+    var chipBase = 'font: inherit; font-size: 13px; border-radius: 999px; padding: 6px 12px; min-height: 32px; cursor: pointer; border: 1px solid ';
+    var sortBase = 'font: inherit; font-size: 13px; border: 0; border-radius: 6px; padding: 8px 12px; min-height: 36px; cursor: pointer; ';
+
+    return {
+      q: s.q,
+      onSearch: function (e) { set({ q: e.target.value }); },
+      country: s.country,
+      onCountry: function (e) { set({ country: e.target.value }); },
+      countries: countries.map(function (c) { return { value: c, label: c === 'all' ? 'All countries' : c }; }),
+      toggles: [
+        { label: 'Open or expected only', on: s.openOnly, flip: function () { set({ openOnly: !s.openOnly }); } },
+        { label: 'Can start in April', on: s.april, flip: function () { set({ april: !s.april }); } },
+        { label: 'Stipend stated', on: s.paid, flip: function () { set({ paid: !s.paid }); } },
+        { label: 'Verified only', on: s.verifiedOnly, flip: function () { set({ verifiedOnly: !s.verifiedOnly }); } }
+      ],
+      topicChips: TOPICS.map(function (t) {
+        var on = s.topics.indexOf(t) >= 0;
+        return {
+          label: t, pressed: on ? 'true' : 'false',
+          style: chipBase + (on ? '#2747C7; background: #2747C7; color: #FFFFFF;' : '#C9C6BD; background: #FFFFFF; color: #16181D;'),
+          toggle: function () { set({ topics: on ? s.topics.filter(function (x) { return x !== t; }) : s.topics.concat([t]) }); }
+        };
+      }),
+      sorts: [['deadline', 'Deadline'], ['stipend', 'Stipend'], ['org', 'A to Z']].map(function (p) {
+        var on = s.sort === p[0];
+        return { label: p[1], pressed: on ? 'true' : 'false', pick: function () { set({ sort: p[0] }); },
+          style: sortBase + (on ? 'background: #FFFFFF; color: #16181D; font-weight: 600; box-shadow: 0 1px 2px rgba(22,24,29,0.12);' : 'background: transparent; color: #3E424B;') };
+      }),
+      reset: function () { set({ q: '', topics: [], country: 'all', april: false, paid: false, openOnly: true, verifiedOnly: false }); },
+      results: results,
+      count: results.length,
+      empty: results.length === 0,
+      stats: {
+        open: OFFERS.filter(function (o) { return o.status === 'open'; }).length,
+        soon: OFFERS.filter(function (o) { var d = daysLeft(o.deadline); return o.status === 'open' && d != null && d >= 0 && d <= 21; }).length,
+        paid: OFFERS.filter(function (o) { return o.min != null; }).length
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>

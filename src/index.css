@@ -264,6 +264,41 @@
   .offer-card {
     content-visibility: auto;
     contain-intrinsic-size: auto 180px;
+    position: relative;
+    transition: border-color 120ms ease;
+  }
+
+  /* The whole card opens the offer: the title link is stretched over it, so there is still one
+     link and one tab stop per card. */
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  .offer-card:hover {
+    border-color: var(--color-input-line);
+  }
+
+  .offer-card:hover .card-link {
+    color: var(--color-ink);
+    text-decoration: underline;
+  }
+
+  .card-link:focus-visible {
+    outline: none;
+  }
+
+  .offer-card:has(.card-link:focus-visible) {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .offer-card {
+      transition: none;
+    }
   }
 
   .wrap-anywhere {

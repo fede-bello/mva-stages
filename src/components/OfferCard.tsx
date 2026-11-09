@@ -31,7 +31,7 @@ function OfferCard({ offer: o, today }: { offer: Offer; today: number }) {
             <Link
               to={`/offer/${encodeURIComponent(o.slug)}`}
               state={{ fromBoard: true }}
-              className={`no-underline hover:underline ${dim ? 'text-ink-2 hover:text-ink' : 'text-ink hover:text-ink'}`}
+              className={`card-link no-underline ${dim ? 'text-ink-2' : 'text-ink'}`}
             >
               {o.title}
             </Link>

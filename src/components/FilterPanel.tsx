@@ -1,4 +1,5 @@
-import type { FilterState, Option } from '../lib/filters'
+import { ORG_TYPE_LABELS } from '../lib/derive'
+import { ORG_TYPES, SOURCE_GROUPS, type FilterState, type Option } from '../lib/filters'
 
 type Props = {
   id: string
@@ -9,6 +10,7 @@ type Props = {
   onClear: () => void
   countries: Option[]
   topics: Option[]
+  sources: Option[]
   className?: string
 }
 
@@ -19,7 +21,7 @@ const TOGGLES: { key: 'openOnly' | 'april' | 'paid' | 'verified'; label: string 
   { key: 'verified', label: 'Verified only' },
 ]
 
-export default function FilterPanel({ id, filters, query, onQuery, onChange, onClear, countries, topics, className = '' }: Props) {
+export default function FilterPanel({ id, filters, query, onQuery, onChange, onClear, countries, topics, sources, className = '' }: Props) {
   // Keep a country from the URL selectable even if no offer has it right now.
   const countryList =
     filters.country && !countries.some((c) => c.value === filters.country)
@@ -29,6 +31,18 @@ export default function FilterPanel({ id, filters, query, onQuery, onChange, onC
     ...topics,
     ...filters.topics.filter((t) => !topics.some((o) => o.value === t)).map((t) => ({ value: t, label: t, count: 0 })),
   ]
+
+  // Keep a source from the URL selectable even if no offer has it right now.
+  const sourceList = [
+    ...sources,
+    ...SOURCE_GROUPS.filter((g) => filters.sources.includes(g.key) && !sources.some((s) => s.value === g.key)).map((g) => ({ value: g.key, label: g.label, count: 0 })),
+  ]
+
+  const toggleSource = (k: string) =>
+    onChange({ sources: filters.sources.includes(k) ? filters.sources.filter((x) => x !== k) : [...filters.sources, k] })
+
+  const toggleOrg = (t: string) =>
+    onChange({ orgTypes: filters.orgTypes.includes(t) ? filters.orgTypes.filter((x) => x !== t) : [...filters.orgTypes, t] })
 
   const toggleTopic = (t: string) =>
     onChange({ topics: filters.topics.includes(t) ? filters.topics.filter((x) => x !== t) : [...filters.topics, t] })
@@ -88,6 +102,28 @@ export default function FilterPanel({ id, filters, query, onQuery, onChange, onC
           ))}
         </select>
       </div>
+
+      <fieldset className="m-0 border-0 p-0">
+        <legend className="mb-2 text-[13px] font-semibold">Organization</legend>
+        <div className="flex flex-wrap gap-[6px]">
+          {ORG_TYPES.map((t) => (
+            <button key={t} type="button" className="chip" aria-pressed={filters.orgTypes.includes(t)} onClick={() => toggleOrg(t)}>
+              {ORG_TYPE_LABELS[t]}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="m-0 border-0 p-0">
+        <legend className="mb-2 text-[13px] font-semibold">Found on</legend>
+        <div className="flex flex-wrap gap-[6px]">
+          {sourceList.map((s) => (
+            <button key={s.value} type="button" className="chip" aria-pressed={filters.sources.includes(s.value)} onClick={() => toggleSource(s.value)}>
+              {s.label}
+            </button>
+          ))}
+        </div>
+      </fieldset>
 
       <fieldset className="m-0 border-0 p-0">
         <legend className="mb-2 text-[13px] font-semibold">Topics</legend>

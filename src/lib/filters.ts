@@ -5,9 +5,30 @@ import { TOPICS } from './validate'
 
 export type SortKey = 'deadline' | 'stipend' | 'az'
 
+/** Where an offer was found, grouped for the filter. Keys are what the URL stores. */
+export const SOURCE_GROUPS = [
+  { key: 'employer', label: 'Employer site', types: ['official_posting', 'lab_website'] },
+  { key: 'board', label: 'Job board', types: ['linkedin', 'aggregator'] },
+  { key: 'drive', label: 'MVA Drive', types: ['mva_drive'] },
+  { key: 'mailing', label: 'Mailing list', types: ['mailing_list'] },
+  { key: 'students', label: 'Added by students', types: ['user_submitted'] },
+  { key: 'other', label: 'Other source', types: ['other'] },
+] as const
+
+const SOURCE_KEYS: readonly string[] = SOURCE_GROUPS.map((g) => g.key)
+
+export function sourceGroup(sourceType: string): string {
+  return SOURCE_GROUPS.find((g) => (g.types as readonly string[]).includes(sourceType))?.key ?? 'other'
+}
+
+/** Organization types in filter order: research first, then industry. */
+export const ORG_TYPES = ['academic_lab', 'public_agency', 'company', 'startup', 'big_tech'] as const
+
 export type FilterState = {
   q: string
   topics: string[]
+  orgTypes: string[]
+  sources: string[]
   country: string // '' = all countries
   openOnly: boolean
   april: boolean
@@ -19,6 +40,8 @@ export type FilterState = {
 export const DEFAULT_FILTERS: FilterState = {
   q: '',
   topics: [],
+  orgTypes: [],
+  sources: [],
   country: '',
   openOnly: true,
   april: false,
@@ -35,9 +58,12 @@ export function parseFilters(params: URLSearchParams): FilterState {
     .split(',')
     .map((t) => t.trim())
     .filter((t, i, arr) => t && (TOPICS as readonly string[]).includes(t) && arr.indexOf(t) === i)
+  const orgTypes = ORG_TYPES.filter((t) => (params.get('org') ?? '').split(',').map((x) => x.trim()).includes(t))
   return {
     q: params.get('q') ?? '',
     topics,
+    orgTypes,
+    sources: SOURCE_KEYS.filter((k) => (params.get('source') ?? '').split(',').map((x) => x.trim()).includes(k)),
     country: params.get('country') ?? '',
     openOnly: params.get('open') !== '0',
     april: params.get('april') === '1',
@@ -52,6 +78,8 @@ export function serializeFilters(s: FilterState): URLSearchParams {
   const p = new URLSearchParams()
   if (s.q.trim()) p.set('q', s.q)
   if (s.topics.length) p.set('topics', s.topics.join(','))
+  if (s.orgTypes.length) p.set('org', ORG_TYPES.filter((t) => s.orgTypes.includes(t)).join(','))
+  if (s.sources.length) p.set('source', SOURCE_KEYS.filter((k) => s.sources.includes(k)).join(','))
   if (s.country) p.set('country', s.country)
   if (!s.openOnly) p.set('open', '0')
   if (s.april) p.set('april', '1')
@@ -71,6 +99,8 @@ export function activeFilterCount(s: FilterState): number {
   return (
     (s.q.trim() ? 1 : 0) +
     s.topics.length +
+    s.orgTypes.length +
+    s.sources.length +
     (s.country ? 1 : 0) +
     (s.openOnly ? 0 : 1) +
     (s.april ? 1 : 0) +
@@ -114,6 +144,13 @@ export function countryOptions(offers: Offer[]): Option[] {
     .map(([value, count]) => ({ value, label: `${value} (${count})`, count }))
 }
 
+/** Source groups present in the data, in the fixed order of SOURCE_GROUPS. */
+export function sourceOptions(offers: Offer[]): Option[] {
+  const counts = new Map<string, number>()
+  for (const o of offers) counts.set(sourceGroup(o.source_type), (counts.get(sourceGroup(o.source_type)) ?? 0) + 1)
+  return SOURCE_GROUPS.filter((g) => counts.has(g.key)).map((g) => ({ value: g.key, label: g.label, count: counts.get(g.key) ?? 0 }))
+}
+
 /** Every topic present in the data, by count, `other` last. */
 export function topicOptions(offers: Offer[]): Option[] {
   const counts = new Map<string, number>()
@@ -142,6 +179,8 @@ export function matches(o: Offer, s: FilterState, today: number): boolean {
   if (s.april && o.april_start !== 'yes' && o.april_start !== 'flexible') return false
   if (s.paid && !hasStipend(o)) return false
   if (s.verified && !o.verified) return false
+  if (s.sources.length && !s.sources.includes(sourceGroup(o.source_type))) return false
+  if (s.orgTypes.length && !(o.org_type && s.orgTypes.includes(o.org_type))) return false
   if (s.country && !atomicCountries(o.country).includes(s.country)) return false
   if (s.topics.length && !s.topics.some((t) => o.topics.includes(t))) return false
   const q = fold(s.q)

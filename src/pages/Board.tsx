@@ -9,7 +9,7 @@ import StatsRow from '../components/StatsRow'
 import { boardMemory } from '../lib/boardMemory'
 import { computeStats } from '../lib/derive'
 import {
-  activeFilterCount, applyFilters, clearFilters, countryOptions, parseFilters, serializeFilters, topicOptions,
+  activeFilterCount, applyFilters, clearFilters, countryOptions, parseFilters, serializeFilters, sourceOptions, topicOptions,
   type FilterState, type SortKey,
 } from '../lib/filters'
 import { useMeta } from '../lib/meta'
@@ -81,6 +81,7 @@ export default function Board() {
   const stats = useMemo(() => (offers ? computeStats(offers, today) : null), [offers, today])
   const countries = useMemo(() => (offers ? countryOptions(offers) : []), [offers])
   const topics = useMemo(() => (offers ? topicOptions(offers) : []), [offers])
+  const sources = useMemo(() => (offers ? sourceOptions(offers) : []), [offers])
   const results = useMemo(() => (offers ? applyFilters(offers, filters, today) : []), [offers, filters, today])
   const anyVerified = useMemo(() => offers?.some((o) => o.verified) ?? false, [offers])
 
@@ -196,6 +197,7 @@ export default function Board() {
             onClear={onClear}
             countries={countries}
             topics={topics}
+            sources={sources}
           />
 
           <section

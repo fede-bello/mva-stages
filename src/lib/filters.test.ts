@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   activeFilterCount, applyFilters, atomicCountries, clearFilters, countryOptions, DEFAULT_FILTERS, fold,
-  parseFilters, serializeFilters, sortOffers, topicOptions, type FilterState,
+  parseFilters, serializeFilters, sortOffers, sourceGroup, topicOptions, type FilterState,
 } from './filters'
 import { offer } from './fixtures'
 
@@ -10,9 +10,9 @@ const f = (p: Partial<FilterState>): FilterState => ({ ...DEFAULT_FILTERS, ...p 
 
 describe('query string', () => {
   it('round-trips every filter', () => {
-    const s = f({ q: 'Île', topics: ['llm', 'rl'], country: 'United States', openOnly: false, april: true, paid: true, verified: true, sort: 'stipend' })
+    const s = f({ q: 'Île', topics: ['llm', 'rl'], orgTypes: ['academic_lab', 'startup'], sources: ['employer', 'drive'], country: 'United States', openOnly: false, april: true, paid: true, verified: true, sort: 'stipend' })
     const qs = serializeFilters(s).toString()
-    expect(qs).toBe('q=%C3%8Ele&topics=llm%2Crl&country=United+States&open=0&april=1&paid=1&verified=1&sort=stipend')
+    expect(qs).toBe('q=%C3%8Ele&topics=llm%2Crl&org=academic_lab%2Cstartup&source=employer%2Cdrive&country=United+States&open=0&april=1&paid=1&verified=1&sort=stipend')
     expect(parseFilters(new URLSearchParams(qs))).toEqual(s)
   })
 
@@ -52,6 +52,31 @@ describe('search and lists', () => {
     ]
     expect(countryOptions(list).map((c) => c.label)).toEqual(['France (2)', 'United States (2)', 'United Kingdom (1)'])
     expect(topicOptions(list).map((t) => t.value)).toEqual(['llm', 'rl', 'other'])
+  })
+})
+
+describe('organization and source filters', () => {
+  it('keeps a canonical order and drops unknown types from the URL', () => {
+    expect(parseFilters(new URLSearchParams('org=startup,nope,academic_lab')).orgTypes).toEqual(['academic_lab', 'startup'])
+  })
+
+  it('groups source types and drops unknown keys from the URL', () => {
+    expect(sourceGroup('lab_website')).toBe('employer')
+    expect(sourceGroup('linkedin')).toBe('board')
+    expect(sourceGroup('mva_drive')).toBe('drive')
+    expect(parseFilters(new URLSearchParams('source=drive,nope,employer')).sources).toEqual(['employer', 'drive'])
+  })
+
+  it('filters by organization type (OR) and by source group (OR)', () => {
+    const lab = offer({ slug: 'lab', org_type: 'academic_lab', source_type: 'mva_drive', status: 'open' })
+    const co = offer({ slug: 'co', org_type: 'company', source_type: 'official_posting', status: 'open' })
+    const none = offer({ slug: 'none', org_type: null, source_type: 'other', status: 'open' })
+    const slugs = (p: Partial<FilterState>) => applyFilters([lab, co, none], f(p), today).map((o) => o.slug).sort()
+    expect(slugs({ orgTypes: ['academic_lab'] })).toEqual(['lab'])
+    expect(slugs({ orgTypes: ['academic_lab', 'company'] })).toEqual(['co', 'lab'])
+    expect(slugs({ sources: ['drive'] })).toEqual(['lab'])
+    expect(slugs({ sources: ['drive', 'employer'] })).toEqual(['co', 'lab'])
+    expect(activeFilterCount(f({ orgTypes: ['company', 'startup'], sources: ['drive'] }))).toBe(3)
   })
 })
 

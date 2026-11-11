@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: consolidate-tricky-incoming
+expected_outcome: |
+  data/offers.json gains the Living Models and Pruna AI offers, with the personal email removed,
+  Living Models added to data/organizations.json as a startup, the Gradium offer (a takedown)
+  left out, the LinkedIn copy of the Mistral offer merged into the existing one without
+  replacing its Ashby link, Pruna's status fixed and its country normalized. build_seed.py passes.
+  Nothing is loaded or committed. The report says Hugging Face had nothing open and Kyutai was
+  not covered.
+context:
+  scaffold_script: place-files.sh

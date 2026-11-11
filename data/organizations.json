@@ -1,0 +1,3078 @@
+[
+  {
+    "name": "3IA Côte d'Azur",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://3ia.univ-cotedazur.eu/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Aalto University",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ABB",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "ABB Corporate Research": "ABB (Corporate Research)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Adlin Science",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Adobe",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "Adobe Research": "Adobe (Research)"
+    },
+    "careers_url": "https://careers.adobe.com/us/en/c/research-jobs",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Adobe Research Paris"
+  },
+  {
+    "name": "Ai2",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Ai2 (Allen Institute for AI)": "Ai2"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Air Liquide",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Airbus",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Airbus Defence and Space": "Airbus (Defence and Space)",
+      "Airbus Defence and Space (Advanced Projects & Robotics)": "Airbus (Defence and Space, Advanced Projects & Robotics)",
+      "Airbus Defence and Space (Data Science)": "Airbus (Defence and Space, Data Science)",
+      "Airbus Defence and Space (Image Engineering)": "Airbus (Defence and Space, Image Engineering)",
+      "Airbus Defence and Space (UK)": "Airbus (Defence and Space, UK)",
+      "Airbus Helicopters": "Airbus (Helicopters)",
+      "Airbus Helicopters (R&T)": "Airbus (Helicopters, R&T)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Alan",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Alfred Wegener Institute",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "AWI (Alfred Wegener Institute)": "Alfred Wegener Institute"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Alice & Bob",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Alphaguard",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Alpic",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Altrove",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Amazon",
+    "type": "big_tech",
+    "group": "big_tech",
+    "careers_url": "https://www.amazon.jobs/content/en/career-programs/university",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "AMI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "AMIAD",
+    "type": "public_agency",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ANITI",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://aniti.univ-toulouse.fr/en/internship-positions/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "AP-HP",
+    "type": "public_agency",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Apneal",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Apple",
+    "type": "big_tech",
+    "group": "big_tech",
+    "careers_url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Aqemia",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Artefact",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Artefact Research Lab": "Artefact (Research Lab)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Arturia",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "ARTURIA": "Arturia"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Ask for the Moon",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ASML",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://www.asml.com/en/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Astek",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "AstraZeneca",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Atos",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Aubay",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "AZAP",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "AZmed",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Barcelona Supercomputing Center",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Barcelona Supercomputing Center (BSC), Earth Sciences": "Barcelona Supercomputing Center (Earth Sciences)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Barco",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Barco Labs": "Barco (Labs)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Baseline Robotics",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "BatiScript",
+    "type": "startup",
+    "group": "startups_fr",
+    "aliases": {
+      "BatiScript / Learn & Go (Kaligo)": "BatiScript (Learn & Go, Kaligo)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Bioptimus",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": "https://www.bioptimus.com/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Blunomy",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "BMW",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "BNP Paribas",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "BNP Paribas CIB": "BNP Paribas (CIB)",
+      "BNP Paribas CIB, AI Lab (Analytics Consulting)": "BNP Paribas (CIB, AI Lab, Analytics Consulting)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Bosch",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Bosch Center for Artificial Intelligence": "Bosch (Center for Artificial Intelligence)",
+      "Bosch Corporate Research": "Bosch (Corporate Research)"
+    },
+    "careers_url": "https://jobs.bosch.com/en/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "BrightHeart",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Builtstop",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "C12",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Callyope",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CARIAD",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CEA",
+    "type": "public_agency",
+    "group": "research_fr",
+    "aliases": {
+      "CEA DAM": "CEA (DAM)",
+      "CEA DAM CESTA": "CEA (DAM CESTA)",
+      "CEA DAM Île-de-France": "CEA (DAM Île-de-France)",
+      "CEA DES": "CEA (DES)",
+      "CEA DES Saclay": "CEA (DES Saclay)",
+      "CEA DES/IRESNE (Cadarache)": "CEA (DES/IRESNE, Cadarache)",
+      "CEA DES/IRESNE (Cadarache) + I2M Marseille": "CEA (DES/IRESNE Cadarache, with I2M Marseille)",
+      "CEA List": "CEA (List)",
+      "CEA List (Kalisteo)": "CEA (List, Kalisteo)",
+      "CEA List (Saclay)": "CEA (List, Saclay)",
+      "CEA List DIN (Saclay)": "CEA (List DIN, Saclay)",
+      "CEA List, LASTI": "CEA (List, LASTI)",
+      "CEA Liten": "CEA (Liten)",
+      "CEA-Leti": "CEA (Leti)",
+      "CEA-Leti Clinatec": "CEA (Leti Clinatec)",
+      "CEA-Leti DOPT/LASP": "CEA (Leti DOPT/LASP)",
+      "CEA-Leti DOPT/LIS": "CEA (Leti DOPT/LIS)",
+      "CEA-Leti LAIC": "CEA (Leti LAIC)",
+      "CEA-Leti LAPCI": "CEA (Leti LAPCI)",
+      "CEA-Leti LS2PR": "CEA (Leti LS2PR)",
+      "CEA-Leti STSF": "CEA (Leti STSF)"
+    },
+    "careers_url": "https://www.emploi.cea.fr/offre-de-emploi/liste-offres.aspx",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Celest Science",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Centre Borelli",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://centreborelli.ens-paris-saclay.fr/fr/offres-demploi-post-doc-these",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CERN",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": "https://careers.cern/programmes/technical-studentship/",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Technical studentship needs member-state nationality; 2027-1 intake closed 2026-10-16"
+  },
+  {
+    "name": "Champalimaud Research",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ChapsVision",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CNES",
+    "type": "public_agency",
+    "group": "research_fr",
+    "careers_url": "https://recrutement.cnes.fr/fr/annonces",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CNRS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "CNRS / Institut Pasteur": "CNRS (with Institut Pasteur)",
+      "CNRS / Univ. Lyon (LBBE)": "CNRS (LBBE, Univ. Lyon)"
+    },
+    "careers_url": "https://emploi.cnrs.fr/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Cohere",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/cohere",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Complexity Science Hub",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Complexity Science Hub Vienna": "Complexity Science Hub"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Computer Vision Center",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "CVC (Computer Vision Center)": "Computer Vision Center"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Contentsquare",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Craft AI",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CRAN",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "CRAN (Université de Lorraine) + INRS": "CRAN (Université de Lorraine, with INRS)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CREATIS",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "aliases": {
+      "CIRI / CREATIS (INSA Lyon)": "CREATIS (INSA Lyon, with CIRI)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CReSTIC",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "CReSTIC (AI4M team), IUT Troyes": "CReSTIC (AI4M team, IUT Troyes)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Criteo",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Criteo AI Lab": "Criteo (AI Lab)"
+    },
+    "careers_url": "https://ailab.criteo.com/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CSEM",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "CWI",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "CWI, Computational Imaging": "CWI (Computational Imaging)"
+    },
+    "careers_url": "https://www.cwi.nl/en/jobs/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Damen",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Dassault Aviation",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Dassault Systèmes",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://www.3ds.com/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "datacraft",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Datadog",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Datadome",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "DATAIA",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://www.dataia.eu/offres",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "DeepHealth",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Deepki",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Dental Monitoring",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Descartes Underwriting",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "DFKI",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "DFKI Augmented Vision": "DFKI (Augmented Vision)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Digital Surf",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Direction du renseignement militaire",
+    "type": "public_agency",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Disney Research",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Disney Research Studios": "Disney Research (Studios)"
+    },
+    "careers_url": "https://studios.disneyresearch.com/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "DKFZ",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "DKFZ, Division of Medical Image Computing": "DKFZ (Medical Image Computing)"
+    },
+    "careers_url": "https://www.dkfz.de/en/career/jobs",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "DLR",
+    "type": "public_agency",
+    "group": "research_eu",
+    "aliases": {
+      "DLR Earth Observation Center": "DLR (Earth Observation Center)",
+      "DLR Institute of Communications and Navigation": "DLR (Institute of Communications and Navigation)",
+      "DLR Institute of Data Science": "DLR (Institute of Data Science)"
+    },
+    "careers_url": "https://www.dlr.de/en/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "DNV",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Doctolib",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Doctrine",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Dust",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EasyMile",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ECMWF",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": "https://jobs.ecmwf.int/Home/Job",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EDF",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "EDF Lab Paris-Saclay": "EDF (Lab Paris-Saclay)",
+      "EDF R&D": "EDF (R&D)",
+      "EDF R&D (PRISME)": "EDF (R&D, PRISME)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Ekimetrics",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Ekimetrics / Université de Lorraine": "Ekimetrics (with Université de Lorraine)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ELLIS",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "ELLIS Alicante": "ELLIS (Alicante)",
+      "ELLIS Amsterdam": "ELLIS (Amsterdam)",
+      "ELLIS Institute Tübingen": "ELLIS (Institute Tübingen)"
+    },
+    "careers_url": "https://ellis.eu/research/jobs",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EMBL",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "EMBL-EBI / French Embassy in London": "EMBL (EMBL-EBI, with the French Embassy in London)"
+    },
+    "careers_url": "https://embl.wd103.myworkdayjobs.com/EMBL",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Enchanted Tools",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Enedis",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "ENEDIS": "Enedis"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Engelhart",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Engie",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Engie (AI and Advanced Analytics, GBU Renewable and Flex)": "Engie (AI and Advanced Analytics)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Enodia Therapeutics",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ENS-PSL",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Entalpic",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EPFL",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://www.epfl.ch/education/international/en/coming-to-epfl/project/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Equativ",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Ericsson",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Ericsson Research": "Ericsson (Research)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ESA",
+    "type": "public_agency",
+    "group": "research_eu",
+    "aliases": {
+      "ESA Φ-lab": "ESA (Φ-lab)",
+      "ESA Φ-lab CIN": "ESA (Φ-lab, CIN)",
+      "European Space Agency": "ESA",
+      "European Space Agency (ESA)": "ESA",
+      "European Space Agency (ESA), Φ-lab": "ESA (Φ-lab)"
+    },
+    "careers_url": "https://www.esa.int/careers/careers/launch-your-career/entry-level-progammes/student-internships",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Student internships need ESA member-state nationality; the 2027 call opened 2026-11-02"
+  },
+  {
+    "name": "EssilorLuxottica",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ETH Zurich",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "ETH Zürich": "ETH Zurich"
+    },
+    "careers_url": "https://inf.ethz.ch/studies/summer-research-fellowship/how-to-apply.html",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EUMETSAT",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": "https://www.eumetsat.int/work-us/careers-eumetsat",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EXLOG",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "EXWAYZ",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "FBK",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Flatiron Institute",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Flatiron Institute, Polymathic AI": "Flatiron Institute (Polymathic AI)",
+      "Simons Foundation (Flatiron Institute)": "Flatiron Institute"
+    },
+    "careers_url": "https://www.simonsfoundation.org/flatiron/job-openings/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "FlexAI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Flexion Robotics",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Foodvisor",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Framatome",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Framatome (EDF group)": "Framatome",
+      "Framatome / Intercontrôle": "Framatome (Intercontrôle)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Fraunhofer",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": "https://jobs.fraunhofer.de/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Ganymed Robotics",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "GdR IASIS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "GE HealthCare",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Generare",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Genesis AI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Genmab",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "GIPSA-lab",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Giskard",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "GitGuardian",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Gladia",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Gleamer",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "GMV",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Gobano Robotics",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Google",
+    "type": "big_tech",
+    "group": "big_tech",
+    "careers_url": "https://www.google.com/about/careers/applications/jobs/results/?q=student%20researcher%20program",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Google DeepMind",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "DeepMind": "Google DeepMind",
+      "Google DeepMind / Google": "Google DeepMind"
+    },
+    "careers_url": "https://deepmind.google/careers/",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Roles moved to Google Careers; the Greenhouse board deepmind returns 404"
+  },
+  {
+    "name": "Gradium",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Gustave Roussy",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "H Company",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": "https://jobs.ashbyhq.com/hcompany",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Heex Technologies",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Helmholtz AI",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://www.helmholtz.de/en/search/jobs/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Helsing",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Hexagon",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Hexagon Robotics": "Hexagon (Robotics)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Hi! PARIS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://hi-paris.fr/recruitment/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Hitachi Energy",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Huawei",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://career.huawei.com/reccampportal/portal5/index.html",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Hugging Face",
+    "type": "startup",
+    "group": "startups_fr",
+    "aliases": {
+      "HuggingFace": "Hugging Face"
+    },
+    "careers_url": "https://apply.workable.com/huggingface/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "HZDR",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "HZDR / CASUS": "HZDR (CASUS)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IBISC",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "IBISC (Université d'Évry, Paris-Saclay) + CH Sud-Francilien": "IBISC (Université d'Évry, with CH Sud-Francilien)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IBM",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "IBM Research Zurich": "IBM (Research Zurich)"
+    },
+    "careers_url": "https://www.ibm.com/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IDEMIA",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "IDEMIA Public Security": "IDEMIA (Public Security)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Idiap",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Idiap Research Institute": "Idiap"
+    },
+    "careers_url": "https://www.idiap.ch/en/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IDSIA",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://www.supsi.ch/en/work-with-us",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "iGlobeScientific",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IGN",
+    "type": "public_agency",
+    "group": "research_fr",
+    "aliases": {
+      "IGN / LASTIG": "IGN (LASTIG)",
+      "IGN LASTIG": "IGN (LASTIG)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IIT",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "IIT (Istituto Italiano di Tecnologia)": "IIT"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ILLS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "imec",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": "https://www.imec-int.com/en/work-at-imec/job-opportunities",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Implicity",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IMT",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "IMT Mines Alès + IMT Nord Europe + CHU Lille": "IMT (Mines Alès, with IMT Nord Europe and CHU Lille)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Inbolt",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Infineon",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "INRAE",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "INRAE BOA + SYSAAF": "INRAE (BOA, with SYSAAF)",
+      "INRAE BioSP": "INRAE (BioSP)",
+      "INRAE RECOVER": "INRAE (RECOVER)",
+      "INRAE URFM (Avignon) + TUM": "INRAE (URFM Avignon, with TUM)"
+    },
+    "careers_url": "https://jobs.inrae.fr/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Inria",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "INRIA": "Inria",
+      "Inria / Paris Brain Institute (ICM, Aramis)": "Inria (Aramis, with Paris Brain Institute)",
+      "Inria Grenoble (Lyon site)": "Inria (Grenoble, Lyon site)",
+      "Inria Rennes": "Inria (Rennes)"
+    },
+    "careers_url": "https://jobs.inria.fr/public/classic/en/offres",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Inserm",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "InstaDeep",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "InstaDeep (BioNTech)": "InstaDeep"
+    },
+    "careers_url": "https://instadeep.com/about-us/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Institut Curie",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Institut Fresnel",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Institut Langevin",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "Institut Langevin (ESPCI) + ONERA": "Institut Langevin (ESPCI, with ONERA)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Institut Pasteur",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "aliases": {
+      "Institut Pasteur + Inria (Epiméthée)": "Institut Pasteur (Epiméthée, with Inria)",
+      "Institut Pasteur / Aix-Marseille Université": "Institut Pasteur (with Aix-Marseille Université)"
+    },
+    "careers_url": "https://www.pasteur.fr/en/about-us/join-us",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Intel",
+    "type": "big_tech",
+    "group": "big_tech",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IPSL",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "IPSL Climate Graduate School": "IPSL (Climate Graduate School)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "iQanto",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IRISA",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "IRISA / Inria / Univ. Rennes (Tavenard, Boniol)": "IRISA (with Inria, Univ. Rennes)",
+      "IRISA / Inria OBELIX": "IRISA (OBELIX, with Inria)"
+    },
+    "careers_url": "https://www.irisa.fr/recrutement",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IRT Saint Exupéry",
+    "type": "public_agency",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "IRT SystemX",
+    "type": "public_agency",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Isomorphic Labs",
+    "type": "company",
+    "group": "startups_eu",
+    "careers_url": "https://www.isomorphiclabs.com/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ISTA",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "ISTA (Institute of Science and Technology Austria)": "ISTA"
+    },
+    "careers_url": "https://phd.pages.ista.ac.at/isternship/",
+    "last_checked": null,
+    "last_result": null,
+    "note": "ISTernship paused for the 2026 and 2027 cycles; year-round internships are arranged with group leaders"
+  },
+  {
+    "name": "Johnson & Johnson MedTech",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "JRC",
+    "type": "public_agency",
+    "group": "research_eu",
+    "aliases": {
+      "European Commission Joint Research Centre (JRC)": "JRC"
+    },
+    "careers_url": "https://joint-research-centre.ec.europa.eu/work-us/jobs-jrc_en",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kandou AI",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Karavela",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "KARL STORZ",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kayrros",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Keenfinity",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kinetix",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "KNMI",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kog AI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kubota",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Kubota Technology Innovation Europe": "Kubota (Technology Innovation Europe)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kumulus Water",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Kyutai",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://kyutai.homerun.co/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "L'Oréal",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "L'Oréal R&I": "L'Oréal (R&I)"
+    },
+    "careers_url": "https://careers.loreal.com/en",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "L2S",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LAAS-CNRS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Lemon Learning",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Lettria",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Lifen",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LightOn",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Linagora",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LIP6",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LIRIS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "LIRIS (Lyon 1) + ERIC (Lyon 2)": "LIRIS (Lyon 1, with ERIC)",
+      "LIRIS + ERIC": "LIRIS (with ERIC)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LIS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LISTIC",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "LISTIC (Univ. Savoie Mont Blanc)": "LISTIC",
+      "LISTIC (Univ. Savoie Mont Blanc) / ICube (Univ. Strasbourg)": "LISTIC (with ICube)",
+      "LISTIC (Université Savoie Mont Blanc)": "LISTIC",
+      "LISTIC (Université Savoie Mont Blanc) + CEDRIC (CNAM)": "LISTIC (with CEDRIC, CNAM)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Lithosquare",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Living Models",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LIX",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LMD",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Logitech",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LPSM",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "LPSM (Sorbonne Université) + Université Laval": "LPSM (Sorbonne Université, with Université Laval)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LS2N",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "LSCE",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "MAHLE",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "MARBEC",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Max Planck Society",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "MPI for Biogeochemistry, Dept. Reichstein": "Max Planck Society (MPI for Biogeochemistry)",
+      "MPI for Brain Research": "Max Planck Society (MPI for Brain Research)",
+      "MPI for Human Cognitive and Brain Sciences (MPI CBS)": "Max Planck Society (MPI CBS)",
+      "MPI-IS / MPI Biological Cybernetics / Tübingen AI Center": "Max Planck Society (MPI-IS, MPI Biological Cybernetics, Tübingen AI Center)",
+      "Max Planck CS (MPI-INF, MPI-SWS, MPI-SP)": "Max Planck Society (MPI-INF, MPI-SWS, MPI-SP)",
+      "Max Planck Institute Tübingen": "Max Planck Society (Tübingen)",
+      "Max Planck Institute for Informatics / Computer Science": "Max Planck Society (MPI-INF)",
+      "Max Planck Institutes (MPI-INF, MPI-SWS, MPI-SP)": "Max Planck Society (MPI-INF, MPI-SWS, MPI-SP)"
+    },
+    "careers_url": "https://www.mpi-inf.mpg.de/career/job-openings",
+    "last_checked": null,
+    "last_result": null,
+    "note": "One entry for all institutes; careers_url is MPI-INF's job page"
+  },
+  {
+    "name": "MBDA",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "MBDA France": "MBDA (France)",
+      "MBDA France (Technical Directorate)": "MBDA (France, Technical Directorate)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Mentalkiz",
+    "type": "startup",
+    "group": "startups_fr",
+    "aliases": {
+      "Mentalkiz / AP-HP": "Mentalkiz (with AP-HP)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Merck",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "MESH Robotic Construction",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Meta",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "FAIR": "Meta (FAIR)",
+      "Meta FAIR": "Meta (FAIR)"
+    },
+    "careers_url": "https://www.metacareers.com/jobsearch/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Metravib Defence",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Mews Partners",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "MIAI Grenoble",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Microsoft",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "Microsoft Research Cambridge": "Microsoft (Research Cambridge)",
+      "Microsoft Research New England": "Microsoft (Research New England)"
+    },
+    "careers_url": "https://apply.careers.microsoft.com/careers?et=Internship",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Mila",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://mila.quebec/en/recruitment",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Mirakl",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Mistral AI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": "https://mistral.ai/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Mobileye",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://careers.mobileye.com/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Moments Lab",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Moon Surgical",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Météo-France",
+    "type": "public_agency",
+    "group": "research_fr",
+    "aliases": {
+      "Météo-France / CNRM": "Météo-France (CNRM)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Nabla",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Naver",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "NAVER LABS Europe": "Naver (Labs Europe)",
+      "Naver Labs Europe": "Naver (Labs Europe)"
+    },
+    "careers_url": "https://careers.werecruit.io/en/naver-labs-europe",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Naver Labs Europe, Grenoble"
+  },
+  {
+    "name": "NEURA Robotics",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Nokia",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Nokia Bell Labs France": "Nokia (Bell Labs France)"
+    },
+    "careers_url": "https://www.nokia.com/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Novartis",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Novartis France": "Novartis (France)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "NP Company",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "NVIDIA",
+    "type": "big_tech",
+    "group": "big_tech",
+    "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "NXP",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "NYU",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "NYU (BioML, Romain Lopez)": "NYU (BioML)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ONERA",
+    "type": "public_agency",
+    "group": "research_fr",
+    "aliases": {
+      "ONERA DEMR": "ONERA (DEMR)",
+      "ONERA DEMR/MATS": "ONERA (DEMR/MATS)",
+      "ONERA DMAS/LEM-MS2": "ONERA (DMAS/LEM-MS2)",
+      "ONERA DMAS/MS2": "ONERA (DMAS/MS2)",
+      "ONERA DMAS/SCAN": "ONERA (DMAS/SCAN)",
+      "ONERA DPHY/ERS": "ONERA (DPHY/ERS)",
+      "ONERA DTIS": "ONERA (DTIS)"
+    },
+    "careers_url": "https://rejoindre.onera.fr/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Orange",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Orange Innovation": "Orange (Innovation)",
+      "Orange Innovation Networks": "Orange (Innovation Networks)",
+      "Orange Networks": "Orange (Networks)"
+    },
+    "careers_url": "https://orange.jobs/gb/en",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "osapiens",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Owkin",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": "https://jobs.ashbyhq.com/owkin",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Paris Brain Institute",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "aliases": {
+      "Paris Brain Institute (ICM)": "Paris Brain Institute"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Parrot",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Parrot Drones": "Parrot (Drones)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Pathway",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Pellenc ST",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Perplexity",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Philips",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Philips Research": "Philips (Research)"
+    },
+    "careers_url": "https://www.careers.philips.com/emea/en",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Photoroom",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Pigment",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Pioneer Centre for AI",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://www.aicentre.dk/jobs",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Poolside",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": "https://www.poolside.ai/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Porsche",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "PostGenAI@Paris",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://scai.sorbonne-universite.fr/projects/postgenai-paris",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "PRAIRIE",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "aliases": {
+      "PRAIRIE-PSAI": "PRAIRIE (PSAI)"
+    },
+    "careers_url": "https://recrutement.psl.eu/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Presage Labs",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Primaa",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Prior Labs",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Prophesee",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://careers.prophesee.ai/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Prosus",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Prosus AI Talent Lab": "Prosus (AI Talent Lab)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Pruna AI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Pulsheart",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "pyannoteAI",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Qualcomm",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "Qualcomm AI Research": "Qualcomm (AI Research)"
+    },
+    "careers_url": "https://careers.qualcomm.com/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "QuantCube Technology",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Quinten Health",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "RAI Institute",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Raidium",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Red Cross Red Crescent Climate Centre",
+    "type": "public_agency",
+    "group": "international",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Remanence",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Renault Group",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Renault Group / Ampere Energy": "Renault Group (Ampere Energy)",
+      "Renault Group / Ampere Software Technology": "Renault Group (Ampere Software Technology)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Reuniwatt",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "RIGI",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "RIGI (MPI-IS Stuttgart / Robotics Institute Germany)": "RIGI (Robotics Institute Germany, MPI-IS Stuttgart)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Rivercell",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "RIVR",
+    "type": "big_tech",
+    "group": "startups_eu",
+    "aliases": {
+      "RIVR (part of Amazon)": "RIVR"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null,
+    "note": "Owned by Amazon according to its postings"
+  },
+  {
+    "name": "Robin Radar Systems",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "RTE",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Runway",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Safran",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Safran Aircraft Engines": "Safran (Aircraft Engines)",
+      "Safran Aircraft Engines (DataLab)": "Safran (Aircraft Engines, DataLab)",
+      "Safran Aircraft Engines (PHM team)": "Safran (Aircraft Engines, PHM team)",
+      "Safran Aircraft Engines (Support & Services)": "Safran (Aircraft Engines, Support & Services)",
+      "Safran Electronics & Defense": "Safran (Electronics & Defense)",
+      "Safran Tech": "Safran (Tech)",
+      "Safran Tech (PRISM)": "Safran (Tech, PRISM)",
+      "Safran Tech (S.AI.R / ARIA)": "Safran (Tech, S.AI.R / ARIA)",
+      "Safran Tech (STN, PRISM unit)": "Safran (Tech, STN, PRISM unit)",
+      "Safran Tech (Systèmes Électriques & Électroniques)": "Safran (Tech, Systèmes Électriques & Électroniques)",
+      "Safran.AI (formerly Preligens), IMINT": "Safran (Safran.AI, IMINT)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SaH Analytics",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SAMOVAR",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Samsung",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "Samsung AI Center": "Samsung (AI Center)",
+      "Samsung Research": "Samsung (Research)"
+    },
+    "careers_url": "https://research.samsung.com/careers",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Samsung AI Center Cambridge, Samsung Research"
+  },
+  {
+    "name": "Sanofi",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Sanofi AI": "Sanofi (AI)",
+      "Sanofi R&D / Digital": "Sanofi (R&D / Digital)"
+    },
+    "careers_url": "https://jobs.sanofi.com/en",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SAP",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SCAI",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": "https://scai.sorbonne-universite.fr/jobs",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Schneider Electric",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Shift Technology",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Siemens",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Siemens DISW": "Siemens (DISW)"
+    },
+    "careers_url": "https://www.siemens.com/en-us/company/jobs/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Sigma Nova",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SkillCorner",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Skydio",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SkyGeo",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Skypher",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Snap",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://careers.snap.com/jobs?type=Intern",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SNCF Réseau",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Socomec",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Sony",
+    "type": "big_tech",
+    "group": "big_tech",
+    "aliases": {
+      "Sony AI": "Sony (Sony AI)"
+    },
+    "careers_url": "https://ai.sony/join-us",
+    "last_checked": null,
+    "last_result": null,
+    "note": "Sony AI (Zurich and others)"
+  },
+  {
+    "name": "SOPHiA GENETICS",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Spore.Bio",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SpotLight Earth",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "SquareMind",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Stellantis",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Stellantis (R&D, advanced numerical methods)": "Stellantis (R&D)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "STMicroelectronics",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Stryker",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Swiss Data Science Center",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Swiss Data Science Center (SDSC)": "Swiss Data Science Center"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Synboli",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Technology Innovation Institute",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "Technology Innovation Institute (TII), Falcon team": "Technology Innovation Institute (Falcon team)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Thales",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Thales (TRT / cortAIx Labs)": "Thales (TRT, cortAIx Labs)",
+      "Thales (cortAIx Labs, TRT Palaiseau, Thales LAS, Thales Alenia Space)": "Thales (cortAIx Labs, TRT, LAS, Alenia Space)",
+      "Thales Airspace Mobility Solutions": "Thales (Airspace Mobility Solutions)",
+      "Thales Alenia Space": "Thales (Alenia Space)",
+      "Thales LAS": "Thales (LAS)",
+      "Thales LAS (Optronics & Missile Electronics)": "Thales (LAS, Optronics & Missile Electronics)",
+      "Thales Research & Technology": "Thales (TRT)",
+      "Thales Services Numériques": "Thales (Services Numériques)"
+    },
+    "careers_url": "https://careers.thalesgroup.com/global/en",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "The Forecasting Company",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "TNO",
+    "type": "public_agency",
+    "group": "research_eu",
+    "careers_url": "https://www.tno.nl/en/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "TotalEnergies",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Toulouse School of Economics",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Toyota",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Toyota Material Handling": "Toyota (Material Handling)",
+      "Toyota Motor Europe": "Toyota (Motor Europe)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Tübingen AI Center",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://tuebingen.ai/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Ubisoft",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Ubisoft La Forge": "Ubisoft (La Forge)"
+    },
+    "careers_url": "https://www.ubisoft.com/en-us/company/careers",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "UMA",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "UNICEF",
+    "type": "public_agency",
+    "group": "international",
+    "aliases": {
+      "UNICEF Office of Innovation (Giga / Magic Box)": "UNICEF (Office of Innovation)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "University of Amsterdam",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "UvA QUVA Lab": "University of Amsterdam (QUVA Lab)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "University of Warwick",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "aliases": {
+      "University of Warwick / ENS": "University of Warwick (with ENS)"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "UPEC",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Valeo",
+    "type": "company",
+    "group": "corporates",
+    "aliases": {
+      "Valeo.ai": "Valeo (valeo.ai)",
+      "valeo.ai": "Valeo (valeo.ai)"
+    },
+    "careers_url": "https://valeoai.github.io/jobs/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "VAT Group",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Vector Institute",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": "https://vectorinstitute.ai/about/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Volkswagen Group",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "VSORA",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Waiv",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Wandercraft",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Wavestone",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Waymo",
+    "type": "big_tech",
+    "group": "big_tech",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null,
+    "note": "Alphabet subsidiary"
+  },
+  {
+    "name": "Wayve",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://wayve.ai/careers/",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "WHO",
+    "type": "public_agency",
+    "group": "international",
+    "aliases": {
+      "World Health Organization (WHO)": "WHO"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Withings",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "WMO",
+    "type": "public_agency",
+    "group": "international",
+    "aliases": {
+      "World Meteorological Organization (WMO)": "WMO"
+    },
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Würth",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Yseop",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Zama",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ZEISS",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": "https://www.zeiss.com/career/en/home.html",
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "Zenseact",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  },
+  {
+    "name": "ZML",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": null,
+    "last_result": null
+  }
+]

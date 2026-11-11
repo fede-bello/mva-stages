@@ -2,13 +2,13 @@
 // message before the database refuses the row. The database stays the real guard.
 import type { TablesInsert } from './database.types'
 
-/** Same list and order as the `topics` check in the init migration. */
+/** Same list and order as the `topics` check in the latest topics migration. */
 export const TOPICS = [
   'computer-vision', '3d-vision', 'llm', 'agents', 'nlp', 'rl', 'time-series',
   'foundation-models', 'generative-models', 'health', 'neuro', 'bio-chem',
   'robotics', 'earth-observation', 'climate-energy', 'physics-sim',
   'speech-audio', 'graphs', 'optimization', 'theory', 'recsys-ir',
-  'efficiency', 'other',
+  'efficiency', 'trustworthy-ai', 'signal-processing', 'other',
 ] as const
 
 export const WORK_MODES = ['onsite', 'hybrid', 'remote', 'unknown'] as const

@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: single-group-health
+expected_outcome: |
+  A live run of the health and neuro group (Institut Pasteur, Institut Curie, Gustave Roussy,
+  Paris Brain Institute, Inserm, AP-HP, CREATIS, NeuroSpin). Every organization of the group gets
+  a coverage result, new offers have real links read from the source and no personal data, the
+  merge and build pass, and the report lists what was checked with nothing open and what was not
+  covered. Nothing is loaded or committed.

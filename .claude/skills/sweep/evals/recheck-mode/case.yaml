@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: recheck-mode
+expected_outcome: |
+  The status of every open, expected and unknown offer in the 24-offer data/offers.json is checked.
+  The two Ekimetrics Lever postings (API 404) end up removed after a confirmation, the two offers
+  with a past deadline are closed, live ones get today's status_checked, the NVIDIA offers
+  (blocked to scripts) are not marked removed, and LinkedIn-only offers get an employer link or
+  a note. Changes go through incoming files and merge.py, the seed is rebuilt, nothing is loaded
+  or committed, and the report says the database sync was skipped because SUPABASE_DB_URL is
+  not set.
+context:
+  scaffold_script: place-files.sh

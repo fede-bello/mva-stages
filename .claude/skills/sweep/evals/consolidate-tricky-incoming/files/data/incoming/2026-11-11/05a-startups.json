@@ -1,0 +1,77 @@
+[
+  {
+    "organization": "Living Models",
+    "title": "Machine Learning Research Intern, plant foundation models",
+    "title_en": "Machine Learning Research Intern, plant foundation models",
+    "city": "Paris",
+    "country": "France",
+    "topics": [
+      "foundation-models",
+      "bio-chem"
+    ],
+    "start_text": "March or April 2027",
+    "april_start": "yes",
+    "duration_text": "6 months",
+    "duration_months_min": 6,
+    "duration_months_max": 6,
+    "status": "open",
+    "status_checked": "2026-11-11",
+    "first_seen": "2026-11-11",
+    "msc_eligible": "yes",
+    "apply_method": "email",
+    "apply_contact": "jane.doe@example.com",
+    "source_type": "official_posting",
+    "source_url": "https://www.livingmodels.ai/careers/ml-research-intern",
+    "apply_url": "https://www.livingmodels.ai/careers/ml-research-intern",
+    "description": "Train and evaluate foundation models on plant biology data."
+  },
+  {
+    "organization": "Mistral AI",
+    "title": "AI Scientist Intern (Internship, Masters or PhD)",
+    "city": "Paris",
+    "country": "France",
+    "topics": [
+      "llm"
+    ],
+    "status": "open",
+    "status_checked": "2026-11-11",
+    "source_type": "linkedin",
+    "apply_url": "https://fr.linkedin.com/jobs/view/4480000001",
+    "source_url": "https://fr.linkedin.com/jobs/view/4480000001",
+    "description": "Research internship on large language models."
+  },
+  {
+    "organization": "Gradium",
+    "title": "Audio research intern",
+    "city": "Paris",
+    "country": "France",
+    "topics": [
+      "speech-audio",
+      "llm"
+    ],
+    "status": "open",
+    "status_checked": "2026-11-11",
+    "first_seen": "2026-11-11",
+    "source_type": "official_posting",
+    "apply_url": "https://jobs.ashbyhq.com/gradium/00000000-0000-0000-0000-000000000001",
+    "slug": "gradium-audio-research-intern",
+    "description": "Audio language models."
+  },
+  {
+    "organization": "Pruna AI",
+    "title": "Research intern, efficient diffusion models",
+    "city": "Munich",
+    "country": "USA or Germany",
+    "topics": [
+      "efficiency",
+      "generative-models",
+      "other"
+    ],
+    "status": "opne",
+    "status_checked": "2026-11-11",
+    "first_seen": "2026-11-11",
+    "source_type": "official_posting",
+    "apply_url": "https://jobs.ashbyhq.com/pruna/00000000-0000-0000-0000-000000000002",
+    "description": "Compression of diffusion models."
+  }
+]

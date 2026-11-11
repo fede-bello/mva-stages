@@ -150,13 +150,25 @@ def is_generic_email(addr: str) -> bool:
     return bool(GENERIC_LOCAL.match(addr.split("@", 1)[0]))
 
 
-PHD = re.compile(r"\bph\.?\s?d\b|doctora", re.I)
+ENGINEERING = re.compile(
+    r"software engineer|developer technology|data engineer|data analyst|\bmlops\b|\bdevops\b"
+    r"|full.?stack|back.?end|front.?end|consultant", re.I)
+RESEARCH_EXCEPTIONS = ROOT / "data" / "research-exceptions.txt"
+
+
+def load_research_exceptions() -> set[str]:
+    """Slugs with an engineering title that were checked to be research, one per line: `slug  # reason`."""
+    if not RESEARCH_EXCEPTIONS.exists():
+        return set()
+    lines = (l.split("#", 1)[0].strip() for l in RESEARCH_EXCEPTIONS.read_text().splitlines())
+    return {l for l in lines if l}
 
 
 def validate(offers: list[dict], orgs: dict[str, dict] | None = None) -> list[str]:
     errors: list[str] = []
     seen: set[str] = set()
     deny = load_denylist()
+    research_exceptions = load_research_exceptions()
     orgs = orgs if orgs is not None else load_orgs()
     for i, o in enumerate(offers):
         where = f"#{i} {o.get('organization')!r} / {o.get('title')!r}"
@@ -174,8 +186,12 @@ def validate(offers: list[dict], orgs: dict[str, dict] | None = None) -> list[st
         for k, allowed in ENUMS.items():
             if k in o and o[k] not in allowed:
                 errors.append(f"{where}: {k}={o[k]!r} not in {sorted(a for a in allowed if a)}")
-        if o.get("msc_eligible") == "no" and PHD.search(o.get("requirements") or ""):
-            errors.append(f"{where}: PhD-only offers are out of scope, drop it (mva-rules.md)")
+        title = f"{o.get('title') or ''} | {o.get('title_en') or ''}"
+        if ENGINEERING.search(title) and o.get("slug") not in research_exceptions:
+            errors.append(f"{where}: engineering title, not a research internship (mva-rules.md); "
+                          "drop it, or list the slug in data/research-exceptions.txt with a reason")
+        if o.get("msc_eligible") == "no":
+            errors.append(f"{where}: msc_eligible=no is out of scope (PhD-only or restricted to other students), drop it (mva-rules.md)")
         org = orgs.get((o.get("organization") or "").split(" (")[0])
         if org is None:
             errors.append(f"{where}: organization not in data/organizations.json (add it, or use its canonical name)")

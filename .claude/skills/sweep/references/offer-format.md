@@ -40,7 +40,7 @@ is not a license to make it wrong.
 | `status_checked` | Today, ISO, when the subagent read the posting |
 | `first_seen` | Today, ISO, for a new offer. Leave out for known ones |
 | `requirements` | Level and key requirements in one short line (`M2 student, PyTorch, French not required`) |
-| `msc_eligible` | `yes` if master's students can apply, `no` if the posting limits it to students an MVA student cannot be (undergraduates only, one named university's students only), else `unknown`. PhD-only offers never get here: skip them (`mva-rules.md`) |
+| `msc_eligible` | `yes` if master's students can apply, else `unknown`. Never `no`: PhD-only offers and offers limited to students an MVA student cannot be are skipped (`mva-rules.md`) |
 | `reference` | The employer's job id (`JR2027377`, `R0341666`, `2026-10466`) |
 | `apply_url` | Link to apply, on the employer's own site or ATS when it exists. Copied, never built |
 | `apply_method` | `portal`, `email`, `form`, `spontaneous`, `unknown` |

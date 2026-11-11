@@ -11,6 +11,7 @@ submissions.
 |---|---|
 | `data/offers.json` | **Source of truth for swept offers.** One object per offer, sorted by organization |
 | `data/organizations.json` | Every organization the sweeps know: canonical name, `type`, sweep `group`, `aliases` (raw spelling to canonical form), `careers_url`, and `last_checked` / `last_result` from the last sweep that looked at it, even when it found nothing |
+| `data/research-exceptions.txt` | Slugs whose title looks like engineering but whose posting describes research, each with a reason. `build_seed.py` refuses engineering titles not listed here |
 | `data/privacy-denylist.txt` | Regexes that must never appear in the data (generic). A gitignored `.local.txt` holds the maintainer's own identifiers |
 | `data/incoming/` | Gitignored scratch area for sweep results before merging |
 | `scripts/merge.py` | Merges sweep results into `data/offers.json` (dedupe by slug, reference, title) |

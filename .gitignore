@@ -13,3 +13,4 @@ __pycache__/
 .vercel
 .env*.local
 docs/oneshot-build.md
+.claude/sweep-workspace/

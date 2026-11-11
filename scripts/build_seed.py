@@ -158,7 +158,8 @@ def validate(offers: list[dict], orgs: dict[str, dict] | None = None) -> list[st
     for i, o in enumerate(offers):
         where = f"#{i} {o.get('organization')!r} / {o.get('title')!r}"
         for k, v in DEFAULTS.items():
-            o.setdefault(k, v)
+            if o.get(k) is None:  # missing or null: the database would store the default anyway
+                o[k] = v
         o.setdefault("slug", slugify(o.get("organization", ""), o.get("title_en") or o.get("title", ""), o.get("reference") or ""))
         o.setdefault("topics", [])
         unknown = set(o) - set(COLUMNS) - {"origin_file"}

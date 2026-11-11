@@ -111,7 +111,9 @@ came from the MVA Drive.
 
 - Local: `supabase start` (Docker), `supabase db reset` applies migrations and the seed.
 - Remote: link with `supabase link --project-ref <ref>`, schema via `supabase db push`, data via
-  `psql "$SUPABASE_DB_URL" -f supabase/seed.sql`. Both are outward-facing: ask first.
+  `supabase db push --include-seed` (dry-run first) or `psql "$SUPABASE_DB_URL" -f supabase/seed.sql`.
+  Both are outward-facing: ask first. Reading needs no password: `scripts/pull_remote.py` gets
+  the service key from the logged-in CLI when `SUPABASE_DB_URL` is unset.
 - Schema changes go in a new migration file, never by editing an applied one.
 - Keep RLS on every table. The anon key ships in the frontend, so every policy must assume the
   caller is hostile.

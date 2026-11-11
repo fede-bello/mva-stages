@@ -55,7 +55,9 @@ The dashboard is where maintainers verify, correct and delete offers, and where 
 submit them. The seed upserts every field of `data/offers.json`, so without this step it would
 undo those edits.
 
-1. `python3 -I scripts/pull_remote.py` (read-only; needs `SUPABASE_DB_URL`). It writes
+1. `python3 -I scripts/pull_remote.py` (read-only). It uses `SUPABASE_DB_URL` when set, and
+   otherwise the REST API with the service key it asks the logged-in Supabase CLI for (no
+   password needed; the key is never printed or saved). It writes
    `data/incoming/<today>/remote/` and prints swept offers edited remotely, offers deleted
    remotely, verified submissions to import, pending submissions and unresolved reports.
 2. Edits that look like real corrections: run it again with `--apply`. Suspicious ones (many
@@ -68,8 +70,9 @@ undo those edits.
    the data, a commit or a brief. Marking reports resolved is a remote write: list them in the
    report and ask.
 
-If `SUPABASE_DB_URL` is missing, say so and continue without it; the report must then say the
-sync was skipped, and the seed must not be loaded remotely.
+If it cannot reach the database (CLI not logged in or project not linked: `supabase login`,
+`supabase link --project-ref <ref>`), say so and continue without it; the report must then say
+the sync was skipped, and the seed must not be loaded remotely.
 
 ## 1. Prepare
 
@@ -164,8 +167,11 @@ Show the maintainer the counts (added, updated, closed, removed, organizations c
 ask before each of these:
 
 - New migrations: `supabase db push`.
-- The seed: `psql "$SUPABASE_DB_URL" -f supabase/seed.sql`. Never without a successful step 0
-  in this sweep, or the seed overwrites dashboard edits.
+- The seed: `supabase db push --include-seed --dry-run`, which must list `supabase/seed.sql`
+  under "Would seed", then the same without `--dry-run` (the linked CLI, no password). If the
+  dry run lists no seed, use `psql "$SUPABASE_DB_URL" -f supabase/seed.sql` instead. Never
+  without a successful step 0 in this sweep, or the seed overwrites dashboard edits. Afterwards
+  run `pull_remote.py` again: it must report 0 offers edited remotely.
 - Commit on the sweep branch (`data: sweep <today>, N new, M closed`), push it and open a PR
   into `main`. Never push to `main`.
 

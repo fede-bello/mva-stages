@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """Pull the live database before a sweep, so the seed never overwrites what changed there.
 
-Read-only on the remote. It runs a few SELECTs with psql against $SUPABASE_DB_URL and writes,
-under data/incoming/YYYY-MM-DD/remote/ (gitignored):
+Read-only on the remote. Two ways to reach it, no password needed for the second:
+
+  * $SUPABASE_DB_URL set: a few SELECTs with psql.
+  * Otherwise: the Supabase REST API, with the project's secret key fetched at run time from the
+    logged-in, linked Supabase CLI (`supabase projects api-keys`). The key stays in memory; it is
+    never printed or written anywhere.
+
+It writes, under data/incoming/YYYY-MM-DD/remote/ (gitignored):
 
   offers.json          every row of public.offers
   user_submitted.json  rows with source_type = 'user_submitted', for the status re-check
@@ -23,6 +29,7 @@ Run it right after the last seed was loaded and before merging anything new: a l
 to data/offers.json that never reached the database would show up as a remote edit.
 
 Usage: python3 -I scripts/pull_remote.py [--apply]
+       SUPABASE_DB_URL=postgresql://... python3 -I scripts/pull_remote.py   (psql instead of REST)
 """
 
 from __future__ import annotations
@@ -31,6 +38,7 @@ import json
 import os
 import subprocess
 import sys
+import urllib.request
 from datetime import date
 from pathlib import Path
 
@@ -61,6 +69,58 @@ def query(url: str, sql: str) -> list[dict]:
     return json.loads(out)
 
 
+def project_ref() -> str:
+    ref = ROOT / "supabase" / ".temp" / "project-ref"
+    if not ref.exists():
+        raise SystemExit("No SUPABASE_DB_URL and the project is not linked: run `supabase link --project-ref <ref>`.")
+    return ref.read_text().strip()
+
+
+def secret_key(ref: str) -> str:
+    out = subprocess.run(
+        ["supabase", "projects", "api-keys", "--project-ref", ref, "-o", "json"],
+        capture_output=True, text=True,
+    )
+    if out.returncode != 0:
+        raise SystemExit("Could not read the API keys with the Supabase CLI (run `supabase login`).")
+    keys = json.loads(out.stdout)
+    # The CLI masks the new `sb_secret_` keys but returns the legacy service_role JWT in full.
+    usable = [k["api_key"] for k in keys if k.get("api_key") and "·" not in k["api_key"]
+              and (k.get("type") == "secret" or k.get("name") == "service_role")]
+    if not usable:
+        raise SystemExit("The Supabase CLI returned no usable secret key for this project.")
+    return usable[0]
+
+
+def rest(ref: str, key: str, path: str) -> list[dict]:
+    """GET every row of a PostgREST query, 1000 at a time."""
+    rows: list[dict] = []
+    while True:
+        req = urllib.request.Request(
+            f"https://{ref}.supabase.co/rest/v1/{path}",
+            headers={"apikey": key, "Range": f"{len(rows)}-{len(rows) + 999}", "Accept": "application/json",
+                     **({"Authorization": f"Bearer {key}"} if key.startswith("eyJ") else {})},
+        )
+        with urllib.request.urlopen(req, timeout=60) as r:
+            page = json.load(r)
+        rows += page
+        if len(page) < 1000:
+            return rows
+
+
+def fetch_remote() -> tuple[list[dict], list[dict], str]:
+    url = os.environ.get("SUPABASE_DB_URL")
+    if url:
+        return query(url, OFFERS_SQL), query(url, REPORTS_SQL), "psql (SUPABASE_DB_URL)"
+    ref = project_ref()
+    key = secret_key(ref)
+    cols = ",".join([*COLUMNS, "verified", "created_at", "updated_at"])
+    offers = sorted(rest(ref, key, f"offers?select={cols}"), key=lambda o: o["slug"])
+    raw = rest(ref, key, "offer_reports?select=kind,message,created_at,offers(slug,organization,title)&resolved=eq.false&order=created_at")
+    reports = [{**(r.pop("offers") or {}), **r} for r in raw]
+    return offers, reports, f"REST API of project {ref} (key from the Supabase CLI)"
+
+
 def same(a, b) -> bool:
     if isinstance(a, (int, float)) and isinstance(b, (int, float)):
         return float(a) == float(b)
@@ -68,16 +128,12 @@ def same(a, b) -> bool:
 
 
 def main() -> int:
-    url = os.environ.get("SUPABASE_DB_URL")
-    if not url:
-        print("SUPABASE_DB_URL is not set (see .env.example).", file=sys.stderr)
-        return 1
     apply = "--apply" in sys.argv
     out_dir = ROOT / "data" / "incoming" / date.today().isoformat() / "remote"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    remote = query(url, OFFERS_SQL)
-    reports = query(url, REPORTS_SQL)
+    remote, reports, via = fetch_remote()
+    print(f"Read the live database through {via}.")
     submitted = [r for r in remote if r["source_type"] == "user_submitted"]
     for name, rows in (("offers", remote), ("user_submitted", submitted), ("reports", reports)):
         (out_dir / f"{name}.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2) + "\n")

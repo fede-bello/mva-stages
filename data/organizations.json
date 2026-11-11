@@ -4,16 +4,16 @@
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://3ia.univ-cotedazur.eu/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: homepage lists no internships; no jobs page found; nothing open: apply page lists only PhD, postdoc, chair and engineer calls"
   },
   {
     "name": "Aalto University",
     "type": "academic_lab",
     "group": "research_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.aalto.fi/en/aalto-university-science-institute-asci/aalto-university-science-institute-international-summer-research-programme",
+    "last_checked": "2026-11-11",
+    "last_result": "2027 AScI call: positions mid-December, applications 7-31 Jan 2027 (expected)"
   },
   {
     "name": "ABB",
@@ -22,17 +22,17 @@
     "aliases": {
       "ABB Corporate Research": "ABB (Corporate Research)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://abb.wd3.myworkdayjobs.com/External_Career_Page",
+    "last_checked": "2026-11-11",
+    "last_result": "2 new offers (Research Center Germany, Robotics); JR00026201 still open"
   },
   {
     "name": "Adlin Science",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/adlin-science-1/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; Welcome to the Jungle returns 403; nothing open (5 non-intern jobs and unsolicited application)"
   },
   {
     "name": "Adobe",
@@ -42,8 +42,8 @@
       "Adobe Research": "Adobe (Research)"
     },
     "careers_url": "https://careers.adobe.com/us/en/c/research-jobs",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (US Adobe Research intern program); nothing in Europe",
     "note": "Adobe Research Paris"
   },
   {
@@ -53,17 +53,17 @@
     "aliases": {
       "Ai2 (Allen Institute for AI)": "Ai2"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://allenai.org/internships",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: year-round research internships page, no dated listing"
   },
   {
     "name": "Air Liquide",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://airliquidehr.wd3.myworkdayjobs.com/AirLiquideExternalCareer",
+    "last_checked": "2026-11-11",
+    "last_result": "1 new offer (R10103561); AI Specialist reposted as R10103849 is AI-adoption support, skipped"
   },
   {
     "name": "Airbus",
@@ -78,17 +78,33 @@
       "Airbus Helicopters": "Airbus (Helicopters)",
       "Airbus Helicopters (R&T)": "Airbus (Helicopters, R&T)"
     },
+    "careers_url": "https://ag.wd3.myworkdayjobs.com/Airbus",
+    "last_checked": "2026-11-11",
+    "last_result": "2 new offers; JR10440584 reposted and open; other 2027 research postings from the last sweep confirmed gone"
+  },
+  {
+    "name": "Aix-Marseille Université",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "MMG: 1 offer"
   },
   {
     "name": "Alan",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/alan",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: Ashby internships are business, data analytics or a 3-month summer program; Mo team topics not on the board"
+  },
+  {
+    "name": "Aleph Alpha",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/alephalpha",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Alfred Wegener Institute",
@@ -97,105 +113,105 @@
     "aliases": {
       "AWI (Alfred Wegener Institute)": "Alfred Wegener Institute"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.awi.de/en/work-study/out-of-university/as-trainee.html",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: open-ended trainee page"
   },
   {
     "name": "Alice & Bob",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/alice-bob",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer, 1 update (other interns: quantum compilation, resource estimation, hardware, business)"
   },
   {
     "name": "Alphaguard",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer still open"
   },
   {
     "name": "Alpic",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: no public board found; known Ashby postings already removed"
   },
   {
     "name": "Altrove",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); not covered: site's only careers link is its LinkedIn jobs page; WTTJ company page lists no jobs"
   },
   {
     "name": "Amazon",
     "type": "big_tech",
     "group": "big_tech",
     "careers_url": "https://www.amazon.jobs/content/en/career-programs/university",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "8 offers; known Masters Bucharest still open"
   },
   {
     "name": "AMI",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/ami",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Ashby lists no internship)"
   },
   {
     "name": "AMIAD",
     "type": "public_agency",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.pass.fonction-publique.gouv.fr/flux/offres_stages",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; 16 new offers; 1 known offer matched to its official posting (PASS)"
   },
   {
     "name": "ANITI",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://aniti.univ-toulouse.fr/en/internship-positions/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 new offer (ENAC); CerCo topics already on the board; IRIT topics dated 2025"
   },
   {
     "name": "AP-HP",
     "type": "public_agency",
     "group": "health_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://recrutement.aphp.fr/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Apneal",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: website answers 403; not covered: apneal.com is a parked domain, no careers page found; known offer (MVA Drive) left unchanged"
   },
   {
     "name": "Apple",
     "type": "big_tech",
     "group": "big_tech",
     "careers_url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "5 new offers, 3 known updated, 1 removed"
   },
   {
     "name": "Aqemia",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://aqemia.teamtailor.com/",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Teamtailor lists no internship)"
   },
   {
     "name": "Artefact",
@@ -204,9 +220,9 @@
     "aliases": {
       "Artefact Research Lab": "Artefact (Research Lab)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://job-boards.greenhouse.io/artefactlinkedin",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (Research Lab fairness intern still listed); other interns are consulting or business; 1 offer (Research Lab fairness intern open on Artefact's own Greenhouse board 'artefact'; the 'artefactlinkedin' board is a LinkedIn mirror)"
   },
   {
     "name": "Arturia",
@@ -216,72 +232,72 @@
       "ARTURIA": "Arturia"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (LinkedIn posting still live); no employer ATS found"
   },
   {
     "name": "Ask for the Moon",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/ask-for-the-moon/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only a Welcome to the Jungle company page, which renders its job list with JavaScript; 1 offer (known, updated)"
   },
   {
     "name": "ASML",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://www.asml.com/en/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: job search is JS-only; internships page still live; 3 offers (internship search for 'machine learning internship' and 'deep learning'); Shenzhen ML intern and San Diego droplet physics intern skipped"
   },
   {
     "name": "Astek",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (LinkedIn posting still live); no employer ATS found"
   },
   {
     "name": "AstraZeneca",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workday tenant not found; nothing open (Workday searches thesis, intern, student: US summer, medical affairs and chemistry theses only)"
   },
   {
     "name": "Atos",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no time left in budget; not covered: out of budget in this rerun"
   },
   {
     "name": "Aubay",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: careers page 404, Workable account has no jobs; out of budget"
   },
   {
     "name": "AZAP",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: site did not answer; out of budget; 1 new offer from SFdS (3 others posted there are agent/support engineering, skipped)"
   },
   {
     "name": "AZmed",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.azmed.co/career",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Barcelona Supercomputing Center",
@@ -291,8 +307,8 @@
       "Barcelona Supercomputing Center (BSC), Earth Sciences": "Barcelona Supercomputing Center (Earth Sciences)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: job board is JS-only (500 / empty HTML); not covered: job page serves a bot-detection challenge"
   },
   {
     "name": "Barco",
@@ -302,16 +318,24 @@
       "Barco Labs": "Barco (Labs)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers (LinkedIn postings still live); no employer ATS found"
+  },
+  {
+    "name": "Basecamp Research",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/basecamp-research",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Baseline Robotics",
     "type": "startup",
     "group": "startups_eu",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: baselinerobotics.com unreachable and no employer job board found; known offer only on LinkedIn, not re-checked"
   },
   {
     "name": "BatiScript",
@@ -321,32 +345,40 @@
       "BatiScript / Learn & Go (Kaligo)": "BatiScript (Learn & Go, Kaligo)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); 1 offer (known, still listed on LinkedIn); company site has no careers page"
   },
   {
     "name": "Bioptimus",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": "https://www.bioptimus.com/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Greenhouse board: only a business talent pool for students)"
+  },
+  {
+    "name": "Black Forest Labs",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/black-forest-labs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Blunomy",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/blunomy/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing open (only Data Team Manager, Sydney)"
   },
   {
     "name": "BMW",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.bmwgroup.jobs/de/en/jobs.html",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no time left in budget; 2 offers from the first 500 rows of the job finder; known ML für Fahrzeugeffizienz and ML for Automated Driving theses not found there but they have no link to re-check"
   },
   {
     "name": "BNP Paribas",
@@ -357,8 +389,8 @@
       "BNP Paribas CIB, AI Lab (Analytics Consulting)": "BNP Paribas (CIB, AI Lab, Analytics Consulting)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no time left in budget; not covered: out of budget in this rerun"
   },
   {
     "name": "Bosch",
@@ -369,48 +401,48 @@
       "Bosch Corporate Research": "Bosch (Corporate Research)"
     },
     "careers_url": "https://jobs.bosch.com/en/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: SmartRecruiters pages answer 200 even for 2025 postings, so status cannot be confirmed without the browser; one title change recorded; SmartRecruiters pages read in the browser: 3 known postings open, Corporate Research LLM agents thesis expired; jobs.bosch.com search ignores keywords, no broad search done"
   },
   {
     "name": "BrightHeart",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/brightheart",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page is a Notion site, not read; nothing open"
   },
   {
     "name": "Builtstop",
     "type": "startup",
     "group": "startups_eu",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "no careers page; site has a contact email only"
   },
   {
     "name": "C12",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/c12qe",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open (only a materials science internship, out of scope; known qubit calibration offer gone)"
   },
   {
     "name": "Callyope",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); not covered: no careers page on the site, no WTTJ or Station F page; known offer (mailing list) left unchanged"
   },
   {
     "name": "CARIAD",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: careers page answers 500; out of budget"
   },
   {
     "name": "CEA",
@@ -440,57 +472,73 @@
       "CEA-Leti STSF": "CEA (Leti STSF)"
     },
     "careers_url": "https://www.emploi.cea.fr/offre-de-emploi/liste-offres.aspx",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "24 new offers; 3 known topics matched to official postings; all known open offers still listed, known removed ones still absent; NeuroSpin: NeuroSpin: nothing open (no NeuroSpin internship in the CEA internships RSS or in the full CEA list crawled for group 06; GINKGO opportunities page lists none); NeuroSpin: not covered: CEA job portal keyword filter returned nothing usable and NeuroSpin has no internship list of its own that I found; a web search found no 2027 posting"
   },
   {
     "name": "Celest Science",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); no careers page; site has a contact form only"
   },
   {
     "name": "Centre Borelli",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://centreborelli.ens-paris-saclay.fr/fr/offres-demploi-post-doc-these",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (engineer and postdoc only)"
   },
   {
     "name": "CERN",
     "type": "public_agency",
     "group": "research_eu",
     "careers_url": "https://careers.cern/programmes/technical-studentship/",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: Technical Studentship shows no open positions",
     "note": "Technical studentship needs member-state nationality; 2027-1 intake closed 2026-10-16"
+  },
+  {
+    "name": "CESP",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "Champalimaud Research",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not checked beyond the known offer (budget); not covered: budget; known open offer not rechecked"
   },
   {
     "name": "ChapsVision",
     "type": "startup",
     "group": "startups_fr",
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/chapsvision/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only a Welcome to the Jungle company page, which renders its job list with JavaScript; 1 offer"
+  },
+  {
+    "name": "CNAM",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "CNES",
     "type": "public_agency",
     "group": "research_fr",
     "careers_url": "https://recrutement.cnes.fr/fr/annonces",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page is JS-only (Digital Recruiters); 3 new offers (90 internships listed, most engineering outside scope)"
   },
   {
     "name": "CNRS",
@@ -501,16 +549,16 @@
       "CNRS / Univ. Lyon (LBBE)": "CNRS (LBBE, Univ. Lyon)"
     },
     "careers_url": "https://emploi.cnrs.fr/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: portal search form needs a POST; CNRS M2 topics found via lab sites; nothing open: national portal lists only researcher, support and PhD contracts, no internships; CNRS M2 topics come from lab sites and mailing lists; LECA: LECA: 1 offer; LPC2E: LPC2E: 1 offer"
   },
   {
     "name": "Cohere",
     "type": "startup",
     "group": "startups_eu",
     "careers_url": "https://jobs.ashbyhq.com/cohere",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
   },
   {
     "name": "Complexity Science Hub",
@@ -519,9 +567,9 @@
     "aliases": {
       "Complexity Science Hub Vienna": "Complexity Science Hub"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://csh.ac.at/education/internships/",
+    "last_checked": "2026-11-11",
+    "last_result": "1 change: 2027 summer program open, apply by 11 Jan 2027"
   },
   {
     "name": "Computer Vision Center",
@@ -530,25 +578,41 @@
     "aliases": {
       "CVC (Computer Vision Center)": "Computer Vision Center"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.cvc.uab.es/internship/",
+    "last_checked": "2026-11-11",
+    "last_result": "1 change: grants restricted to Spanish/UAB students"
   },
   {
     "name": "Contentsquare",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/contentsquare",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Lever: no research internships)"
+  },
+  {
+    "name": "Cradle",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/cradlebio",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Craft AI",
     "type": "company",
     "group": "corporates",
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/craft-ai/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing open (only Account Executive)"
+  },
+  {
+    "name": "CRAL",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "CRAN",
@@ -558,8 +622,8 @@
       "CRAN (Université de Lorraine) + INRS": "CRAN (Université de Lorraine, with INRS)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page; check via GdR IASIS kiosque; nothing new: known GdR IASIS offer still online; 1 offer"
   },
   {
     "name": "CREATIS",
@@ -568,9 +632,9 @@
     "aliases": {
       "CIRI / CREATIS (INSA Lyon)": "CREATIS (INSA Lyon, with CIRI)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.creatis.insa-lyon.fr/site/en/recrutement",
+    "last_checked": "2026-11-11",
+    "last_result": "6 offers; 1 offer"
   },
   {
     "name": "CReSTIC",
@@ -580,8 +644,8 @@
       "CReSTIC (AI4M team), IUT Troyes": "CReSTIC (AI4M team, IUT Troyes)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page; check via GdR IASIS kiosque; nothing new: known GdR IASIS offer still online; 1 offer"
   },
   {
     "name": "Criteo",
@@ -591,16 +655,16 @@
       "Criteo AI Lab": "Criteo (AI Lab)"
     },
     "careers_url": "https://ailab.criteo.com/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers.criteo.com answers 403 (Cloudflare challenge) to detail pages; search page shows only non-research interns; 1 new offer (r14933); r19935 and r21132 still open; other interns are business, analytics or software"
   },
   {
     "name": "CSEM",
     "type": "public_agency",
     "group": "research_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.csem.ch/en/jobs/",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer, 1 change"
   },
   {
     "name": "CWI",
@@ -610,96 +674,104 @@
       "CWI, Computational Imaging": "CWI (Computational Imaging)"
     },
     "careers_url": "https://www.cwi.nl/en/jobs/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: master projects page unchanged"
   },
   {
     "name": "Damen",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (LinkedIn posting still live)"
   },
   {
     "name": "Dassault Aviation",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Talentsoft site not read; not covered: only the first page of the Talentsoft list read, no ML research internship on it"
   },
   {
     "name": "Dassault Systèmes",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://www.3ds.com/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "20 3ds.com research postings still live, 10 LinkedIn ones still live; careers search page is JS-only, no new offers found"
   },
   {
     "name": "datacraft",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/datacraft/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only a Welcome to the Jungle company page, which renders its job list with JavaScript; nothing open (only program manager and business internships)"
   },
   {
     "name": "Datadog",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers still listed, nothing new research-related"
   },
   {
     "name": "Datadome",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://job-boards.greenhouse.io/ddome",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing open"
   },
   {
     "name": "DATAIA",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://www.dataia.eu/offres",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (LATMOS rain cells, recorded under IPSL)"
   },
   {
     "name": "DeepHealth",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: careers page 403, Workable account has no jobs; known offer not re-checked"
   },
   {
     "name": "Deepki",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.deepki.com/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing open (Teamtailor feed: marketing and LCA internships only)"
+  },
+  {
+    "name": "DeepL",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/deepl",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Dental Monitoring",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://dentalmonitoring.com/careers/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing open"
   },
   {
     "name": "Descartes Underwriting",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.descartesunderwriting.com/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "1 update (other intern postings are underwriting and analytics, not research)"
   },
   {
     "name": "DFKI",
@@ -708,25 +780,25 @@
     "aliases": {
       "DFKI Augmented Vision": "DFKI (Augmented Vision)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://av.dfki.de/jobs/",
+    "last_checked": "2026-11-11",
+    "last_result": "Augmented Vision: nothing open: jobs page shows no jobs; known posting is PhD-only"
   },
   {
     "name": "Digital Surf",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/digital-surf/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Welcome to the Jungle returns 403; 1 offer (known Stage scientifique Master 1 ou 2 still listed)"
   },
   {
     "name": "Direction du renseignement militaire",
     "type": "public_agency",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.pass.fonction-publique.gouv.fr/flux/offres_stages",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new in scope: known spectral signatures offer still open; other DRM internships are analyst, OSINT or IT roles"
   },
   {
     "name": "Disney Research",
@@ -736,8 +808,8 @@
       "Disney Research Studios": "Disney Research (Studios)"
     },
     "careers_url": "https://studios.disneyresearch.com/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (internships section empty)"
   },
   {
     "name": "DKFZ",
@@ -747,8 +819,8 @@
       "DKFZ, Division of Medical Image Computing": "DKFZ (Medical Image Computing)"
     },
     "careers_url": "https://www.dkfz.de/en/career/jobs",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs board is JS-only; nothing new: jobs feed (11 postings) has no internship; MIC lab page still offers MSc theses and internships"
   },
   {
     "name": "DLR",
@@ -760,56 +832,56 @@
       "DLR Institute of Data Science": "DLR (Institute of Data Science)"
     },
     "careers_url": "https://www.dlr.de/en/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs.dlr.de search results load by JS only; 5 offers, 1 change (sitemap of jobs.dlr.de, 369 postings, filtered on thesis and internship titles)"
   },
   {
     "name": "DNV",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workday tenant not found; not covered: jobs.dnv.com search 404 and no Workday tenant; out of budget"
   },
   {
     "name": "Doctolib",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/doctolib/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing new; known ML research intern found and updated"
   },
   {
     "name": "Doctrine",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/doctrine",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (Lever internships are fullstack and SRE)"
   },
   {
     "name": "Dust",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/dust",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "EasyMile",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/easymile/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Welcome to the Jungle returns 403; nothing new (known offer still listed; other internships are embedded safety and AI tooling)"
   },
   {
     "name": "ECMWF",
     "type": "public_agency",
     "group": "research_eu",
     "careers_url": "https://jobs.ecmwf.int/Home/Job",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs.ecmwf.int is JS-only; nothing open: 4 vacancies, none an internship"
   },
   {
     "name": "EDF",
@@ -820,9 +892,9 @@
       "EDF R&D": "EDF (R&D)",
       "EDF R&D (PRISME)": "EDF (R&D, PRISME)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.edf.fr/edf-recrute/rejoignez-nous/voir-les-offres/nos-offres",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: edf.fr job pages return 403; 2 LinkedIn postings still live; 1 offer"
   },
   {
     "name": "Ekimetrics",
@@ -831,9 +903,17 @@
     "aliases": {
       "Ekimetrics / Université de Lorraine": "Ekimetrics (with Université de Lorraine)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/ekimetrics",
+    "last_checked": "2026-11-11",
+    "last_result": "3 known offers unlisted on the Lever API but hosted pages still accept applications; no new research internships"
+  },
+  {
+    "name": "ElevenLabs",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/elevenlabs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "ELLIS",
@@ -845,8 +925,8 @@
       "ELLIS Institute Tübingen": "ELLIS (Institute Tübingen)"
     },
     "careers_url": "https://ellis.eu/research/jobs",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new in group: board lists PhD/postdoc/faculty roles plus Prosus internships (company, other group); Alicante: nothing new"
   },
   {
     "name": "EMBL",
@@ -856,16 +936,24 @@
       "EMBL-EBI / French Embassy in London": "EMBL (EMBL-EBI, with the French Embassy in London)"
     },
     "careers_url": "https://embl.wd103.myworkdayjobs.com/EMBL",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: Workday search 'intern'/'master' only shows TechDev programme (JR1649); EMBL-EBI, with the French Embassy in London: 1 change: open, deadline 30 Nov 2026"
+  },
+  {
+    "name": "ENAC",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (via ANITI)"
   },
   {
     "name": "Enchanted Tools",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://enchanted.tools/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "1 update (robotics intern closed; only a regulatory internship listed)"
   },
   {
     "name": "Enedis",
@@ -874,17 +962,17 @@
     "aliases": {
       "ENEDIS": "Enedis"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.edf.fr/edf-recrute/rejoignez-nous/voir-les-offres/nos-offres",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: edf.fr job pages return 403; nothing open (no Enedis research internship among the screened titles)"
   },
   {
     "name": "Engelhart",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://boards-api.greenhouse.io/v1/boards/engelhart/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Greenhouse: 4 jobs, no internships)"
   },
   {
     "name": "Engie",
@@ -894,48 +982,48 @@
       "Engie (AI and Advanced Analytics, GBU Renewable and Flex)": "Engie (AI and Advanced Analytics)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer still live"
   },
   {
     "name": "Enodia Therapeutics",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.enodiatx.com/careers/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: website not reachable; nothing open"
   },
   {
     "name": "ENS-PSL",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; not covered: no central internship page found; known offers come from the MVA Drive"
   },
   {
     "name": "Entalpic",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://entalpic.notion.site/Join-Entalpic-9f29b9a69fb840508cd3f9a7c1c0d057",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (Notion board: one HPC internship; PhD interns welcome spontaneously)"
   },
   {
     "name": "EPFL",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://www.epfl.ch/education/international/en/coming-to-epfl/project/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 changes: ERIP open until 30 Nov, Summer@EPFL deadline 29 Nov"
   },
   {
     "name": "Equativ",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/equativ",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Lever: no research internships)"
   },
   {
     "name": "Ericsson",
@@ -945,8 +1033,8 @@
       "Ericsson Research": "Ericsson (Research)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "3 known offers still live (Eightfold API); broad search not done"
   },
   {
     "name": "ESA",
@@ -960,17 +1048,33 @@
       "European Space Agency (ESA), Φ-lab": "ESA (Φ-lab)"
     },
     "careers_url": "https://www.esa.int/careers/careers/launch-your-career/entry-level-progammes/student-internships",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "7 offers, 9 changes",
     "note": "Student internships need ESA member-state nationality; the 2027 call opened 2026-11-02"
+  },
+  {
+    "name": "ESSEC Business School",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "EssilorLuxottica",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "4 known offers still live"
+  },
+  {
+    "name": "Estuaire",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "ETH Zurich",
@@ -980,40 +1084,48 @@
       "ETH Zürich": "ETH Zurich"
     },
     "careers_url": "https://inf.ethz.ch/studies/summer-research-fellowship/how-to-apply.html",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 change: SSRF open until 16 Dec 2026"
+  },
+  {
+    "name": "ETIS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "EUMETSAT",
     "type": "public_agency",
     "group": "research_eu",
     "careers_url": "https://www.eumetsat.int/work-us/careers-eumetsat",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: generic internship page, no vacancies listed"
   },
   {
     "name": "EXLOG",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: out of budget"
   },
   {
     "name": "EXWAYZ",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://exwayz.fr/jobs/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "FBK",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs.fbk.eu internship list is JS-only; not covered: internship list is JS-only and the browser tool is not allowed on jobs.fbk.eu"
   },
   {
     "name": "Flatiron Institute",
@@ -1024,32 +1136,40 @@
       "Simons Foundation (Flatiron Institute)": "Flatiron Institute"
     },
     "careers_url": "https://www.simonsfoundation.org/flatiron/job-openings/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: job openings list postdoc/faculty only"
   },
   {
     "name": "FlexAI",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://ats.rippling.com/flexai/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Flexion Robotics",
     "type": "startup",
     "group": "startups_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://apply.workable.com/flexion-robotics/",
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers (1 new)"
   },
   {
     "name": "Foodvisor",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; not covered: Welcome to the Jungle company page returns 404, no other careers page found"
+  },
+  {
+    "name": "Forschungszentrum Jülich",
+    "type": "academic_lab",
+    "group": "research_eu",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "Framatome",
@@ -1059,129 +1179,129 @@
       "Framatome (EDF group)": "Framatome",
       "Framatome / Intercontrôle": "Framatome (Intercontrôle)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.edf.fr/edf-recrute/rejoignez-nous/voir-les-offres/nos-offres",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: edf.fr job pages return 403; nothing new; 1 known offer removed, 7 still listed"
   },
   {
     "name": "Fraunhofer",
     "type": "public_agency",
     "group": "research_eu",
     "careers_url": "https://jobs.fraunhofer.de/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "4 offers (partial: two keyword searches only, many more theses exist); 6 offers (sitemap of jobs.fraunhofer.de, 740 postings; 67 ML-related thesis titles, strongest research ones taken)"
   },
   {
     "name": "Ganymed Robotics",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/ganymed-robotics/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: website not reachable; nothing open"
   },
   {
     "name": "GdR IASIS",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://gdr-iasis.cnrs.fr/kiosque/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: kiosque lists about 13 new M2 offers, left for the mailing-list group"
   },
   {
     "name": "GE HealthCare",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite",
+    "last_checked": "2026-11-11",
+    "last_result": "3 known offers still open; other Buc internships are engineering (HPC optimisation, sensor characterisation), skipped"
   },
   {
     "name": "Generare",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.generare.bio/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Genesis AI",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Lever board empty)"
   },
   {
     "name": "Genmab",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workday tenant not found; not covered: Workday tenant not found, out of budget"
   },
   {
     "name": "GIPSA-lab",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new: no lab internship page found, web search only found 2025-2026 topics; known Safe-Med offer still online"
   },
   {
     "name": "Giskard",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Workable lists one sales role)"
   },
   {
     "name": "GitGuardian",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/gitguardian/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workable board empty, careers page answers 403; nothing open"
   },
   {
     "name": "Gladia",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Ashby lists no internship)"
   },
   {
     "name": "Gleamer",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.gleamer.ai/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "GMV",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: out of budget"
   },
   {
     "name": "Gobano Robotics",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/gobano-robotics/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: website not reachable; nothing open (deployment engineering and founder associate internships, out of scope)"
   },
   {
     "name": "Google",
     "type": "big_tech",
     "group": "big_tech",
     "careers_url": "https://www.google.com/about/careers/applications/jobs/results/?q=student%20researcher%20program",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new for MVA students: EMEA Student Researcher and PhD intern already listed; Student Researcher postings for Israel and India require local enrolment or residence"
   },
   {
     "name": "Google DeepMind",
@@ -1191,58 +1311,58 @@
       "DeepMind": "Google DeepMind",
       "Google DeepMind / Google": "Google DeepMind"
     },
-    "careers_url": "https://deepmind.google/careers/",
-    "last_checked": null,
-    "last_result": null,
+    "careers_url": "https://www.google.com/about/careers/applications/jobs/results?company=DeepMind&employment_type=INTERN",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open beyond the shared EMEA Student Researcher posting; Greenhouse board deepmind is gone (404), careers link to Google Careers, which lists 0 DeepMind interns",
     "note": "Roles moved to Google Careers; the Greenhouse board deepmind returns 404"
   },
   {
     "name": "Gradium",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://gradium.homerun.co/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); 1 offer"
   },
   {
     "name": "Gustave Roussy",
     "type": "academic_lab",
     "group": "health_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.gustaveroussy.fr/offres-emploi",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "H Company",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": "https://jobs.ashbyhq.com/hcompany",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (only a legal operations intern)"
   },
   {
     "name": "Heex Technologies",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://heex.notion.site/Join-the-Smart-Data-Revolution-24a54af7e722804196bdf00ad58a58f9",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workable board empty, careers page answers 500; nothing open (spontaneous applications only)"
   },
   {
     "name": "Helmholtz AI",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://www.helmholtz.de/en/search/jobs/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Helmholtz job search is JS-only; nothing in group beyond Forschungszentrum Jülich theses (Helmholtz job search, 'master thesis machine learning', 18 results)"
   },
   {
     "name": "Helsing",
     "type": "startup",
     "group": "startups_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://boards-api.greenhouse.io/v1/boards/helsing/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (known, still listed)"
   },
   {
     "name": "Hexagon",
@@ -1252,32 +1372,40 @@
       "Hexagon Robotics": "Hexagon (Robotics)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workday tenant not found; not covered: Workday tenant not found, out of budget"
+  },
+  {
+    "name": "HGH Systèmes Infrarouges",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "3 offers"
   },
   {
     "name": "Hi! PARIS",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://hi-paris.fr/recruitment/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Hitachi Energy",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://hitachi.wd1.myworkdayjobs.com/hitachi",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no time left in budget; nothing open (Hitachi group Workday board; R0145074 gone)"
   },
   {
     "name": "Huawei",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://career.huawei.com/reccampportal/portal5/index.html",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (LinkedIn posting still live); career portal not read"
   },
   {
     "name": "Hugging Face",
@@ -1287,8 +1415,16 @@
       "HuggingFace": "Hugging Face"
     },
     "careers_url": "https://apply.workable.com/huggingface/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (no internship on Workable)"
+  },
+  {
+    "name": "HydroSciences Montpellier",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "HZDR",
@@ -1298,8 +1434,8 @@
       "HZDR / CASUS": "HZDR (CASUS)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 change: known posting page now 404"
   },
   {
     "name": "IBISC",
@@ -1309,8 +1445,8 @@
       "IBISC (Université d'Évry, Paris-Saclay) + CH Sud-Francilien": "IBISC (Université d'Évry, with CH Sud-Francilien)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: no new IBISC entries on the Paris-Saclay board"
   },
   {
     "name": "IBM",
@@ -1320,8 +1456,8 @@
       "IBM Research Zurich": "IBM (Research Zurich)"
     },
     "careers_url": "https://www.ibm.com/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "Research Zurich: 6 new offers, 3 known still open, 1 removed"
   },
   {
     "name": "IDEMIA",
@@ -1330,9 +1466,9 @@
     "aliases": {
       "IDEMIA Public Security": "IDEMIA (Public Security)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.idemia.com/search/?q=stage",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (no research internships in search for stage/intern/stagiaire)"
   },
   {
     "name": "Idiap",
@@ -1342,24 +1478,32 @@
       "Idiap Research Institute": "Idiap"
     },
     "careers_url": "https://www.idiap.ch/en/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: werecruit board is JS-only; EPFL-hosted student project list points non-EPFL students to the open internship; nothing new: 4 jobs (postdoc, staff); spontaneous application still open"
   },
   {
     "name": "IDSIA",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://www.supsi.ch/en/work-with-us",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing specific: SUPSI page only describes internships generically"
+  },
+  {
+    "name": "IETR",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "iGlobeScientific",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: out of budget"
   },
   {
     "name": "IGN",
@@ -1369,9 +1513,9 @@
       "IGN / LASTIG": "IGN (LASTIG)",
       "IGN LASTIG": "IGN (LASTIG)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.umr-lastig.fr/join/",
+    "last_checked": "2026-11-11",
+    "last_result": "LASTIG: not covered: join page shows no internship list yet; LASTIG: nothing open: join page shows no internship list yet"
   },
   {
     "name": "IIT",
@@ -1380,33 +1524,41 @@
     "aliases": {
       "IIT (Istituto Italiano di Tecnologia)": "IIT"
     },
+    "careers_url": "https://www.iit.it/education/erasmus-plus",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: Erasmus+ internship lists by domain, unchanged"
+  },
+  {
+    "name": "Iliad",
+    "type": "company",
+    "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "Free Mobile: 1 offer"
   },
   {
     "name": "ILLS",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; not covered: no internship page found; known topics come from the MVA Drive"
   },
   {
     "name": "imec",
     "type": "public_agency",
     "group": "research_eu",
     "careers_url": "https://www.imec-int.com/en/work-at-imec/job-opportunities",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: internship/thesis search is JS-only; 5 offers, 1 change (student search 'machine learning'; more topics exist)"
   },
   {
     "name": "Implicity",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/implicity/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workable board empty, careers page has no job list; nothing open"
   },
   {
     "name": "IMT",
@@ -1416,24 +1568,32 @@
       "IMT Mines Alès + IMT Nord Europe + CHU Lille": "IMT (Mines Alès, with IMT Nord Europe and CHU Lille)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new: known CARe-CBM GdR IASIS offer still online; Télécom Paris: Télécom Paris: 1 offer"
+  },
+  {
+    "name": "ImViA",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (closed)"
   },
   {
     "name": "Inbolt",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/inbolt/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Infineon",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.infineon.com/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no time left in budget; nothing open (Eightfold search for CV, ML, deep learning, KAI: engineering and analyst internships only)"
   },
   {
     "name": "INRAE",
@@ -1446,8 +1606,8 @@
       "INRAE URFM (Avignon) + TUM": "INRAE (URFM Avignon, with TUM)"
     },
     "careers_url": "https://jobs.inrae.fr/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: offer listing is JS-only; known offer ot-30610 still open (deadline 2026-11-15); 2 new offers (keyword searches on the listing, first result page each); known ot-30610 still open; MISTEA: MISTEA: 1 offer; INTHERES: INTHERES: 1 offer; Toulouse: Toulouse: 1 offer"
   },
   {
     "name": "Inria",
@@ -1460,16 +1620,16 @@
       "Inria Rennes": "Inria (Rennes)"
     },
     "careers_url": "https://jobs.inria.fr/public/classic/en/offres",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "10 new offers; 2 known updated; GLAD-X 2026-10466 removed"
   },
   {
     "name": "Inserm",
     "type": "academic_lab",
     "group": "health_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://pro.inserm.fr/rubriques/nous-rejoindre/offres-demploi",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open; ICARE: ICARE: 1 offer"
   },
   {
     "name": "InstaDeep",
@@ -1479,24 +1639,24 @@
       "InstaDeep (BioNTech)": "InstaDeep"
     },
     "careers_url": "https://instadeep.com/about-us/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (358) still open; internships page lists only that one"
   },
   {
     "name": "Institut Curie",
     "type": "academic_lab",
     "group": "health_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://institut-curie.org/job-offers",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Institut Fresnel",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing open: known GdR IASIS posting now returns 404"
   },
   {
     "name": "Institut Langevin",
@@ -1506,8 +1666,16 @@
       "Institut Langevin (ESPCI) + ONERA": "Institut Langevin (ESPCI, with ONERA)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new: known infrared tomography offer still online"
+  },
+  {
+    "name": "Institut Pascal",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (closed)"
   },
   {
     "name": "Institut Pasteur",
@@ -1518,16 +1686,16 @@
       "Institut Pasteur / Aix-Marseille Université": "Institut Pasteur (with Aix-Marseille Université)"
     },
     "careers_url": "https://www.pasteur.fr/en/about-us/join-us",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Intel",
     "type": "big_tech",
     "group": "big_tech",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://intel.wd1.myworkdayjobs.com/External",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in Europe that fits (SWE, DevOps, compiler interns in Gdansk)"
   },
   {
     "name": "IPSL",
@@ -1536,17 +1704,33 @@
     "aliases": {
       "IPSL Climate Graduate School": "IPSL (Climate Graduate School)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://internships-climate.ipsl.fr/les-offres",
+    "last_checked": "2026-11-11",
+    "last_result": "5 offers (LATMOS)"
   },
   {
     "name": "iQanto",
     "type": "startup",
     "group": "startups_fr",
+    "careers_url": "https://jobs.iqanto.net/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "1 update (offer found on its Teamtailor board)"
+  },
+  {
+    "name": "IRD",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "UMR AMAP: 1 offer"
+  },
+  {
+    "name": "IRIMAS",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "IRISA",
@@ -1557,32 +1741,40 @@
       "IRISA / Inria OBELIX": "IRISA (OBELIX, with Inria)"
     },
     "careers_url": "https://www.irisa.fr/recrutement",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: stage page is general information only, no topic list"
+  },
+  {
+    "name": "IRIT",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
   },
   {
     "name": "IRT Saint Exupéry",
     "type": "public_agency",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://irt-saint-exupery.taleez.com/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Taleez page renders no offers without JS; nothing open: Taleez board lists 2 fixed-term jobs, no internships"
   },
   {
     "name": "IRT SystemX",
     "type": "public_agency",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.irt-systemx.fr/nous-rejoindre/",
+    "last_checked": "2026-11-11",
+    "last_result": "3 new offers; 2 known updated with links"
   },
   {
     "name": "Isomorphic Labs",
     "type": "company",
     "group": "startups_eu",
     "careers_url": "https://www.isomorphiclabs.com/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "ISTA",
@@ -1592,17 +1784,17 @@
       "ISTA (Institute of Science and Technology Austria)": "ISTA"
     },
     "careers_url": "https://phd.pages.ista.ac.at/isternship/",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: ISTernship paused, year-round scientific internships",
     "note": "ISTernship paused for the 2026 and 2027 cycles; year-round internships are arranged with group leaders"
   },
   {
     "name": "Johnson & Johnson MedTech",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jj.wd5.myworkdayjobs.com/JJ",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Workday search for AI internships in France returned 0)"
   },
   {
     "name": "JRC",
@@ -1612,72 +1804,80 @@
       "European Commission Joint Research Centre (JRC)": "JRC"
     },
     "careers_url": "https://joint-research-centre.ec.europa.eu/work-us/jobs-jrc_en",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: recruitment.jrc.ec.europa.eu is JS-only; info page says two sessions a year (March, October starts); 1 change: portal says applications closed, next call in spring for October start"
   },
   {
     "name": "Kandou AI",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (LinkedIn posting still live)"
   },
   {
     "name": "Karavela",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://karavela.ai/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "1 update"
   },
   {
     "name": "KARL STORZ",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers (LinkedIn postings still live)"
   },
   {
     "name": "Kayrros",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://kayrros1.recruitee.com/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Keenfinity",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: out of budget"
   },
   {
     "name": "Kinetix",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only a Welcome to the Jungle company page, which renders its job list with JavaScript; no careers page; site has no jobs link"
   },
   {
     "name": "KNMI",
     "type": "public_agency",
     "group": "research_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.knmi.nl/over-het-knmi/stages",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new"
   },
   {
     "name": "Kog AI",
     "type": "startup",
     "group": "startups_fr",
+    "careers_url": "https://jobs.ashbyhq.com/kog",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
+  },
+  {
+    "name": "KU Leuven",
+    "type": "academic_lab",
+    "group": "research_eu",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "Kubota",
@@ -1687,24 +1887,24 @@
       "Kubota Technology Innovation Europe": "Kubota (Technology Innovation Europe)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no ATS found; not covered: out of budget"
   },
   {
     "name": "Kumulus Water",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://kumuluswater.com/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (only a marketing intern)"
   },
   {
     "name": "Kyutai",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://kyutai.homerun.co/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "L'Oréal",
@@ -1714,72 +1914,88 @@
       "L'Oréal R&I": "L'Oréal (R&I)"
     },
     "careers_url": "https://careers.loreal.com/en",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers site is JS-only; JobDetail link of 253280 redirects to the home page, aggregators still list it; nothing new; known Evaluation Intelligence offer found and updated; 253280 not found in 4 keyword searches (not marked removed)"
   },
   {
     "name": "L2S",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://l2s.centralesupelec.fr/recrutements/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: page lists internships without links in static HTML; 2 offers (2 control-only topics skipped); 2027 topics now published"
   },
   {
     "name": "LAAS-CNRS",
     "type": "academic_lab",
     "group": "research_fr",
+    "careers_url": "https://www.laas.fr/offres/",
+    "last_checked": "2026-11-11",
+    "last_result": "2 new offers"
+  },
+  {
+    "name": "LARIS",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
+  },
+  {
+    "name": "Latent Labs",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/latentlabs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Lemon Learning",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer still open"
   },
   {
     "name": "Lettria",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); not covered: no careers link on site and no WTTJ company page"
   },
   {
     "name": "Lifen",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies-v1/lifen/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; nothing open"
   },
   {
     "name": "LightOn",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/lighton-1/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Linagora",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse/Lever/Ashby/Workable board; not covered: out of budget"
   },
   {
     "name": "LIP6",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://ai2d.lip6.fr/taxonomy/term/3",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: AI2D topic list read, no MVA-fit topics added; nothing open: AI2D list has no topic newer than January 2025; no lab-wide internship page found"
   },
   {
     "name": "LIRIS",
@@ -1789,17 +2005,33 @@
       "LIRIS (Lyon 1) + ERIC (Lyon 2)": "LIRIS (Lyon 1, with ERIC)",
       "LIRIS + ERIC": "LIRIS (with ERIC)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://liris.cnrs.fr/emplois/offres-de-stage",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs page returns 404; 11 offers; 6 known offers still listed (monocular 3D one is back with a new URL); 2 older postings skipped (2025 start, company app development)"
   },
   {
     "name": "LIS",
     "type": "academic_lab",
     "group": "research_fr",
+    "careers_url": "https://www.lis-lab.fr/offre-de-stage/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new: ECG offer still listed (deadline 30/11/2026); one theoretical CS topic skipped"
+  },
+  {
+    "name": "LISIC",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
+  },
+  {
+    "name": "LISN",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "4 offers (via Paris-Saclay board); 1 offer"
   },
   {
     "name": "LISTIC",
@@ -1811,49 +2043,81 @@
       "LISTIC (Université Savoie Mont Blanc)": "LISTIC",
       "LISTIC (Université Savoie Mont Blanc) + CEDRIC (CNAM)": "LISTIC (with CEDRIC, CNAM)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.univ-smb.fr/listic/informations/emplois/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing open: internship list only has 2025-2026 cycle topics"
   },
   {
     "name": "Lithosquare",
     "type": "startup",
     "group": "startups_fr",
+    "careers_url": "https://jobs.ashbyhq.com/lithosquare",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
+  },
+  {
+    "name": "LITIS",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
+  },
+  {
+    "name": "LIUM",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "Living Models",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page is a Notion site, not read; not covered: Notion job board table did not load (role address jobs@livingmodels.ai)"
   },
   {
     "name": "LIX",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing open: no internship list; the lab asks M2 students to contact researchers directly; ODELIX page undated"
+  },
+  {
+    "name": "LJK",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
+  },
+  {
+    "name": "LMBA",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "3 offers"
   },
   {
     "name": "LMD",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.lmd.ipsl.fr/home/liste-des-listes/liste-des-stages/",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: list page empty"
   },
   {
     "name": "Logitech",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://logitech.wd5.myworkdayjobs.com/Logitech",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Workday tenant not found; nothing open (Workday 'intern' search, 125 hits, no research internships)"
   },
   {
     "name": "LPSM",
@@ -1863,40 +2127,40 @@
       "LPSM (Sorbonne Université) + Université Laval": "LPSM (Sorbonne Université, with Université Laval)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new: no own list (points to M2 Statistique and M2A boards); known peptide offer still on the SCAI jobs page"
   },
   {
     "name": "LS2N",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.ls2n.fr/travailler-au-labo/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing open: internship section says no position for now"
   },
   {
     "name": "LSCE",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.lsce.ipsl.fr/enseignement/stages/",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (via Paris-Saclay board)"
   },
   {
     "name": "MAHLE",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; no careers page checked; not covered: out of budget (jobs.mahle.com found, not searched)"
   },
   {
     "name": "MARBEC",
     "type": "academic_lab",
     "group": "research_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://umr-marbec.fr/nous-rejoindre/les-offres-de-stages-et-postes/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; 1 offer; 3 ecology-only M2 topics skipped"
   },
   {
     "name": "Max Planck Society",
@@ -1913,8 +2177,8 @@
       "Max Planck Institutes (MPI-INF, MPI-SWS, MPI-SP)": "Max Planck Society (MPI-INF, MPI-SWS, MPI-SP)"
     },
     "careers_url": "https://www.mpi-inf.mpg.de/career/job-openings",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "MPI-INF, MPI-SWS, MPI-SP: nothing new: summer deadline 1 Nov passed, off-cycle rolling; Tübingen: 1 change: CaCTüS 2027 open until 16 Nov 2026; partial: only MPI-INF/CIS and CaCTüS checked; MPI-IS: not covered: is.mpg.de serves a bot-detection challenge; MPI-INF: nothing new: job openings page lists no internships",
     "note": "One entry for all institutes; careers_url is MPI-INF's job page"
   },
   {
@@ -1925,9 +2189,9 @@
       "MBDA France": "MBDA (France)",
       "MBDA France (Technical Directorate)": "MBDA (France, Technical Directorate)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.mbda-systems.com/country-fr/careers/job-vacancies",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: mbda-systems.com answers 403 to scripts and renders empty in the browser; Welcome to the Jungle pages blocked (202 challenge); MBDA France: 5 new offers; 2 known removed; 1 known moved to the MBDA site"
   },
   {
     "name": "Mentalkiz",
@@ -1937,24 +2201,24 @@
       "Mentalkiz / AP-HP": "Mentalkiz (with AP-HP)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); no careers page; site is an app shell only"
   },
   {
     "name": "Merck",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.merckgroup.com/global/en/search-results",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; nothing open (no research AI internship in the Merck KGaA search; the known AI-First Workflows offer not found by keyword)"
   },
   {
     "name": "MESH Robotic Construction",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: website did not respond"
   },
   {
     "name": "Meta",
@@ -1965,32 +2229,40 @@
       "Meta FAIR": "Meta (FAIR)"
     },
     "careers_url": "https://www.metacareers.com/jobsearch/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "6 new PhD offers (Zurich, London); both Paris MSc offers still open"
   },
   {
     "name": "Metravib Defence",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: out of budget"
   },
   {
     "name": "Mews Partners",
     "type": "company",
     "group": "corporates",
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/mews-partners/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only listed on Welcome to the Jungle, which blocks scripted reads; 1 offer"
+  },
+  {
+    "name": "MIA Paris-Saclay",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
   },
   {
     "name": "MIAI Grenoble",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: homepage links an M1/M2 internships section, not read; not covered: M1/M2 internships and call pages redirect to the UGA sign-in page"
   },
   {
     "name": "Microsoft",
@@ -2001,56 +2273,64 @@
       "Microsoft Research New England": "Microsoft (Research New England)"
     },
     "careers_url": "https://apply.careers.microsoft.com/careers?et=Internship",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (MSR Cambridge Machine Intelligence); known Robotics Systems and Control posting no longer accepts applications"
   },
   {
     "name": "Mila",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://mila.quebec/en/recruitment",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new"
   },
   {
     "name": "Mirakl",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://job-boards.greenhouse.io/mirakl",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: Greenhouse board (24 jobs) has no research internship; the AI Research Intern H1 2027 posting is on Welcome to the Jungle only and could not be re-read"
   },
   {
     "name": "Mistral AI",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": "https://mistral.ai/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer, 3 known still open (others: HR and IP interns)"
+  },
+  {
+    "name": "MMG",
+    "type": "academic_lab",
+    "group": "health_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "Mobileye",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://careers.mobileye.com/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page has no recognisable ATS feed; not read in the browser for lack of budget; nothing open (Lever board: 173 postings, only 2 non-research student jobs in Israel)"
   },
   {
     "name": "Moments Lab",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); not covered: careers page links only to LinkedIn job search"
   },
   {
     "name": "Moon Surgical",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://moonsurgical.notion.site/Moon-Surgical-Jobs-Board-7a646bb4294a417d96d93875bddb4998",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (Notion board: finance and product security interns)"
   },
   {
     "name": "Météo-France",
@@ -2060,16 +2340,16 @@
       "Météo-France / CNRM": "Météo-France (CNRM)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: CNRM internships page did not respond; not covered: cnrm.sedoo.fr/stages did not respond (curl and browser)"
   },
   {
     "name": "Nabla",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/nabla",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Naver",
@@ -2080,17 +2360,17 @@
       "Naver Labs Europe": "Naver (Labs Europe)"
     },
     "careers_url": "https://careers.werecruit.io/en/naver-labs-europe",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "Labs Europe: nothing open: only full-time research scientist roles and spontaneous applications",
     "note": "Naver Labs Europe, Grenoble"
   },
   {
     "name": "NEURA Robotics",
     "type": "startup",
     "group": "startups_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.neura-robotics.com/",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open on own board (13 internships, none research); known LinkedIn offer not listed there"
   },
   {
     "name": "Nokia",
@@ -2100,8 +2380,8 @@
       "Nokia Bell Labs France": "Nokia (Bell Labs France)"
     },
     "careers_url": "https://www.nokia.com/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs.nokia.com is an Oracle HCM JavaScript app; not read for lack of budget; nothing open (no internship in France or at Bell Labs on the Oracle HCM board)"
   },
   {
     "name": "Novartis",
@@ -2110,33 +2390,33 @@
     "aliases": {
       "Novartis France": "Novartis (France)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Workday searches: no research internship in ML/AI)"
   },
   {
     "name": "NP Company",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.npco.ai/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: website unknown or not reachable; nothing open"
   },
   {
     "name": "NVIDIA",
     "type": "big_tech",
     "group": "big_tech",
     "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "6 new offers, 5 known still open, 1 removed (19 intern postings in Europe)"
   },
   {
     "name": "NXP",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: Workday site nxp/careers answers 422/500"
   },
   {
     "name": "NYU",
@@ -2146,8 +2426,8 @@
       "NYU (BioML, Romain Lopez)": "NYU (BioML)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "no careers page in scope; known offer not rechecked"
   },
   {
     "name": "ONERA",
@@ -2163,8 +2443,8 @@
       "ONERA DTIS": "ONERA (DTIS)"
     },
     "careers_url": "https://rejoindre.onera.fr/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "4 new offers from the RSS feed (latest 10 items only); DTIS: DTIS: 1 offer (DTIS-2027-55)"
   },
   {
     "name": "Orange",
@@ -2176,24 +2456,24 @@
       "Orange Networks": "Orange (Networks)"
     },
     "careers_url": "https://orange.jobs/gb/en",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: orange.jobs search renders empty in the browser; one known posting checked (CTS-2026-54553, 410 expired); 11 new offers; 1 known removed (410); search pages capped at 833 of 927 postings"
   },
   {
     "name": "osapiens",
     "type": "startup",
     "group": "startups_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.osapiens.com/",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (internships are business roles)"
   },
   {
     "name": "Owkin",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": "https://jobs.ashbyhq.com/owkin",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (no internship on Ashby; recurring entry stays expected)"
   },
   {
     "name": "Paris Brain Institute",
@@ -2202,9 +2482,9 @@
     "aliases": {
       "Paris Brain Institute (ICM)": "Paris Brain Institute"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://offres.institutducerveau-icm.org/fr/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Parrot",
@@ -2214,32 +2494,32 @@
       "Parrot Drones": "Parrot (Drones)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; known posting page answers 200 but was not parsed; not covered: talentview board is JS-only (known posting URL still answers 200)"
   },
   {
     "name": "Pathway",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://pathway.com/join",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page has no readable job list; nothing open"
   },
   {
     "name": "Pellenc ST",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: no careers page found in budget"
   },
   {
     "name": "Perplexity",
     "type": "startup",
     "group": "startups_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/perplexity",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (known, still listed)"
   },
   {
     "name": "Philips",
@@ -2249,56 +2529,64 @@
       "Philips Research": "Philips (Research)"
     },
     "careers_url": "https://www.careers.philips.com/emea/en",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Phenom careers site, no public JSON feed found; not read in the browser for lack of budget; nothing open (Workday: no research or thesis internship in AI or imaging)"
   },
   {
     "name": "Photoroom",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/photoroom",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Pigment",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/pigment",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (Data Scientist Internship from 2025 on applied LLM tooling, sales and SWE interns)"
   },
   {
     "name": "Pioneer Centre for AI",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://www.aicentre.dk/jobs",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: PhD and postdoc roles only"
+  },
+  {
+    "name": "PolyAI",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://job-boards.greenhouse.io/polyai",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Poolside",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": "https://www.poolside.ai/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Porsche",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: out of budget"
   },
   {
     "name": "PostGenAI@Paris",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://scai.sorbonne-universite.fr/projects/postgenai-paris",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: page returned almost no content; nothing open: project page only; internships go through SCAI (see SCAI)"
   },
   {
     "name": "PRAIRIE",
@@ -2308,40 +2596,40 @@
       "PRAIRIE-PSAI": "PRAIRIE (PSAI)"
     },
     "careers_url": "https://recrutement.psl.eu/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: only a Pasteur M2 topic (left to the group covering Institut Pasteur)"
   },
   {
     "name": "Presage Labs",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://presagelabs.ai/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Primaa",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); not covered: WTTJ company page returns 404 and no own careers page found"
   },
   {
     "name": "Prior Labs",
-    "type": "startup",
+    "type": "company",
     "group": "startups_eu",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/prior-labs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open; known PhD intern posting gone"
   },
   {
     "name": "Prophesee",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://careers.prophesee.ai/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Teamtailor RSS: 12 jobs, no internship)"
   },
   {
     "name": "Prosus",
@@ -2350,33 +2638,33 @@
     "aliases": {
       "Prosus AI Talent Lab": "Prosus (AI Talent Lab)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/prosus",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; 1 new offer; known LLM/causal offer found on Ashby"
   },
   {
     "name": "Pruna AI",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.pruna.ai/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "3 known still open (one posting)"
   },
   {
     "name": "Pulsheart",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: website unknown or not reachable; not covered: no website or careers page found"
   },
   {
     "name": "pyannoteAI",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.notion.so/pyannoteAI-Job-board-2b062efaec7f80e2a1c0dcb8c728cfff",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Qualcomm",
@@ -2386,56 +2674,64 @@
       "Qualcomm AI Research": "Qualcomm (AI Research)"
     },
     "careers_url": "https://careers.qualcomm.com/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers (Amsterdam AI Research program, known, now with link; Munich PhD autonomous driving); France has 8 intern roles, all hardware, security or compiler, skipped"
+  },
+  {
+    "name": "QuantCo",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.lever.co/quantco-",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: 2 applied-AI internships (client delivery, not research) skipped"
   },
   {
     "name": "QuantCube Technology",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/quantcube-technology/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; nothing open (only spontaneous applications)"
   },
   {
     "name": "Quinten Health",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/quinten/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; nothing open (only spontaneous applications)"
   },
   {
     "name": "RAI Institute",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse board under the names tried; not searched further; not covered: rai-inst.com timed out; Ashby board name not found"
   },
   {
     "name": "Raidium",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.lever.co/raidium",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer, 1 update"
   },
   {
     "name": "Red Cross Red Crescent Climate Centre",
     "type": "public_agency",
     "group": "international",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.climatecentre.org/interning/",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new"
   },
   {
     "name": "Remanence",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/remanence",
+    "last_checked": "2026-11-11",
+    "last_result": "2 updates"
   },
   {
     "name": "Renault Group",
@@ -2445,17 +2741,17 @@
       "Renault Group / Ampere Energy": "Renault Group (Ampere Energy)",
       "Renault Group / Ampere Software Technology": "Renault Group (Ampere Software Technology)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://alliancewd.wd3.myworkdayjobs.com/renault-group-careers",
+    "last_checked": "2026-11-11",
+    "last_result": "3 offers (Workday searches: IA, machine learning, vision, deep learning, data scientist)"
   },
   {
     "name": "Reuniwatt",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: careers page has no listing readable in budget"
   },
   {
     "name": "RIGI",
@@ -2465,16 +2761,16 @@
       "RIGI (MPI-IS Stuttgart / Robotics Institute Germany)": "RIGI (Robotics Institute Germany, MPI-IS Stuttgart)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not checked: known offer already removed"
   },
   {
     "name": "Rivercell",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/rivercell/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only a Welcome to the Jungle company page, which renders its job list with JavaScript; nothing open"
   },
   {
     "name": "RIVR",
@@ -2483,34 +2779,34 @@
     "aliases": {
       "RIVR (part of Amazon)": "RIVR"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null,
+    "careers_url": "https://www.amazon.jobs/en/jobs/10595274/slam-computer-vision-intern-rivr",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer found on Amazon Jobs (SLAM/CV intern); also an Applied Scientist Intern VLA and DATA posting (10600919) that looks like the known Lever VLA offer; nothing open",
     "note": "Owned by Amazon according to its postings"
   },
   {
     "name": "Robin Radar Systems",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.robinradar.com/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; nothing open (Ashby board robin-radar: 27 jobs, no internship)"
   },
   {
     "name": "RTE",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: careers URL returned 404, out of budget"
   },
   {
     "name": "Runway",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/runway-ml",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (no internship on Ashby)"
   },
   {
     "name": "Safran",
@@ -2529,25 +2825,25 @@
       "Safran Tech (Systèmes Électriques & Électroniques)": "Safran (Tech, Systèmes Électriques & Électroniques)",
       "Safran.AI (formerly Preligens), IMINT": "Safran (Safran.AI, IMINT)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.safran-group.com/fr/offres",
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers (safran-group.com searched in the browser: 'stage chateaufort' page 1, 'stage intelligence artificielle' page 1 of 6; other pages not read); 7 offers (rerun: read all 6 pages, 65 results, of the 'stage intelligence artificielle' search; skipped LLM-assistant, tooling and Bac+3 postings)"
   },
   {
     "name": "SaH Analytics",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: website did not respond"
   },
   {
     "name": "SAMOVAR",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing new: known AI peer-review offer no longer on the Master Data AI board; no SAMOVAR internship list found"
   },
   {
     "name": "Samsung",
@@ -2558,8 +2854,8 @@
       "Samsung Research": "Samsung (Research)"
     },
     "careers_url": "https://research.samsung.com/careers",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: Samsung global Workday shows only a generic internship in Milan and business roles in Europe",
     "note": "Samsung AI Center Cambridge, Samsung Research"
   },
   {
@@ -2571,40 +2867,56 @@
       "Sanofi R&D / Digital": "Sanofi (R&D / Digital)"
     },
     "careers_url": "https://jobs.sanofi.com/en",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Workday searches: no AI/ML research internship; a stability-modelling stage R2877705 skipped as mostly tool support)"
   },
   {
     "name": "SAP",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: new jobs.sap.com site drops the search query and is JS-only"
   },
   {
     "name": "SCAI",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": "https://scai.sorbonne-universite.fr/jobs",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs page returned almost no content; 1 expected offer (partner-company internships announced); 1 internship listed, already on the board (LPSM)"
   },
   {
     "name": "Schneider Electric",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget"
+  },
+  {
+    "name": "Sensmore",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/sensmore",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (only a working-student operator role)"
+  },
+  {
+    "name": "Sereact",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/sereact",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
   },
   {
     "name": "Shift Technology",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://boards-api.greenhouse.io/v1/boards/shifttechnology/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Lever board under the names tried; 1 offer updated (Greenhouse board, 13 jobs: Paris data science internships, applied)"
   },
   {
     "name": "Siemens",
@@ -2614,72 +2926,72 @@
       "Siemens DISW": "Siemens (DISW)"
     },
     "careers_url": "https://www.siemens.com/en-us/company/jobs/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs.siemens.com timed out; not covered: jobs.siemens.com API timed out for scripts; not read in the browser for lack of budget"
   },
   {
     "name": "Sigma Nova",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 update (foundation-models posting closed); website has no job list"
   },
   {
     "name": "SkillCorner",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/skillcorner/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only a Welcome to the Jungle company page, which renders its job list with JavaScript; 1 offer"
   },
   {
     "name": "Skydio",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://api.ashbyhq.com/posting-api/job-board/skydio",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse or Ashby board under the names tried; 5 offers and 1 update (Ashby board, about 30 internships; skipped hardware, software, manufacturing and tools roles)"
   },
   {
     "name": "SkyGeo",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://skygeo.recruitee.com/api/offers/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; 1 offer updated (Recruitee: standing Data Analytics internship)"
   },
   {
     "name": "Skypher",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://skypher.co/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "1 update"
   },
   {
     "name": "Snap",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://careers.snap.com/jobs?type=Intern",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (Workday board, searches 'intern' and 'research intern')"
   },
   {
     "name": "SNCF Réseau",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: sncf-reseau.com careers answers 403 to scripts"
   },
   {
     "name": "Socomec",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/socomec/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only listed on Welcome to the Jungle, which blocks scripted reads; nothing new (Welcome to the Jungle list of 31 jobs; known SoH battery internship still open; known time-series internship not re-checked)"
   },
   {
     "name": "Sony",
@@ -2689,41 +3001,41 @@
       "Sony AI": "Sony (Sony AI)"
     },
     "careers_url": "https://ai.sony/join-us",
-    "last_checked": null,
-    "last_result": null,
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: Sony AI audio internship (JR-118646) linked from ai.sony is gone from Workday; a Lund master thesis on AI tools for UX research skipped as weak fit",
     "note": "Sony AI (Zurich and others)"
   },
   {
     "name": "SOPHiA GENETICS",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://apply.workable.com/api/v1/widget/accounts/sophia-genetics",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Greenhouse or Lever board under the names tried; nothing open (Workable board: no research internship)"
   },
   {
     "name": "Spore.Bio",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.spore.bio/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open in scope (lab, biotech and engineering interns only)"
   },
   {
     "name": "SpotLight Earth",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer still open (other posting not rechecked)"
   },
   {
     "name": "SquareMind",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.ashbyhq.com/squaremind",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Ashby board empty)"
   },
   {
     "name": "Stellantis",
@@ -2733,24 +3045,24 @@
       "Stellantis (R&D, advanced numerical methods)": "Stellantis (R&D)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: jobs.groupe-psa.com lists 353 offers, only page 1 read (no research internship); keyword search not tried for lack of budget"
   },
   {
     "name": "STMicroelectronics",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: Workday site name not found; tool-call budget"
   },
   {
     "name": "Stryker",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://stryker.wd1.myworkdayjobs.com/StrykerCareers",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new (Workday searches; 3 known offers still listed)"
   },
   {
     "name": "Swiss Data Science Center",
@@ -2759,17 +3071,25 @@
     "aliases": {
       "Swiss Data Science Center (SDSC)": "Swiss Data Science Center"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://datascience.ch/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open: no internships on the jobs page"
   },
   {
     "name": "Synboli",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.synboli.com/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); 1 offer (known)"
+  },
+  {
+    "name": "Synthesia",
+    "type": "startup",
+    "group": "startups_eu",
+    "careers_url": "https://jobs.ashbyhq.com/synthesia",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "Technology Innovation Institute",
@@ -2778,9 +3098,9 @@
     "aliases": {
       "Technology Innovation Institute (TII), Falcon team": "Technology Innovation Institute (Falcon team)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://careers.tii.ae/us/en/search-results?keywords=intern",
+    "last_checked": "2026-11-11",
+    "last_result": "not checked: no careers URL known; nothing open: careers.tii.ae search 'intern' returns no internship; known Falcon offer has no link to recheck"
   },
   {
     "name": "Thales",
@@ -2797,40 +3117,40 @@
       "Thales Services Numériques": "Thales (Services Numériques)"
     },
     "careers_url": "https://careers.thalesgroup.com/global/en",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "21 offers (Workday searches: IA, intelligence artificielle, deep learning, machine learning, vision, recherche, données, LLM, apprentissage, cortAIx; about 180 AI-related stage titles screened, mostly engineering or tooling and skipped)"
   },
   {
     "name": "The Forecasting Company",
     "type": "startup",
     "group": "startups_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (Ashby board empty)"
   },
   {
     "name": "TNO",
     "type": "public_agency",
     "group": "research_eu",
     "careers_url": "https://www.tno.nl/en/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers (partial: vacancy search shows only the first 10 results without JS); nothing new: sitemap lists 10 internships, the ML ones already in 08; others are engineering or chemistry"
   },
   {
     "name": "TotalEnergies",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.totalenergies.com/fr_FR/careers/SearchJobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs.totalenergies.com timed out for scripts; 2 offers; known 84650 removed (page not found), 84535 still open (searches 'stage machine learning', 'stage intelligence artificielle')"
   },
   {
     "name": "Toulouse School of Economics",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; nothing open: job opportunities page lists fellowships and faculty posts only, no internships"
   },
   {
     "name": "Toyota",
@@ -2841,16 +3161,24 @@
       "Toyota Motor Europe": "Toyota (Motor Europe)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget"
+  },
+  {
+    "name": "Télécom Paris",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "LTCI: 1 offer"
   },
   {
     "name": "Tübingen AI Center",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://tuebingen.ai/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page is JS-only; nothing open: 3 positions (PI, HPC engineer, professorships)"
   },
   {
     "name": "Ubisoft",
@@ -2860,16 +3188,16 @@
       "Ubisoft La Forge": "Ubisoft (La Forge)"
     },
     "careers_url": "https://www.ubisoft.com/en-us/company/careers",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: SmartRecruiters needs the browser; not read for lack of budget; nothing open seen (SmartRecruiters page: no La Forge research internship among listed jobs; Paris and Montreal lists only partly shown, search ignored)"
   },
   {
     "name": "UMA",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://app.dover.com/apply/uma/81b8f209-7e15-4c97-bfa7-b8b3af15e547",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: Dover job list is JavaScript-only; 1 offer (known)"
   },
   {
     "name": "UNICEF",
@@ -2878,9 +3206,9 @@
     "aliases": {
       "UNICEF Office of Innovation (Giga / Magic Box)": "UNICEF (Office of Innovation)"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.unicef.org/careers/internships",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: generic programme page"
   },
   {
     "name": "University of Amsterdam",
@@ -2890,8 +3218,8 @@
       "UvA QUVA Lab": "University of Amsterdam (QUVA Lab)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not checked: no careers URL known; QUVA Lab: nothing new: QUVA page no longer mentions internships; known offer left as unknown"
   },
   {
     "name": "University of Warwick",
@@ -2901,16 +3229,48 @@
       "University of Warwick / ENS": "University of Warwick (with ENS)"
     },
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not checked: no careers URL known; not checked: no careers URL known, known offer has no link"
+  },
+  {
+    "name": "Université Clermont Auvergne",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "LMBP: 1 offer"
+  },
+  {
+    "name": "Université de Corse",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
+  },
+  {
+    "name": "Université de Perpignan",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer"
+  },
+  {
+    "name": "Université Sorbonne Paris Nord",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "L2TI: 1 offer"
   },
   {
     "name": "UPEC",
     "type": "academic_lab",
     "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page known; not covered: lissi.u-pec.fr did not respond; known LISSI offer may match the GdR IASIS one in file 09; 1 offer"
   },
   {
     "name": "Valeo",
@@ -2921,72 +3281,88 @@
       "valeo.ai": "Valeo (valeo.ai)"
     },
     "careers_url": "https://valeoai.github.io/jobs/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open (valeo.ai jobs page last lists 2024 internships)"
+  },
+  {
+    "name": "Valmy",
+    "type": "startup",
+    "group": "startups_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "2 offers"
   },
   {
     "name": "VAT Group",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; not covered: careers page 404; tool-call budget"
   },
   {
     "name": "Vector Institute",
     "type": "academic_lab",
     "group": "research_eu",
     "careers_url": "https://vectorinstitute.ai/about/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: no 2027 call dates on the page"
+  },
+  {
+    "name": "Veolia",
+    "type": "company",
+    "group": "corporates",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (via HelloWork; employer site not checked)"
   },
   {
     "name": "Volkswagen Group",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget"
   },
   {
     "name": "VSORA",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://vsora.com/careers/",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; nothing open (careers page mentions no internship)"
   },
   {
     "name": "Waiv",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/waiv/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no careers page or public ATS board found (homepage and /careers checked); nothing open"
   },
   {
     "name": "Wandercraft",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/wandercraft/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Lever or Ashby board; Welcome to the Jungle blocks scripted reads; 1 offer (Welcome to the Jungle, 24 jobs; the AI & control engineer roles are full-time)"
   },
   {
     "name": "Wavestone",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.welcometothejungle.com/fr/companies/wavestone/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: only listed on Welcome to the Jungle, which blocks scripted reads; nothing new (Welcome to the Jungle search 'stage IA', first 30 results: LLM-as-a-judge still open, machine unlearning not in them; others are consulting or MLOps)"
   },
   {
     "name": "Waymo",
     "type": "big_tech",
     "group": "big_tech",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null,
+    "careers_url": "https://careers.withwaymo.com/jobs",
+    "last_checked": "2026-11-11",
+    "last_result": "1 new offer; known London MS/PhD offer still open; other 2027 interns are US-based",
     "note": "Alphabet subsidiary"
   },
   {
@@ -2994,8 +3370,8 @@
     "type": "startup",
     "group": "startups_eu",
     "careers_url": "https://wayve.ai/careers/",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "nothing open"
   },
   {
     "name": "WHO",
@@ -3004,17 +3380,17 @@
     "aliases": {
       "World Health Organization (WHO)": "WHO"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://www.who.int/careers/internship-programme",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: generic programme page"
   },
   {
     "name": "Withings",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://apply.workable.com/withings/",
+    "last_checked": "2026-11-11",
+    "last_result": "1 offer (Workable widget API)"
   },
   {
     "name": "WMO",
@@ -3023,56 +3399,72 @@
     "aliases": {
       "World Meteorological Organization (WMO)": "WMO"
     },
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://wmo.int/jobs/wmo-internships",
+    "last_checked": "2026-11-11",
+    "last_result": "nothing new: generic programme page"
   },
   {
     "name": "Würth",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget"
   },
   {
     "name": "Yseop",
     "type": "company",
     "group": "corporates",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: no Lever board under the name tried; not covered: no Workable or Teamtailor board; Welcome to the Jungle page not read"
   },
   {
     "name": "Zama",
     "type": "startup",
     "group": "startups_fr",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://jobs.zama.org",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: jobs site has no readable feed; nothing open"
   },
   {
     "name": "ZEISS",
     "type": "company",
     "group": "corporates",
     "careers_url": "https://www.zeiss.com/career/en/home.html",
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: zeiss.com careers answers 403; not covered: tool-call budget (careers site answered 403 in the first pass)"
   },
   {
     "name": "Zenseact",
     "type": "company",
     "group": "corporates",
-    "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "careers_url": "https://career.zenseact.com/jobs.rss",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: tool-call budget; 2 offers and 1 update (Teamtailor RSS, 5 jobs: master thesis clusters A, B, C)"
   },
   {
     "name": "ZML",
     "type": "startup",
     "group": "startups_fr",
+    "careers_url": "https://zml.ai/careers",
+    "last_checked": "2026-11-11",
+    "last_result": "not covered: careers page has no readable job list; no open roles listed on careers page"
+  },
+  {
+    "name": "École des Ponts",
+    "type": "academic_lab",
+    "group": "research_fr",
     "careers_url": null,
-    "last_checked": null,
-    "last_result": null
+    "last_checked": "2026-11-11",
+    "last_result": "3 offers"
+  },
+  {
+    "name": "École polytechnique",
+    "type": "academic_lab",
+    "group": "research_fr",
+    "careers_url": null,
+    "last_checked": "2026-11-11",
+    "last_result": "CMAP: 1 offer"
   }
 ]

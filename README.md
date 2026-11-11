@@ -37,7 +37,13 @@ python3 -I scripts/check_status.py [--groups health_fr]       # pre-check which 
 python3 -I scripts/merge.py data/incoming/YYYY-MM-DD/*.json   # add sweep results and coverage
 python3 -I scripts/dedupe.py pairs.json                       # collapse confirmed duplicates
 python3 -I scripts/build_seed.py                              # validate and regenerate the seed
+python3 -I scripts/load_remote.py --dry-run --prune           # then without --dry-run: load the live database
 ```
+
+Loading the live database needs no password: `supabase login` and `supabase link --project-ref
+<ref>` once, and the scripts take the service key from the CLI. Do not use
+`supabase db push --include-seed` to reload offers: after the first load it only updates the seed
+hash. After loading, `pull_remote.py` must report 0 offers edited and 0 deleted remotely.
 
 With Claude Code, `/sweep` runs the whole sweep (`/sweep recheck`, `/sweep 5`, `/sweep sync`
 for parts of it). See `CLAUDE.md` for the data rules and `data/organizations.json` for the

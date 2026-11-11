@@ -29,6 +29,14 @@ browser tool for JS-only pages. Never log in, never bypass a block or a rate lim
 robots.txt (including `Crawl-delay`: ONERA and CNES ask for 10 s, Lever 1 s). A page you may
 not or cannot read is `not covered: <reason>`.
 
+- Never change the User-Agent to get a page, and never open LinkedIn postings, by script or in
+  the browser. The shared Chrome may be logged in to the maintainer's accounts (LinkedIn,
+  Meta): being logged in is not a reason to read a page; read only public employer pages.
+- In the browser, open one tab of your own and only ever navigate that tab: other subagents
+  share the same browser.
+- Some pages answer gzip even without asking for it (Enchanted Tools): decompress before
+  reading, or a live "not available anymore" banner is missed.
+
 | ATS | Recognise it | Read the board | One posting, and how removal shows |
 |---|---|---|---|
 | Greenhouse | `job-boards.greenhouse.io/<board>`, `boards.greenhouse.io/<board>`, `?gh_jid=` on the employer's site (EU boards too) | `GET https://boards-api.greenhouse.io/v1/boards/<board>/jobs` (`?content=true` adds text, can be MBs) | `.../jobs/<id>`: 404 `Job not found` |
@@ -106,9 +114,12 @@ Philips Research, Snap Research, Disney Research, Mobileye.
 
 Every organization of groups `startups_fr` and `startups_eu`: their own Ashby, Lever,
 Greenhouse, Workable, Homerun or Welcome to the Jungle board. Then discovery: the Station F
-job board (jobs.stationf.co), Welcome to the Jungle searches ("stage machine learning",
-"research intern", "stage IA") in France. Many startups have no internship posted: that is a
-coverage result ("nothing open"), not something to fill.
+job board (jobs.stationf.co). Welcome to the Jungle's robots.txt disallows its job search
+(`jobs?query=`): read company pages (`/fr/companies/<name>/jobs`, browser tool) and single
+postings instead, never the search. Many startups have no internship posted: that is a
+coverage result ("nothing open"), not something to fill. "No careers page found" after only
+trying the homepage and `/careers` by plain fetch is not a result: open the site in the
+browser and look for the jobs link (footer, Notion, Dover, WTTJ) first.
 
 ## 06 Research in France
 
@@ -157,14 +168,17 @@ Every organization of groups `research_eu` and `international`. Programs:
   notices), IIT, ELLIS (https://ellis.eu/research/jobs), Tübingen AI Center, Pioneer Centre for AI.
 - EPFL master's project for external students
   (https://www.epfl.ch/education/international/en/coming-to-epfl/project/), ETH.
-- EURAXESS (https://euraxess.ec.europa.eu/jobs/search) filtered on "Other research profiles"
-  or keyword "internship" / "master".
+- EURAXESS (https://euraxess.ec.europa.eu/jobs/search): its robots.txt disallows searches with
+  parameters and scripted requests get 403. Not covered unless that changes; the institutes'
+  own boards above carry the same offers.
 
 ## 09 Mailing lists and boards
 
 - GdR IASIS: https://gdr-iasis.cnrs.fr/proposition-de-postes/ ("Offres de stages", titles
   "[Stage M2]", no dates shown: read each post).
-- GdR MaDICS: https://www.madics.fr/offres/ ("Stages", deadlines shown).
+- GdR MaDICS: https://www.madics.fr/offres/ ("Stages"). Its "Date limite de publication" is
+  when the listing comes down, **not** an application deadline: leave `deadline` null unless
+  the post or its PDF states one, and write "Listed on MaDICS until <date>." in notes.
 - SFdS: https://www.sfds.asso.fr/fr/n/506-consulter_les_offres_demploi/ (type "Stage", level
   "Master").
 - ABG: https://www.abg.asso.fr/fr/candidatOffres ("Type d'offre: Stage master 2 / Ingénieur").
@@ -186,15 +200,15 @@ supervisor's name or address.
 Discovery only: every offer found here needs the employer's own link (section "How to read job
 sites") before it is recorded; keep the aggregator link only when there is no other.
 
-- LinkedIn guest search. Its terms restrict automated access, so keep it small: a few result
-  pages per query, no per-posting fetches, nothing stored beyond what leads to the employer's
-  posting:
-  `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=<k>&location=<country>&f_JT=I&start=<0,25,50>`
-  with keywords `machine learning research intern`, `computer vision intern`, `LLM intern`,
-  `research intern AI`, `stage recherche IA`, `time series intern`, `robotics intern`,
-  `medical imaging intern`, `generative AI intern`, and countries France, Switzerland, Germany,
-  Netherlands, Belgium, Spain, Italy, Denmark, Sweden, United Kingdom.
-- EURAXESS, HelloWork, JobTeaser and Indeed: browser tool; not covered if blocked.
+- LinkedIn: **do not use.** Its robots.txt disallows `/jobs-guest/` and every path for other
+  crawlers, and its terms restrict automated access. Not even the guest search, not in the
+  browser when it is logged in.
+- HelloWork: works (search and listings readable). Its listings often carry the employer's
+  reference (EDF `2026-xxxxxx`, Valeo `REQ...`, Thales `R0...`): search the employer's ATS for
+  it. Keep the HelloWork link only when the employer's posting cannot be found, and say so in
+  notes.
+- Indeed: browser tool, a few queries at most; not covered if blocked.
+- EURAXESS and JobTeaser: robots.txt disallows their searches. Not covered.
 
 ## Recurring programs calendar
 

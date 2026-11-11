@@ -17,6 +17,7 @@ submissions.
 | `scripts/build_seed.py` | Validates `data/offers.json` against `data/organizations.json` and writes `supabase/seed.sql` as upserts on `slug` |
 | `scripts/pull_remote.py` | Read-only pull of the live database before a sweep: dashboard edits, deletions, submissions and reports |
 | `supabase/migrations/` | Schema, RLS and triggers |
+| `scripts/load_remote.py` | Loads `data/offers.json` into the remote database through the REST API (no password), optionally pruning stale swept rows |
 | `supabase/seed.sql` | Generated. Never edit by hand |
 | `.claude/skills/sweep/` | How to run a sweep |
 
@@ -110,10 +111,22 @@ came from the MVA Drive.
 ## Supabase
 
 - Local: `supabase start` (Docker), `supabase db reset` applies migrations and the seed.
-- Remote: link with `supabase link --project-ref <ref>`, schema via `supabase db push`, data via
-  `supabase db push --include-seed` (dry-run first) or `psql "$SUPABASE_DB_URL" -f supabase/seed.sql`.
-  Both are outward-facing: ask first. Reading needs no password: `scripts/pull_remote.py` gets
-  the service key from the logged-in CLI when `SUPABASE_DB_URL` is unset.
+- Remote: `supabase login` once, then `supabase link --project-ref <ref>`. No database password
+  is needed for anything below: the scripts ask the linked CLI for the service key
+  (`supabase projects api-keys`), keep it in memory and use the REST API.
+  - Schema: `supabase db push` (new migrations only).
+  - Read: `scripts/pull_remote.py` (read-only; uses `SUPABASE_DB_URL` with psql when set).
+  - Write offers: `scripts/load_remote.py --dry-run [--prune]`, then without `--dry-run`. It
+    upserts `data/offers.json` on `slug` like the seed (`first_seen` only on insert) and, with
+    `--prune`, deletes swept rows that are no longer in `data/offers.json`. It refuses to run
+    without a `pull_remote.py` pull from the same day.
+  - Not `supabase db push --include-seed`: after the first load the CLI only updates the seed
+    hash and never runs `seed.sql` again, even though its dry run says "Would seed".
+  - With `SUPABASE_DB_URL` set, `psql "$SUPABASE_DB_URL" -f supabase/seed.sql` also loads the
+    seed (no deletes).
+
+  All writes are outward-facing: ask first, and run `pull_remote.py` afterwards (0 edited,
+  0 deleted remotely).
 - Schema changes go in a new migration file, never by editing an applied one.
 - Keep RLS on every table. The anon key ships in the frontend, so every policy must assume the
   caller is hostile.

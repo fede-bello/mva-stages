@@ -137,6 +137,10 @@ As each subagent returns, check that both its files exist and parse (`python3 -I
    apart): trust those, and fix by hand only what it lists as problems. Fix the incoming files
    (never `data/offers.json` by hand) and repeat until it prints no problems and no unknown
    organizations.
+   Conflicts: the merge applies files in name order and the last update to an offer wins.
+   List the offers that two files update with different `status`, links or dates (groups
+   overlap: 02 and the search groups, a group and its rerun), settle each against the source,
+   and remove the losing row from its file.
 2. Unknown organizations: add each to `data/organizations.json` with the type criteria in
    `CLAUDE.md`, or as an alias of an existing entry. A new `big_tech` needs a reason.
 3. Duplicates: skim the new offers per organization. Same posting under two titles, French and
@@ -167,11 +171,20 @@ Show the maintainer the counts (added, updated, closed, removed, organizations c
 ask before each of these:
 
 - New migrations: `supabase db push`.
-- The seed: `supabase db push --include-seed --dry-run`, which must list `supabase/seed.sql`
-  under "Would seed", then the same without `--dry-run` (the linked CLI, no password). If the
-  dry run lists no seed, use `psql "$SUPABASE_DB_URL" -f supabase/seed.sql` instead. Never
-  without a successful step 0 in this sweep, or the seed overwrites dashboard edits. Afterwards
-  run `pull_remote.py` again: it must report 0 offers edited remotely.
+- The offers: `python3 -I scripts/load_remote.py --dry-run --prune`, check the counts (update,
+  insert, and the stale swept offers it would delete: the ones `dedupe.py` merged or that were
+  dropped by hand), then the same without `--dry-run`. It upserts `data/offers.json` through the
+  REST API with the service key from the linked CLI (no database password) and refuses to run
+  without today's step 0 pull. Do not use `supabase db push --include-seed` for this: once a seed
+  has been applied, the CLI only records the new hash and never runs `seed.sql` again (it still
+  prints "Would seed", so the dry run does not catch it). With `SUPABASE_DB_URL` set,
+  `psql "$SUPABASE_DB_URL" -f supabase/seed.sql` also works, but it never deletes stale rows.
+  Never load without a successful step 0 in this sweep, or it overwrites dashboard edits.
+  Afterwards run `pull_remote.py` again: it must report as many remote offers as
+  `data/offers.json`, 0 edited and 0 deleted remotely.
+- Reports confirmed in group 02: mark them resolved (a remote write, ask first) with a PATCH on
+  `offer_reports?resolved=eq.false&offer_id=in.(...)` setting `resolved: true`, using the same
+  service key; `pull_remote.py` must then report 0 unresolved for those offers.
 - Commit on the sweep branch (`data: sweep <today>, N new, M closed`), push it and open a PR
   into `main`. Never push to `main`.
 
@@ -202,4 +215,5 @@ Waiting for your OK: <load seed / push migrations / PR>
 | `CLAUDE.md` | Always in context: data rules, organization types, countries |
 
 Scripts (run them, do not read them unless one fails): `scripts/pull_remote.py`,
-`scripts/check_status.py`, `scripts/merge.py`, `scripts/dedupe.py`, `scripts/build_seed.py`.
+`scripts/check_status.py`, `scripts/merge.py`, `scripts/dedupe.py`, `scripts/build_seed.py`,
+`scripts/load_remote.py`.

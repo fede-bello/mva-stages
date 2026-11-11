@@ -150,6 +150,9 @@ def is_generic_email(addr: str) -> bool:
     return bool(GENERIC_LOCAL.match(addr.split("@", 1)[0]))
 
 
+PHD = re.compile(r"\bph\.?\s?d\b|doctora", re.I)
+
+
 def validate(offers: list[dict], orgs: dict[str, dict] | None = None) -> list[str]:
     errors: list[str] = []
     seen: set[str] = set()
@@ -171,6 +174,8 @@ def validate(offers: list[dict], orgs: dict[str, dict] | None = None) -> list[st
         for k, allowed in ENUMS.items():
             if k in o and o[k] not in allowed:
                 errors.append(f"{where}: {k}={o[k]!r} not in {sorted(a for a in allowed if a)}")
+        if o.get("msc_eligible") == "no" and PHD.search(o.get("requirements") or ""):
+            errors.append(f"{where}: PhD-only offers are out of scope, drop it (mva-rules.md)")
         org = orgs.get((o.get("organization") or "").split(" (")[0])
         if org is None:
             errors.append(f"{where}: organization not in data/organizations.json (add it, or use its canonical name)")

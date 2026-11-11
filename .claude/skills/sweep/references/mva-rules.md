@@ -32,7 +32,11 @@ What it does not accept, so the board skips it:
 - Work that is mostly data collection, cleaning, deployment or applying an existing library
   tool, with no research question. Pure software engineering, MLOps, dashboards, consulting
   delivery.
-- Full-time jobs. PhD-only roles, except at a well-known lab (then `msc_eligible: "no"`).
+- Full-time jobs.
+- **PhD-only roles, with no exception**: the board is for master's students. That includes
+  big tech and well-known labs ("PhD students only", "enrolled in a PhD", "PhD Intern",
+  "doctoral candidate"). An offer open to master's **or** PhD students stays, and so does a
+  PhD position that explicitly offers a master's internship before it.
 
 Gray zones go on the board with a factual note rather than being dropped: "50% client work"
 consulting internships, 3-month summer programs (too short alone, but some hosts extend them),

@@ -37,6 +37,8 @@ What it does not accept, so the board skips it:
   big tech and well-known labs ("PhD students only", "enrolled in a PhD", "PhD Intern",
   "doctoral candidate"). An offer open to master's **or** PhD students stays, and so does a
   PhD position that explicitly offers a master's internship before it.
+- **Offers an MVA student cannot apply to**: undergraduates only, or only the students of one
+  named university or country ("UvA students only", "ETH enrolment required").
 
 Gray zones go on the board with a factual note rather than being dropped: "50% client work"
 consulting internships, 3-month summer programs (too short alone, but some hosts extend them),

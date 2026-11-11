@@ -10,10 +10,12 @@ submissions.
 | Path | What it is |
 |---|---|
 | `data/offers.json` | **Source of truth for swept offers.** One object per offer, sorted by organization |
+| `data/organizations.json` | Every organization the sweeps know: canonical name, `type`, sweep `group`, `aliases` (raw spelling to canonical form), `careers_url`, and `last_checked` / `last_result` from the last sweep that looked at it, even when it found nothing |
 | `data/privacy-denylist.txt` | Regexes that must never appear in the data (generic). A gitignored `.local.txt` holds the maintainer's own identifiers |
 | `data/incoming/` | Gitignored scratch area for sweep results before merging |
 | `scripts/merge.py` | Merges sweep results into `data/offers.json` (dedupe by slug, reference, title) |
-| `scripts/build_seed.py` | Validates `data/offers.json` and writes `supabase/seed.sql` as upserts on `slug` |
+| `scripts/build_seed.py` | Validates `data/offers.json` against `data/organizations.json` and writes `supabase/seed.sql` as upserts on `slug` |
+| `scripts/pull_remote.py` | Read-only pull of the live database before a sweep: dashboard edits, deletions, submissions and reports |
 | `supabase/migrations/` | Schema, RLS and triggers |
 | `supabase/seed.sql` | Generated. Never edit by hand |
 | `.claude/skills/sweep/` | How to run a sweep |
@@ -25,12 +27,41 @@ Run Python with `python3 -I` (no third-party deps).
 `public.offers` (see the migration for the constraints):
 
 - Identity: `slug` (unique, stable), `organization`, `title` (original language), `title_en`, `org_type`, `reference`.
-- Place: `city`, `country` (English name), `work_mode`.
-- Content: `topics` (fixed list in the migration and in `build_seed.py`, keep both in sync), `description`, `requirements`, `msc_eligible`, `notes`.
+- Place: `city`, `country`, `work_mode`.
+- Content: `topics` (fixed list in the latest topics migration, `build_seed.py` and `src/lib/validate.ts`, keep the three in sync), `description`, `requirements`, `msc_eligible`, `notes`.
 - Money and dates: `stipend_text` as written plus `stipend_min/max_eur_month` when known, `start_text`, `april_start`, `duration_*`, `posted_date`, `deadline`.
 - Status: `status` (`open`, `closed`, `removed`, `expected`, `unknown`), `status_checked`, `first_seen`.
 - Applying and provenance: `apply_url`, `apply_method`, `ats`, `apply_contact`, `source_type`, `source_url`.
 - Moderation: `verified`. Swept offers and submissions both start unverified; a maintainer verifies.
+
+### Organizations
+
+`organization` is `Canonical name` or `Canonical name (unit, site or partner)`: `CEA (List,
+Saclay)`, `Safran (Tech, PRISM)`, `Institut Pasteur (Epiméthée, with Inria)`. The part before
+` (` must be a `name` in `data/organizations.json`; `build_seed.py` refuses anything else. A
+joint offer goes under the lead organization, partners after `with`. No people's names in it.
+
+`org_type` belongs to the organization, not the offer: it comes from `data/organizations.json`
+and `build_seed.py` checks every offer against it. One rule per type:
+
+| Type | Criterion | Examples |
+|---|---|---|
+| `big_tech` | Closed list: Alphabet (Google, Google DeepMind, Waymo), Amazon, Apple, Meta, Microsoft, NVIDIA, IBM, Intel, Qualcomm, Samsung, Huawei, Sony, Adobe, Naver, and companies they wholly own. Adding one needs a reason in the PR | Google DeepMind, Sony AI, RIVR (Amazon) |
+| `startup` | Private, not listed, founded in 2016 or later, not owned by a larger group | Mistral AI, Hugging Face, Owkin, Perplexity |
+| `company` | Every other business: listed groups, older private firms, subsidiaries, consultancies | SAP, Prosus, Criteo, Wandercraft (2012), InstaDeep (BioNTech) |
+| `academic_lab` | Universities, schools, and public or non-profit institutes whose main output is research: CNRS, Inria, INRAE, Inserm, Institut Pasteur, Max Planck, Helmholtz, EMBL, ELLIS, and non-profits like Ai2, Kyutai, Flatiron, Mila | Ai2, Kyutai, CREATIS |
+| `public_agency` | Government bodies, mission agencies and intergovernmental organisations (ESA, CNES, ECMWF, EUMETSAT, CERN, JRC, UN agencies, met offices, IGN), and technology research organisations with a public mandate (CEA, ONERA, DLR, Fraunhofer, TNO, imec, CSEM, IRTs) | CEA, ONERA, ESA |
+
+A startup that turns 11 or gets acquired moves to `company` (or `big_tech`) in
+`data/organizations.json`, and every offer follows at the next build.
+
+### Countries
+
+`country` is an English short name from `COUNTRIES` in `build_seed.py` (`United States`, not
+`USA`). When the intern picks among sites, list them: `Germany, France`. Never `Multiple`,
+`EMEA` or `remote`. No city and no country in the posting: null.
+
+### Reports, requests and access
 
 `public.offer_reports` holds "this is wrong / closed / duplicate" flags. The public only sees
 counts (`offer_report_counts`), never the messages.
@@ -44,13 +75,16 @@ A trigger forces every public insert to `verified = false`, `source_type = 'user
 and a random slug, and rejects personal email addresses. Another trigger caps anonymous inserts
 globally (offers and contact requests: 10 per 10 minutes, 60 per day; reports: 30 and 300).
 Editing, verifying, deleting and reading reports use the service role
-(Supabase dashboard or scripts). Everything in `offers` is public, including the offers that
+(Supabase dashboard or scripts). Every sweep starts with `scripts/pull_remote.py`, so dashboard
+edits reach `data/offers.json` before the next seed would overwrite them. Everything in `offers` is public, including the offers that
 came from the MVA Drive.
 
 ## Rules for the data
 
 - **Every value must come from the offer's own source.** Copy links that exist, never build or
-  guess one. When unsure, leave the field null. The site tells users the data can be wrong; that
+  guess one. When unsure, leave the field null. One exception: a French posting that pays "the
+  legal minimum" counts as stating the current legal monthly amount (682.50 € in 2026, see
+  `.claude/skills/sweep/references/mva-rules.md`). The site tells users the data can be wrong; that
   is not a license to make it wrong.
 - **Status reflects the posting, not anyone's application.** `removed` only when the posting is
   gone, `closed` when the deadline passed or the organization closed the role.

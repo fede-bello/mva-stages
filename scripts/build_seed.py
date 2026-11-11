@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "offers.json"
 SEED = ROOT / "supabase" / "seed.sql"
 PRIVACY = ROOT / "data" / "privacy-denylist.txt"
+ORGS = ROOT / "data" / "organizations.json"
 
 ENUMS = {
     "org_type": {"company", "startup", "big_tech", "academic_lab", "public_agency", None},
@@ -38,8 +39,20 @@ TOPICS = {
     "computer-vision", "3d-vision", "llm", "agents", "nlp", "rl", "time-series",
     "foundation-models", "generative-models", "health", "neuro", "bio-chem", "robotics",
     "earth-observation", "climate-energy", "physics-sim", "speech-audio", "graphs",
-    "optimization", "theory", "recsys-ir", "efficiency", "other",
+    "optimization", "theory", "recsys-ir", "efficiency", "trustworthy-ai", "signal-processing",
+    "other",
 }
+# English short names. `country` holds one of these, or several joined by ", " when the
+# posting lets the intern pick the site.
+COUNTRIES = {
+    "Austria", "Belgium", "Canada", "Czech Republic", "Denmark", "Estonia", "Finland", "France",
+    "Germany", "Ghana", "Greece", "Hungary", "Iceland", "Ireland", "Israel", "Italy", "Japan",
+    "Luxembourg", "Monaco", "Netherlands", "Norway", "Poland", "Portugal", "Romania", "Singapore",
+    "South Korea", "Spain", "Sweden", "Switzerland", "United Arab Emirates", "United Kingdom",
+    "United States",
+}
+COUNTRY_ALIASES = {"USA": "United States", "US": "United States", "UK": "United Kingdom",
+                   "Holland": "Netherlands", "The Netherlands": "Netherlands", "Deutschland": "Germany"}
 DEFAULTS = {"work_mode": "unknown", "april_start": "unknown", "status": "unknown",
             "msc_eligible": "unknown", "apply_method": "unknown"}
 TEXT = ["organization", "title", "title_en", "org_type", "city", "country", "work_mode",
@@ -74,6 +87,39 @@ def sql(v) -> str:
     return "'" + str(v).replace("'", "''") + "'"
 
 
+def load_orgs() -> dict[str, dict]:
+    """Canonical organizations by name. Aliases are raw spellings seen in past sweeps."""
+    return {o["name"]: o for o in json.loads(ORGS.read_text())}
+
+
+def canonical_org(raw: str, orgs: dict[str, dict]) -> str:
+    """Rewrite a raw organization string to `Canonical name (unit, site or partner)`.
+
+    `aliases` in data/organizations.json maps raw spellings seen in past sweeps to their
+    canonical form, e.g. `CEA List` -> `CEA (List)`. A new variant of a known alias keeps its
+    parenthesis: `CEA List (Grenoble)` -> `CEA (List, Grenoble)`. Unknown names come back
+    unchanged and validate() rejects them.
+    """
+    lead, _, tail = raw.partition(" (")
+    if lead in orgs:
+        return raw
+    aliases = {a: c for o in orgs.values() for a, c in o.get("aliases", {}).items()}
+    if raw in aliases:
+        return aliases[raw]
+    if lead in aliases and tail.endswith(")"):
+        base = aliases[lead]
+        extra = tail[:-1]
+        return f"{base[:-1]}, {extra})" if base.endswith(")") else f"{base} ({extra})"
+    return raw
+
+
+def canonical_country(raw: str | None) -> str | None:
+    if not raw:
+        return raw
+    parts = [p.strip() for p in re.split(r",|\bor\b|/|;", raw) if p.strip()]
+    return ", ".join(dict.fromkeys(COUNTRY_ALIASES.get(p, p) for p in parts))
+
+
 def load_denylist() -> list[re.Pattern]:
     # The committed list holds generic patterns (application status words). The .local list is
     # gitignored and holds the maintainer's own names and identifiers.
@@ -104,10 +150,11 @@ def is_generic_email(addr: str) -> bool:
     return bool(GENERIC_LOCAL.match(addr.split("@", 1)[0]))
 
 
-def validate(offers: list[dict]) -> list[str]:
+def validate(offers: list[dict], orgs: dict[str, dict] | None = None) -> list[str]:
     errors: list[str] = []
     seen: set[str] = set()
     deny = load_denylist()
+    orgs = orgs if orgs is not None else load_orgs()
     for i, o in enumerate(offers):
         where = f"#{i} {o.get('organization')!r} / {o.get('title')!r}"
         for k, v in DEFAULTS.items():
@@ -123,6 +170,14 @@ def validate(offers: list[dict]) -> list[str]:
         for k, allowed in ENUMS.items():
             if k in o and o[k] not in allowed:
                 errors.append(f"{where}: {k}={o[k]!r} not in {sorted(a for a in allowed if a)}")
+        org = orgs.get((o.get("organization") or "").split(" (")[0])
+        if org is None:
+            errors.append(f"{where}: organization not in data/organizations.json (add it, or use its canonical name)")
+        elif o.get("org_type") != org["type"]:
+            errors.append(f"{where}: org_type={o.get('org_type')!r}, organizations.json says {org['type']!r}")
+        for c in (o.get("country") or "").split(", ") if o.get("country") else []:
+            if c not in COUNTRIES:
+                errors.append(f"{where}: country {c!r} is not a canonical name (see COUNTRIES)")
         bad = set(o["topics"]) - TOPICS
         if bad:
             errors.append(f"{where}: unknown topics {sorted(bad)}")
@@ -138,6 +193,8 @@ def validate(offers: list[dict]) -> list[str]:
         lo, hi = o.get("stipend_min_eur_month"), o.get("stipend_max_eur_month")
         if lo is not None and hi is not None and hi < lo:
             errors.append(f"{where}: stipend max < min")
+        if "other" in o["topics"] and len(o["topics"]) > 1:
+            errors.append(f"{where}: `other` only goes alone, drop it when another topic fits")
         if o["slug"] in seen:
             errors.append(f"{where}: duplicate slug {o['slug']}")
         seen.add(o["slug"])

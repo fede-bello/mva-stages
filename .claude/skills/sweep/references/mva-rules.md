@@ -29,9 +29,19 @@ Sources:
 What it does not accept, so the board skips it:
 - Quantitative finance and trading ("les stages en finance quantitative ou trading sont
   prohibés").
-- Work that is mostly data collection, cleaning, deployment or applying an existing library
-  tool, with no research question. Pure software engineering, MLOps, dashboards, consulting
-  delivery.
+- **Anything that is not research.** The MVA only validates research internships, so every
+  offer must pass this test: the posting names a research question or an open problem the
+  intern works on (a method to design, study or compare, with results to evaluate), and the
+  `description` states it. Skip work that is mostly data collection, cleaning, deployment,
+  integration, tooling, dashboards, or applying an existing tool with no question behind it.
+  - **Engineering titles are skipped by default**: software engineer, developer technology,
+    data engineer, data analyst, MLOps, DevOps, full-stack, back-end, front-end, consultant.
+    `build_seed.py` refuses them. Keep one only when the posting itself describes research
+    (cite it in `description`) and add its slug, with a one-line reason, to
+    `data/research-exceptions.txt`.
+  - "ML engineer", "research engineer" or "ingénieur" titles are common for real research
+    stages in France: judge them by the content, not the title.
+  - When unsure, keep it out. A missing offer costs less than a stage the MVA refuses.
 - Full-time jobs.
 - **PhD-only roles, with no exception**: the board is for master's students. That includes
   big tech and well-known labs ("PhD students only", "enrolled in a PhD", "PhD Intern",

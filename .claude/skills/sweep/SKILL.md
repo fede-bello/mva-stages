@@ -150,7 +150,10 @@ As each subagent returns, check that both its files exist and parse (`python3 -I
 4. Spot-check yourself, in the source, every new offer that has a stipend, a deadline in the next
    3 weeks or a big-name organization, every `removed` decision, and every new organization's
    type. Subagent output is not trusted until checked.
-5. Read `data/incoming/<today>/02-submissions.md` and list what the maintainer should verify.
+5. Research check (`references/mva-rules.md`): read the description of every new offer and drop
+   the ones with no research question. Subagents let engineering, tooling and consulting
+   postings through; this pass is where they get caught.
+6. Read `data/incoming/<today>/02-submissions.md` and list what the maintainer should verify.
 
 ## 5. Merge and build
 

@@ -1,0 +1,2 @@
+# Offers with an engineering title kept because the posting describes research.
+# One per line: <slug>  # <reason>. See .claude/skills/sweep/references/mva-rules.md.

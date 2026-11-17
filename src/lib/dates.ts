@@ -59,3 +59,10 @@ export function formatShortDate(iso: string | null | undefined, today: number): 
   const base = `${String(d.getUTCDate()).padStart(2, '0')} ${MONTHS[d.getUTCMonth()]}`
   return d.getUTCFullYear() === new Date(today).getUTCFullYear() ? base : `${base} ${d.getUTCFullYear()}`
 }
+
+/** Calendar date in Europe/Paris of a timestamp (`2026-11-09T23:30:00Z` gives `2026-11-10`), or '' when invalid. */
+export function parisDateOf(timestamp: string | null | undefined): string {
+  if (!timestamp) return ''
+  const d = new Date(timestamp)
+  return Number.isNaN(d.getTime()) ? '' : parisParts.format(d)
+}

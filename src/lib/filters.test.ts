@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   activeFilterCount, applyFilters, atomicCountries, clearFilters, countryOptions, DEFAULT_FILTERS, fold,
-  parseFilters, serializeFilters, sortOffers, sourceGroup, topicOptions, type FilterState,
+  lastSweepDate, parseFilters, recency, serializeFilters, sortOffers, sourceGroup, topicOptions, type FilterState,
 } from './filters'
 import { offer } from './fixtures'
 
@@ -10,15 +10,15 @@ const f = (p: Partial<FilterState>): FilterState => ({ ...DEFAULT_FILTERS, ...p 
 
 describe('query string', () => {
   it('round-trips every filter', () => {
-    const s = f({ q: 'Île', topics: ['llm', 'rl'], orgTypes: ['academic_lab', 'startup'], sources: ['employer', 'drive'], country: 'United States', openOnly: false, april: true, paid: true, verified: true, sort: 'stipend' })
+    const s = f({ q: 'Île', topics: ['llm', 'rl'], orgTypes: ['academic_lab', 'startup'], sources: ['employer', 'drive'], country: 'United States', openOnly: false, april: true, paid: true, verified: true, since: '2026-11-01', sort: 'stipend' })
     const qs = serializeFilters(s).toString()
-    expect(qs).toBe('q=%C3%8Ele&topics=llm%2Crl&org=academic_lab%2Cstartup&source=employer%2Cdrive&country=United+States&open=0&april=1&paid=1&verified=1&sort=stipend')
+    expect(qs).toBe('q=%C3%8Ele&topics=llm%2Crl&org=academic_lab%2Cstartup&source=employer%2Cdrive&country=United+States&open=0&april=1&paid=1&verified=1&since=2026-11-01&sort=stipend')
     expect(parseFilters(new URLSearchParams(qs))).toEqual(s)
   })
 
   it('writes nothing for the defaults and ignores junk', () => {
     expect(serializeFilters(DEFAULT_FILTERS).toString()).toBe('')
-    expect(parseFilters(new URLSearchParams('sort=bogus&topics=llm,nope,llm&open=1'))).toEqual(f({ topics: ['llm'] }))
+    expect(parseFilters(new URLSearchParams('sort=bogus&topics=llm,nope,llm&open=1&since=nope'))).toEqual(f({ topics: ['llm'] }))
   })
 
   it('clears everything but the sort', () => {
@@ -109,5 +109,40 @@ describe('filtering and sorting', () => {
   it('sorts by stipend and A to Z with stable ties', () => {
     expect(ids(sortOffers(all, 'stipend', today))).toEqual([past.id, a.id, b.id, c.id, removed.id])
     expect(ids(sortOffers(all, 'az', today))).toEqual([a.id, b.id, past.id, removed.id, c.id])
+  })
+})
+
+describe('recent changes', () => {
+  const old = '2026-10-01'
+  it('tells new from updated and ignores the rest', () => {
+    const added = offer({ first_seen: '2026-11-10', updated_at: '2026-11-10T08:00:00Z' })
+    const edited = offer({ first_seen: old, updated_at: '2026-11-10T08:00:00Z' })
+    const stale = offer({ first_seen: old, updated_at: '2026-10-02T08:00:00Z' })
+    expect(recency(added, '2026-11-09')).toBe('new')
+    expect(recency(edited, '2026-11-09')).toBe('updated')
+    expect(recency(stale, '2026-11-09')).toBeNull()
+    expect(recency(added, '')).toBeNull()
+  })
+
+  it('reads updated_at in Paris time', () => {
+    const late = offer({ first_seen: old, updated_at: '2026-11-09T23:30:00Z' }) // 00:30 on the 10th in Paris
+    expect(recency(late, '2026-11-10')).toBe('updated')
+  })
+
+  it('filters by since and counts as an active filter', () => {
+    const a = offer({ first_seen: '2026-11-10' })
+    const b = offer({ first_seen: old, updated_at: '2026-10-02T00:00:00Z' })
+    expect(applyFilters([a, b], f({ since: '2026-11-09' }), today)).toEqual([a])
+    expect(activeFilterCount(f({ since: '2026-11-09' }))).toBe(1)
+  })
+
+  it('takes the last sweep from re-check dates, not from student submissions', () => {
+    const offers = [
+      offer({ status_checked: '2026-11-05' }),
+      offer({ status_checked: '2026-11-08' }),
+      offer({ status_checked: '2026-11-12', source_type: 'user_submitted' }),
+    ]
+    expect(lastSweepDate(offers)).toBe('2026-11-08')
+    expect(lastSweepDate([offer({ status_checked: null })])).toBeNull()
   })
 })

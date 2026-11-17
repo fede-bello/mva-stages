@@ -9,7 +9,7 @@ import StatsRow from '../components/StatsRow'
 import { boardMemory } from '../lib/boardMemory'
 import { computeStats } from '../lib/derive'
 import {
-  activeFilterCount, applyFilters, clearFilters, countryOptions, parseFilters, serializeFilters, sourceOptions, topicOptions,
+  activeFilterCount, applyFilters, clearFilters, countryOptions, lastSweepDate, parseFilters, recency, serializeFilters, sourceOptions, topicOptions,
   type FilterState, type SortKey,
 } from '../lib/filters'
 import { useMeta } from '../lib/meta'
@@ -83,6 +83,9 @@ export default function Board() {
   const topics = useMemo(() => (offers ? topicOptions(offers) : []), [offers])
   const sources = useMemo(() => (offers ? sourceOptions(offers) : []), [offers])
   const results = useMemo(() => (offers ? applyFilters(offers, filters, today) : []), [offers, filters, today])
+  const lastSweep = useMemo(() => (offers ? lastSweepDate(offers) : null), [offers])
+  // Badges follow the date filter when set, else the last sweep.
+  const badgeSince = filters.since || lastSweep || ''
   const anyVerified = useMemo(() => offers?.some((o) => o.verified) ?? false, [offers])
 
   // How many cards are rendered; back to 50 when the filters change.
@@ -141,7 +144,7 @@ export default function Board() {
     body = (
       <>
         {visible.map((o) => (
-          <OfferCard key={o.id} offer={o} today={today} />
+          <OfferCard key={o.id} offer={o} today={today} recent={recency(o, badgeSince)} />
         ))}
         {left > 0 && (
           <button
@@ -198,6 +201,7 @@ export default function Board() {
             countries={countries}
             topics={topics}
             sources={sources}
+            lastSweep={lastSweep}
           />
 
           <section

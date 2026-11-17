@@ -22,3 +22,11 @@ export function UnverifiedBadge() {
     </span>
   )
 }
+
+export function RecencyBadge({ kind }: { kind: 'new' | 'updated' }) {
+  return (
+    <span className="rounded-xs bg-accent-soft px-[6px] py-[2px] text-[12px] font-semibold text-accent-strong">
+      {kind === 'new' ? 'New' : 'Updated'}
+    </span>
+  )
+}

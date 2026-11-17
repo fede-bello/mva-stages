@@ -1,4 +1,5 @@
 import { ORG_TYPE_LABELS } from '../lib/derive'
+import { formatDate } from '../lib/dates'
 import { ORG_TYPES, SOURCE_GROUPS, type FilterState, type Option } from '../lib/filters'
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
   countries: Option[]
   topics: Option[]
   sources: Option[]
+  lastSweep: string | null
   className?: string
 }
 
@@ -21,7 +23,7 @@ const TOGGLES: { key: 'openOnly' | 'april' | 'paid' | 'verified'; label: string 
   { key: 'verified', label: 'Verified only' },
 ]
 
-export default function FilterPanel({ id, filters, query, onQuery, onChange, onClear, countries, topics, sources, className = '' }: Props) {
+export default function FilterPanel({ id, filters, query, onQuery, onChange, onClear, countries, topics, sources, lastSweep, className = '' }: Props) {
   // Keep a country from the URL selectable even if no offer has it right now.
   const countryList =
     filters.country && !countries.some((c) => c.value === filters.country)
@@ -83,6 +85,37 @@ export default function FilterPanel({ id, filters, query, onQuery, onChange, onC
           </label>
         ))}
       </fieldset>
+
+      <div className="flex flex-col gap-[6px]">
+        <label htmlFor="since" className="text-[13px] font-semibold">
+          Added or updated since
+        </label>
+        <input
+          id="since"
+          type="date"
+          className="field field-sm"
+          value={filters.since}
+          onChange={(e) => onChange({ since: e.target.value })}
+        />
+        <div className="flex flex-wrap gap-[6px]">
+          {lastSweep && (
+            <button
+              type="button"
+              className="chip"
+              aria-pressed={filters.since === lastSweep}
+              onClick={() => onChange({ since: filters.since === lastSweep ? '' : lastSweep })}
+              title={`Last sweep: ${formatDate(lastSweep)}`}
+            >
+              Since last sweep
+            </button>
+          )}
+          {filters.since && (
+            <button type="button" className="chip" onClick={() => onChange({ since: '' })}>
+              Any date
+            </button>
+          )}
+        </div>
+      </div>
 
       <div className="flex flex-col gap-[6px]">
         <label htmlFor="country" className="text-[13px] font-semibold">

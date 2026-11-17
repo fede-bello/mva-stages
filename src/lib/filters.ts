@@ -1,5 +1,5 @@
 // Board filters: state <-> query string, predicates, sorting, country and topic lists.
-import { daysUntil } from './dates'
+import { daysUntil, isoToUtc, parisDateOf } from './dates'
 import { effectiveStatus, hasStipend, type Offer, type Status } from './derive'
 import { TOPICS } from './validate'
 
@@ -34,6 +34,7 @@ export type FilterState = {
   april: boolean
   paid: boolean
   verified: boolean
+  since: string // '' = no date filter, else YYYY-MM-DD: added or modified on or after it
   sort: SortKey
 }
 
@@ -47,6 +48,7 @@ export const DEFAULT_FILTERS: FilterState = {
   april: false,
   paid: false,
   verified: false,
+  since: '',
   sort: 'deadline',
 }
 
@@ -69,6 +71,7 @@ export function parseFilters(params: URLSearchParams): FilterState {
     april: params.get('april') === '1',
     paid: params.get('paid') === '1',
     verified: params.get('verified') === '1',
+    since: isoToUtc(params.get('since')) === null ? '' : (params.get('since') ?? ''),
     sort: sort && SORTS.includes(sort) ? sort : 'deadline',
   }
 }
@@ -85,6 +88,7 @@ export function serializeFilters(s: FilterState): URLSearchParams {
   if (s.april) p.set('april', '1')
   if (s.paid) p.set('paid', '1')
   if (s.verified) p.set('verified', '1')
+  if (s.since) p.set('since', s.since)
   if (s.sort !== 'deadline') p.set('sort', s.sort)
   return p
 }
@@ -105,7 +109,8 @@ export function activeFilterCount(s: FilterState): number {
     (s.openOnly ? 0 : 1) +
     (s.april ? 1 : 0) +
     (s.paid ? 1 : 0) +
-    (s.verified ? 1 : 0)
+    (s.verified ? 1 : 0) +
+    (s.since ? 1 : 0)
   )
 }
 
@@ -160,6 +165,30 @@ export function topicOptions(offers: Offer[]): Option[] {
     .map(([value, count]) => ({ value, label: value, count }))
 }
 
+export type Recency = 'new' | 'updated'
+
+/**
+ * Whether the offer was added (`first_seen`) or really modified (`updated_at`, which the database moves
+ * only on a content or status change, not on a re-check) on or after `since` (YYYY-MM-DD, Paris time).
+ */
+export function recency(o: Offer, since: string): Recency | null {
+  if (!since) return null
+  if (o.first_seen >= since) return 'new'
+  if (parisDateOf(o.updated_at) >= since) return 'updated'
+  return null
+}
+
+/**
+ * Date of the last sweep, from data the public already reads: the latest `status_checked` among offers
+ * that did not come from a student (sweeps re-check offers and stamp that date; submissions stamp it
+ * at insert). Null when there is none.
+ */
+export function lastSweepDate(offers: Offer[]): string | null {
+  let best = ''
+  for (const o of offers) if (o.source_type !== 'user_submitted' && o.status_checked && o.status_checked > best) best = o.status_checked
+  return best || null
+}
+
 const searchCache = new WeakMap<Offer, string>()
 
 function searchText(o: Offer): string {
@@ -179,6 +208,7 @@ export function matches(o: Offer, s: FilterState, today: number): boolean {
   if (s.april && o.april_start !== 'yes' && o.april_start !== 'flexible') return false
   if (s.paid && !hasStipend(o)) return false
   if (s.verified && !o.verified) return false
+  if (s.since && recency(o, s.since) === null) return false
   if (s.sources.length && !s.sources.includes(sourceGroup(o.source_type))) return false
   if (s.orgTypes.length && !(o.org_type && s.orgTypes.includes(o.org_type))) return false
   if (s.country && !atomicCountries(o.country).includes(s.country)) return false

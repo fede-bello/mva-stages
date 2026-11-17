@@ -4,9 +4,10 @@ import {
   deadlineText, durationText, effectiveStatus, hasStipend, isDimmed, isUnverifiedSubmission, placeText, soonDays,
   statusPill, stipendCardText, viaLabel, type Offer,
 } from '../lib/derive'
-import { StatusPill, TopicTag, UnverifiedBadge } from './OfferBits'
+import type { Recency } from '../lib/filters'
+import { RecencyBadge, StatusPill, TopicTag, UnverifiedBadge } from './OfferBits'
 
-function OfferCard({ offer: o, today }: { offer: Offer; today: number }) {
+function OfferCard({ offer: o, today, recent = null }: { offer: Offer; today: number; recent?: Recency | null }) {
   const status = effectiveStatus(o, today)
   const dim = isDimmed(status)
   const pill = statusPill(o, today)
@@ -25,6 +26,7 @@ function OfferCard({ offer: o, today }: { offer: Offer; today: number }) {
               {o.organization}
             </span>
             {o.reference && <span className="wrap-anywhere font-mono text-[12px] text-muted">{o.reference}</span>}
+            {recent && <RecencyBadge kind={recent} />}
             {isUnverifiedSubmission(o) && <UnverifiedBadge />}
           </div>
           <h2 className="m-0 text-[18px] leading-[1.3] font-semibold wrap-anywhere">

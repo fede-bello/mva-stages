@@ -60,6 +60,10 @@ export default function Legal() {
           published.
         </p>
         <p className="m-0 mb-2">Anonymous, cookieless usage statistics by Vercel Web Analytics.</p>
+        <p className="m-0 mb-2">
+          Your browser keeps a few counters in its local storage (days visited, postings opened, whether you answered the
+          GitHub star card) so that card shows only to returning visitors and at most twice. They never leave your browser.
+        </p>
         <p className="m-0">
           We never publish personal email addresses, only role addresses like jobs@ or recrutement@ when a posting gives
           one. A supervisor's name appears only when the public posting names them.

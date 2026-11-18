@@ -15,3 +15,7 @@ export function trackOfferAdded(topic: string | null, country: string | null) {
 export function trackReportSent(slug: string, kind: string) {
   track('report_sent', { slug: clip(slug), kind: clip(kind) })
 }
+
+export function trackStarPrompt(kind: 'shown' | 'starred' | 'dismissed') {
+  track('star_prompt', { kind })
+}

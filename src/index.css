@@ -328,6 +328,19 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .star-prompt {
+    animation: star-prompt-in 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+}
+
+@keyframes star-prompt-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
 @keyframes pulse {
   50% {
     opacity: 0.55;

@@ -54,3 +54,11 @@ export function FilterIcon() {
     </svg>
   )
 }
+
+export function StarIcon({ size = 18 }: { size?: number }) {
+  return (
+    <svg {...base} width={size} height={size} className="flex-none">
+      <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9L12 2.5Z" />
+    </svg>
+  )
+}

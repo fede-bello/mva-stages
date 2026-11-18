@@ -3,6 +3,7 @@ import { Suspense } from 'react'
 import { Outlet, ScrollRestoration } from 'react-router'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import StarPrompt from './components/StarPrompt'
 
 function PageFallback() {
   return (
@@ -28,6 +29,7 @@ export default function Root() {
         </Suspense>
       </div>
       <Footer />
+      <StarPrompt />
       <ScrollRestoration />
       <Analytics />
     </div>

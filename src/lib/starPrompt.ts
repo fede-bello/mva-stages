@@ -1,7 +1,13 @@
-// When to ask for a GitHub star. Only visitors who got value from the board see it, every week
-// at most and three times ever (most people use the board for a few weeks only). Never again after
-// they click the star link or "Don't ask again". Everything stays in this browser's localStorage:
-// no cookie, nothing sent anywhere.
+// When to ask for a GitHub star. Most students use the board for a few weeks only, so it asks
+// early and comes back every few days, four times at most. Never again after they click the star
+// link or "Don't ask again". Everything stays in this browser's localStorage: no cookie, nothing
+// sent anywhere.
+//
+// Triggers, best moment first:
+// - coming back to the tab after opening an original posting (they just got what they came for);
+// - a few seconds into a visit on a second day or later;
+// - after a while on a first visit.
+// Never right on arrival: Google's mobile interstitial rule targets popups shown on landing.
 
 export const STAR_KEY = 'mva-stages:star-prompt'
 
@@ -14,15 +20,16 @@ export type StarState = {
   /** Times the card was shown, and when it may show again (0: no snooze). */
   shown: number
   snoozeUntil: number
-  /** Clicked the star link, or dismissed for good. */
+  /** Clicked the star link, or "Don't ask again". */
   done: boolean
 }
 
 const DAY = 86_400_000
-export const MIN_DAYS = 2
-export const MIN_OPENED = 3
-export const MAX_SHOWS = 3
-export const SNOOZE_DAYS = 7
+export const MAX_SHOWS = 4
+export const SNOOZE_DAYS = 3
+export const RETURNING_DELAY_MS = 6_000
+export const FIRST_VISIT_DELAY_MS = 45_000
+export const BACK_FROM_POSTING_DELAY_MS = 700
 
 export const emptyState: StarState = { days: 0, lastDay: 0, opened: 0, shown: 0, snoozeUntil: 0, done: false }
 
@@ -53,10 +60,14 @@ export function recordOpened(s: StarState): StarState {
   return { ...s, opened: s.opened + 1 }
 }
 
-/** Engaged enough: came back on a second day, or opened 3 postings. */
-export function shouldShow(s: StarState, today: number): boolean {
-  if (s.done || s.shown >= MAX_SHOWS || today < s.snoozeUntil) return false
-  return s.days >= MIN_DAYS || s.opened >= MIN_OPENED
+/** Not answered for good, under the cap and not snoozed. */
+export function canShow(s: StarState, today: number): boolean {
+  return !s.done && s.shown < MAX_SHOWS && today >= s.snoozeUntil
+}
+
+/** How long to wait on a page before asking. */
+export function visitDelay(s: StarState): number {
+  return s.days >= 2 ? RETURNING_DELAY_MS : FIRST_VISIT_DELAY_MS
 }
 
 export function recordShown(s: StarState, today: number): StarState {
@@ -93,4 +104,18 @@ export function saveState(s: StarState): void {
 export function update(fn: (s: StarState) => StarState): void {
   const s = loadState()
   if (s) saveState(fn(s))
+}
+
+// Set when a posting opens in a new tab, read when this tab is visible again.
+let postingJustOpened = false
+
+export function markPostingOpened(): void {
+  postingJustOpened = true
+  update(recordOpened)
+}
+
+export function takePostingJustOpened(): boolean {
+  const was = postingJustOpened
+  postingJustOpened = false
+  return was
 }

@@ -1,6 +1,7 @@
-// When to ask for a GitHub star. Only returning visitors who got value from the board see it,
-// at most twice ever, never again after they click or after the second "Not now". Everything
-// stays in this browser's localStorage: no cookie, nothing sent anywhere.
+// When to ask for a GitHub star. Only visitors who got value from the board see it, every week
+// at most and three times ever (most people use the board for a few weeks only). Never again after
+// they click the star link or "Don't ask again". Everything stays in this browser's localStorage:
+// no cookie, nothing sent anywhere.
 
 export const STAR_KEY = 'mva-stages:star-prompt'
 
@@ -18,10 +19,10 @@ export type StarState = {
 }
 
 const DAY = 86_400_000
-export const MIN_DAYS = 3
+export const MIN_DAYS = 2
 export const MIN_OPENED = 3
-export const MAX_SHOWS = 2
-export const SNOOZE_DAYS = 30
+export const MAX_SHOWS = 3
+export const SNOOZE_DAYS = 7
 
 export const emptyState: StarState = { days: 0, lastDay: 0, opened: 0, shown: 0, snoozeUntil: 0, done: false }
 
@@ -52,10 +53,10 @@ export function recordOpened(s: StarState): StarState {
   return { ...s, opened: s.opened + 1 }
 }
 
-/** Engaged enough: came back on 3 different days, or opened 3 postings on at least the second day. */
+/** Engaged enough: came back on a second day, or opened 3 postings. */
 export function shouldShow(s: StarState, today: number): boolean {
   if (s.done || s.shown >= MAX_SHOWS || today < s.snoozeUntil) return false
-  return s.days >= MIN_DAYS || (s.days >= 2 && s.opened >= MIN_OPENED)
+  return s.days >= MIN_DAYS || s.opened >= MIN_OPENED
 }
 
 export function recordShown(s: StarState, today: number): StarState {
@@ -67,7 +68,8 @@ export function recordDismissed(s: StarState): StarState {
   return s.shown >= MAX_SHOWS ? { ...s, done: true } : s
 }
 
-export function recordStarred(s: StarState): StarState {
+/** Clicked the star link or "Don't ask again". */
+export function recordDone(s: StarState): StarState {
   return { ...s, done: true }
 }
 

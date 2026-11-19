@@ -16,6 +16,6 @@ export function trackReportSent(slug: string, kind: string) {
   track('report_sent', { slug: clip(slug), kind: clip(kind) })
 }
 
-export function trackStarPrompt(kind: 'shown' | 'starred' | 'dismissed') {
+export function trackStarPrompt(kind: 'shown' | 'starred' | 'dismissed' | 'never') {
   track('star_prompt', { kind })
 }

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router'
 import { trackStarPrompt } from '../lib/analytics'
 import { parisToday } from '../lib/dates'
 import { REPO_URL } from '../lib/site'
-import { loadState, recordDismissed, recordShown, recordStarred, recordVisit, saveState, shouldShow, update } from '../lib/starPrompt'
+import { loadState, recordDismissed, recordDone, recordShown, recordVisit, saveState, shouldShow, update } from '../lib/starPrompt'
 import { StarIcon } from './Icons'
 
 // Waits a bit after a page opens, so it never greets someone mid-search.
@@ -48,9 +48,15 @@ export default function StarPrompt() {
   }
 
   const star = () => {
-    update(recordStarred)
+    update(recordDone)
     setOpen(false)
     trackStarPrompt('starred')
+  }
+
+  const never = () => {
+    update(recordDone)
+    setOpen(false)
+    trackStarPrompt('never')
   }
 
   return (
@@ -84,6 +90,13 @@ export default function StarPrompt() {
           Not now
         </button>
       </div>
+      <button
+        type="button"
+        onClick={never}
+        className="mt-2 min-h-[32px] cursor-pointer border-0 bg-transparent p-0 text-[13px] text-muted underline underline-offset-2 hover:text-ink"
+      >
+        Don't ask again
+      </button>
     </aside>
   )
 }

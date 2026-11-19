@@ -3,100 +3,145 @@ import { useLocation } from 'react-router'
 import { trackStarPrompt } from '../lib/analytics'
 import { parisToday } from '../lib/dates'
 import { REPO_URL } from '../lib/site'
-import { loadState, recordDismissed, recordDone, recordShown, recordVisit, saveState, shouldShow, update } from '../lib/starPrompt'
+import {
+  BACK_FROM_POSTING_DELAY_MS,
+  canShow,
+  loadState,
+  recordDismissed,
+  recordDone,
+  recordShown,
+  recordVisit,
+  saveState,
+  takePostingJustOpened,
+  update,
+  visitDelay,
+} from '../lib/starPrompt'
 import { StarIcon } from './Icons'
-
-// Waits a bit after a page opens, so it never greets someone mid-search.
-const DELAY_MS = 8000
 
 // Never over the forms: someone adding an offer or writing to us must not be interrupted.
 const quietPaths = ['/submit', '/legal']
 
-/** A small, non-modal card asking returning visitors for a GitHub star. Does not take focus. */
+/** A centered dialog asking for a GitHub star. When and how often: see lib/starPrompt. */
 export default function StarPrompt() {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+  const dialog = useRef<HTMLDialogElement>(null)
   const counted = useRef(false)
+  // Delays count from when the site was opened, not from each page change.
+  const startedAt = useRef(0)
 
   useEffect(() => {
     if (!counted.current) {
       counted.current = true
+      startedAt.current = Date.now()
       update((s) => recordVisit(s, parisToday()))
     }
   }, [])
 
   useEffect(() => {
     if (open || quietPaths.includes(pathname)) return
-    const timer = window.setTimeout(() => {
+    let timer = 0
+
+    const tryShow = () => {
       if (document.visibilityState !== 'visible') return
       const today = parisToday()
       const s = loadState()
-      if (!s || !shouldShow(s, today)) return
+      if (!s || !canShow(s, today)) return
       saveState(recordShown(s, today))
       setOpen(true)
       trackStarPrompt('shown')
-    }, DELAY_MS)
-    return () => window.clearTimeout(timer)
+    }
+
+    const schedule = (ms: number) => {
+      window.clearTimeout(timer)
+      timer = window.setTimeout(tryShow, ms)
+    }
+
+    const afterVisitDelay = () => {
+      const s = loadState()
+      if (s) schedule(Math.max(1500, visitDelay(s) - (Date.now() - startedAt.current)))
+    }
+    afterVisitDelay()
+
+    // Back from the posting they opened, or back to a tab that was hidden when the timer ran out.
+    const onVisible = () => {
+      if (document.visibilityState !== 'visible') return
+      if (takePostingJustOpened()) schedule(BACK_FROM_POSTING_DELAY_MS)
+      else afterVisitDelay()
+    }
+    document.addEventListener('visibilitychange', onVisible)
+    return () => {
+      window.clearTimeout(timer)
+      document.removeEventListener('visibilitychange', onVisible)
+    }
   }, [pathname, open])
+
+  useEffect(() => {
+    const d = dialog.current
+    if (open && d && !d.open) {
+      d.showModal()
+      // Focus the dialog, not the star link, so it opens without a focus ring on a button.
+      d.focus()
+    }
+  }, [open])
 
   if (!open) return null
 
-  const dismiss = () => {
-    update(recordDismissed)
+  const close = (answer: 'dismissed' | 'starred' | 'never') => {
+    update(answer === 'dismissed' ? recordDismissed : recordDone)
+    dialog.current?.close()
     setOpen(false)
-    trackStarPrompt('dismissed')
-  }
-
-  const star = () => {
-    update(recordDone)
-    setOpen(false)
-    trackStarPrompt('starred')
-  }
-
-  const never = () => {
-    update(recordDone)
-    setOpen(false)
-    trackStarPrompt('never')
+    trackStarPrompt(answer)
   }
 
   return (
-    <aside
+    <dialog
+      ref={dialog}
+      tabIndex={-1}
       aria-labelledby="star-prompt-title"
-      onKeyDown={(e) => {
-        if (e.key === 'Escape') dismiss()
+      aria-describedby="star-prompt-body"
+      className="star-prompt m-auto w-[calc(100%-32px)] max-w-[400px] rounded-lg border border-line bg-surface p-0 text-ink shadow-[0_24px_64px_rgba(22,24,29,0.28)]"
+      onCancel={(e) => {
+        e.preventDefault()
+        close('dismissed')
       }}
-      className="star-prompt fixed right-4 bottom-4 left-4 z-20 rounded-lg border border-line bg-surface p-5 text-ink shadow-[0_12px_32px_rgba(22,24,29,0.16),0_2px_6px_rgba(22,24,29,0.08)] min-[520px]:left-auto min-[520px]:w-[360px] min-[520px]:right-6 min-[520px]:bottom-6"
+      onClick={(e) => {
+        // A click on the backdrop lands on the dialog element itself.
+        if (e.target === e.currentTarget) close('dismissed')
+      }}
     >
-      <div className="flex items-start gap-3">
-        <span className="mt-[2px] flex h-9 w-9 flex-none items-center justify-center rounded-full bg-accent-soft text-accent">
-          <StarIcon size={18} />
+      <div className="flex flex-col items-center px-6 pt-8 pb-6 text-center">
+        <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent-soft text-accent">
+          <StarIcon size={28} />
         </span>
-        <div className="min-w-0">
-          <h2 id="star-prompt-title" className="m-0 text-[16px] leading-[1.35]">
-            Finding this board useful?
-          </h2>
-          <p className="m-0 mt-1 text-[14px] text-ink-2">
-            A star on GitHub helps the next MVA students find it, and tells us it is worth keeping up to date.
-          </p>
-        </div>
-      </div>
-      <div className="mt-4 flex flex-wrap gap-2">
-        <a href={REPO_URL} target="_blank" rel="noopener noreferrer" className="btn btn-dark flex-1" onClick={star}>
+        <h2 id="star-prompt-title" className="m-0 mt-4 text-[22px] leading-[1.25] tracking-[-0.01em]">
+          Finding this board useful?
+        </h2>
+        <p id="star-prompt-body" className="m-0 mt-2 text-[16px] text-ink-2">
+          A star on GitHub helps me with my own interviews :)
+        </p>
+        <a
+          href={REPO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-dark mt-6 w-full"
+          onClick={() => close('starred')}
+        >
           <StarIcon size={16} />
           Star on GitHub
           <span className="sr-only">(opens in a new tab)</span>
         </a>
-        <button type="button" className="btn btn-outline" onClick={dismiss}>
+        <button type="button" className="btn btn-outline mt-2 w-full" onClick={() => close('dismissed')}>
           Not now
         </button>
+        <button
+          type="button"
+          onClick={() => close('never')}
+          className="mt-3 min-h-[32px] cursor-pointer border-0 bg-transparent p-0 text-[13px] text-muted underline underline-offset-2 hover:text-ink"
+        >
+          Don't ask again
+        </button>
       </div>
-      <button
-        type="button"
-        onClick={never}
-        className="mt-2 min-h-[32px] cursor-pointer border-0 bg-transparent p-0 text-[13px] text-muted underline underline-offset-2 hover:text-ink"
-      >
-        Don't ask again
-      </button>
-    </aside>
+    </dialog>
   )
 }

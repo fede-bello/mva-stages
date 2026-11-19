@@ -6,7 +6,7 @@ import { StatusPill, TopicTag, UnverifiedBadge } from '../components/OfferBits'
 import ReportForm from '../components/ReportForm'
 import { OfferSkeleton } from '../components/Skeletons'
 import { trackOpenPosting } from '../lib/analytics'
-import { recordOpened, update as updateStarPrompt } from '../lib/starPrompt'
+import { markPostingOpened } from '../lib/starPrompt'
 import { boardMemory } from '../lib/boardMemory'
 import { daysUntil, formatDate, formatShortDate } from '../lib/dates'
 import {
@@ -242,7 +242,7 @@ function OfferView({ o, all, today }: { o: OfferRow; all: OfferRow[]; today: num
                 className="btn btn-primary"
                 onClick={() => {
                   trackOpenPosting(o.slug, o.country)
-                  updateStarPrompt(recordOpened)
+                  markPostingOpened()
                 }}
               >
                 Open the original posting

@@ -32,6 +32,10 @@ not or cannot read is `not covered: <reason>`.
 - Never change the User-Agent to get a page, and never open LinkedIn postings, by script or in
   the browser. The shared Chrome may be logged in to the maintainer's accounts (LinkedIn,
   Meta): being logged in is not a reason to read a page; read only public employer pages.
+- A page that refuses you (403, a challenge, a login) is `not covered`. Do not retry it with
+  another client (curl, WebFetch, another library) to get past the refusal, and check
+  robots.txt before the first request to a site, not after.
+- Never run `scripts/merge.py` or any script that writes `data/`: the main session merges.
 - In the browser, open one tab of your own and only ever navigate that tab: other subagents
   share the same browser.
 - Some pages answer gzip even without asking for it (Enchanted Tools): decompress before
@@ -47,6 +51,7 @@ not or cannot read is `not covered: <reason>`.
 | Recruitee | `<company>.recruitee.com` | `GET https://<company>.recruitee.com/api/offers/` (token mandatory from 2027-02-10: then HTML only) | `/api/offers/<id>`: 404 |
 | Personio | `<company>.jobs.personio.de` | `GET https://<company>.jobs.personio.de/xml?language=en` (`employmentType: intern`) | Removed when it leaves the feed |
 | Teamtailor | `<company>.teamtailor.com` or custom domain | `GET https://<site>/jobs.rss?per_page=100&offset=0` | Job page 404 |
+| Eightfold | `jobs.<company>.com/careers/job/<id>` (Ericsson, Qualcomm): the HTML page is the same JS shell for every id | `GET https://<host>/api/apply/v2/jobs/<id>?domain=<company>.com` (robots.txt allows `/api/apply`) returns the posting with its text | Same endpoint: an error instead of the posting when gone. The HTML page is never proof |
 | SmartRecruiters | `jobs.smartrecruiters.com/<Company>/<id>-<slug>` | **Its API's robots.txt disallows crawlers: do not call it.** Read the careers page with the browser tool | Browser |
 | Welcome to the Jungle, Homerun, Taleo, SuccessFactors, Talentsoft, BambooHR | | HTML or browser tool. On SuccessFactors sites (ESA, EPFL) robots.txt disallows `/services/` (RSS): use the search page | |
 
@@ -130,6 +135,8 @@ Portals carry most of the volume:
   on lab sites and in group 09's lists).
 - CEA, all institutes in one portal: https://www.emploi.cea.fr/offre-de-emploi/liste-offres.aspx.
   Internships RSS (every CEA internship, French): https://www.emploi.cea.fr/handlers/offerRss.ashx?LCID=1036&Rss_Contract=579
+  Without a keyword the feed returns only the 20 newest items: add `&Rss_Keywords=<word>` (e.g.
+  `apprentissage`, `vision`, `NeuroSpin`), which searches the whole portal.
   Record the institute as the unit: List, Leti, DAM, DES, NeuroSpin.
 - ONERA: RSS https://w3.onera.fr/stages/fr/rss.xml (Crawl-delay 10 s), and https://rejoindre.onera.fr/
 - CNES: https://recrutement.cnes.fr/fr/annonces (internships posted from September).
@@ -146,6 +153,14 @@ Portals carry most of the volume:
   (https://centreborelli.ens-paris-saclay.fr/fr/offres-demploi-post-doc-these), IRISA
   (https://www.irisa.fr/recrutement), LIP6, L2S, LIRIS, LISN, LIX, CMAP, LIGM, GREYC, ICube,
   LJK, LAAS, Télécom Paris LTCI, DI ENS.
+- Master programmes' internship lists, which carry M2 topics from many hosts (labs, EDF R&D,
+  ONERA, CEA...): LJLL M2 Mathématiques de la Modélisation
+  https://www.ljll.fr/MathModel/jobs/stages.html (PDFs), IP Paris Data AI
+  https://dataai.telecom-paris.fr/internships, ENS cognitive science master
+  https://master-cogsci.ens.psl.eu/fr/stages/offres/ (mostly psychology: keep the ML topics).
+  Record each offer under its host organization.
+- A lab with no offers page of its own is a result only after searching its site for "stage
+  M2", "offres de stage" or "sujets de stage": write "nothing found: <what you tried>".
 
 ## 07 Health and neuro in France
 
@@ -182,7 +197,10 @@ Every organization of groups `research_eu` and `international`. Programs:
 - SFdS: https://www.sfds.asso.fr/fr/n/506-consulter_les_offres_demploi/ (type "Stage", level
   "Master").
 - ABG: https://www.abg.asso.fr/fr/candidatOffres ("Type d'offre: Stage master 2 / Ingénieur").
-- ROADEF posts (operations research M2 offers).
+- DataIA WINS international M2 internships: https://dataia.pages.lisn.upsaclay.fr/spin/ (the page
+  loads a public JSON of about 40 offers abroad; record each under its host, check its country
+  is in `COUNTRIES`).
+- ROADEF posts (operations research M2 offers; roadef.org answered 403 to scripts in 2026-11).
 - AFIA: https://afia.asso.fr/les-offres-demploi/ (JS: browser tool).
 - `[mva26]` cohort list in the maintainer's Gmail, read-only with `gws gmail` (search
   `subject:[mva26] (stage OR internship OR offre)` since the last sweep).

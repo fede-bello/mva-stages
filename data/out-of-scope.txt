@@ -1,0 +1,11 @@
+# Offers that do not belong on the board even though the posting is real: the MVA could not
+# validate them (enrolment restricted to another university or country, not research).
+# merge.py never re-adds them and drops them if present. One slug per line, then "# reason".
+# Requests from organizations or people go in takedowns.txt instead.
+fraunhofer-ipa-master-s-thesis-lifelong-mapping-for-outdoor-robots-with-long-term-stable-s  # requires enrolment at a German university
+fraunhofer-ipa-master-thesis-reinforcement-learning-for-a-wheeled-bipedal-outdoor-robot-wi  # requires enrolment at a German university
+siemens-disw-wind-turbine-virtual-sensing  # requires enrolment at a Spanish university
+stryker-cloud-applications-internship  # testing and cloud work, not research
+stryker-software-test-engineering-internship  # software testing, not research
+stryker-system-testing-cas-internship  # system testing, not research
+stryker-r-d-internship-biomechanical-testing-lab-r572129  # mechanical testing of prostheses, outside MVA topics

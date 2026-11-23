@@ -12,6 +12,7 @@ submissions.
 | `data/offers.json` | **Source of truth for swept offers.** One object per offer, sorted by organization |
 | `data/organizations.json` | Every organization the sweeps know: canonical name, `type`, sweep `group`, `aliases` (raw spelling to canonical form), `careers_url`, and `last_checked` / `last_result` from the last sweep that looked at it, even when it found nothing |
 | `data/research-exceptions.txt` | Slugs whose title looks like engineering but whose posting describes research, each with a reason. `build_seed.py` refuses engineering titles not listed here |
+| `data/out-of-scope.txt` | Slugs of real postings the MVA could not validate (enrolment restricted elsewhere, not research), each with a reason. `merge.py` never re-adds them |
 | `data/privacy-denylist.txt` | Regexes that must never appear in the data (generic). A gitignored `.local.txt` holds the maintainer's own identifiers |
 | `data/incoming/` | Gitignored scratch area for sweep results before merging |
 | `scripts/merge.py` | Merges sweep results into `data/offers.json` (dedupe by slug, reference, title) |
@@ -105,6 +106,10 @@ came from the MVA Drive.
 - **Takedowns win.** If an organization or a person asks to change or remove an entry, do it in
   the database and in `data/offers.json` in the same change, and do not re-add it in later sweeps
   (add its slug to `data/takedowns.txt`).
+- **Out of scope stays out.** An offer found to break the MVA rules after it was added
+  (enrolment restricted to another university or country, not research) goes in
+  `data/out-of-scope.txt` with its reason; the next merge drops it and `load_remote.py --prune`
+  deletes it remotely.
 - **No Drive links or Drive IDs** in committed files. The MVA folder ID lives in
   `MVA_DRIVE_STAGES_FOLDER` in `.claude/settings.local.json`.
 - Descriptions and notes in English, short and neutral. Titles keep the posting's language.

@@ -68,7 +68,7 @@ CHECK = {"open", "expected", "unknown"}
 GONE_TEXT = [
     "no longer accepting applications", "no longer available", "job not found",
     "this job has expired", "position has been filled", "the job you are looking for",
-    "posting is closed", "job is closed", "this position is closed", "job posting has expired",
+    "posting is closed", "job is closed", "cannot be found", "this position is closed", "job posting has expired",
     "n'est plus disponible", "offre expirée", "offre n'est plus", "offre pourvue",
     "cette offre a expiré", "annonce n'est plus", "candidatures sont closes",
     "nicht mehr verfügbar", "stelle ist bereits besetzt",
@@ -236,7 +236,10 @@ def check(o: dict, today: str) -> dict:
     vt = json_ld_valid_through(body)
     if vt and vt < today:
         return {**out, "verdict": "expired", "evidence": f"JobPosting.validThrough {vt}"}
-    text = re.sub(r"<[^>]+>", " ", body).lower()
+    # Drop script, style and template blocks first: some sites ship their error templates in every
+    # page (imec's Next.js data, Apple's built-in messages), which would read as "gone" everywhere.
+    visible = re.sub(r"<(script|style|template|noscript)\b[^>]*>.*?</\1\s*>", " ", body, flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", visible).lower()
     hit = next((g for g in GONE_TEXT if g in text), None)
     if hit:
         return {**out, "verdict": "gone", "evidence": f"page says {hit!r}"}

@@ -20,8 +20,12 @@ They update `last_checked` (the date in the file's folder name, else today), `la
 when it was empty, `careers_url` in data/organizations.json. An entry for an organization that
 is not there yet is added only if it has `type` and `group`; review those in the diff.
 
+Slugs listed in data/takedowns.txt (requests) or data/out-of-scope.txt (offers the MVA could not
+validate) are never added and are dropped from data/offers.json.
+
 Usage: python3 -I scripts/merge.py data/incoming/2026-11-20/*.json
        python3 -I scripts/merge.py --dry-run FILES...
+       python3 -I scripts/merge.py --help
 """
 
 from __future__ import annotations
@@ -140,7 +144,22 @@ def compatible(key: tuple, inc: dict, hit: dict) -> bool:
     return not (a and b and a != b)
 
 
+def read_slug_list(path: Path) -> set[str]:
+    """Slugs from a list file: one per line, `#` starts a comment (also after the slug)."""
+    if not path.exists():
+        return set()
+    return {l.split("#", 1)[0].split()[0] for l in path.read_text().splitlines() if l.split("#", 1)[0].strip()}
+
+
 def main() -> int:
+    flags = [a for a in sys.argv[1:] if a.startswith("-")]
+    if any(f in ("-h", "--help") for f in flags):
+        print(__doc__)
+        return 0
+    unknown_flags = [f for f in flags if f != "--dry-run"]
+    if unknown_flags:
+        print(f"unknown option {unknown_flags[0]}; the only option is --dry-run (see --help)", file=sys.stderr)
+        return 2
     # Only group files (`01-drive.json`, `05a-startups.coverage.json`...) are sweep results.
     # Anything else in the folder (status-precheck.json, remote/ dumps) is a work file.
     all_args = []
@@ -149,6 +168,9 @@ def main() -> int:
             all_args.append(a)
         else:
             print(f"skipped {a}: not a group file (NN-name.json)")
+    if not all_args:
+        print("no group files given (NN-name.json); nothing to merge. See --help.", file=sys.stderr)
+        return 2
     coverage = [a for a in all_args if a.endswith(".coverage.json")]
     args = [a for a in all_args if not a.endswith(".coverage.json")]
     dry = "--dry-run" in sys.argv
@@ -158,8 +180,10 @@ def main() -> int:
         for k in keys(o):
             index[k] = o
 
-    takedowns_file = ROOT / "data" / "takedowns.txt"
-    takedowns = {l.strip() for l in takedowns_file.read_text().splitlines() if l.strip() and not l.startswith("#")} if takedowns_file.exists() else set()
+    takedowns = read_slug_list(ROOT / "data" / "takedowns.txt")
+    # Offers the MVA could not validate (enrolment restricted elsewhere, not research). Same
+    # effect as a takedown: never re-added, dropped if present. Each line carries its reason.
+    takedowns |= read_slug_list(ROOT / "data" / "out-of-scope.txt")
 
     orgs = load_orgs()
     unknown_orgs: set[str] = set()
@@ -170,7 +194,7 @@ def main() -> int:
             guess = inc.get("slug") or slugify(inc.get("organization", ""), inc.get("title_en") or inc.get("title", ""), inc.get("reference") or "")
             if guess in takedowns:
                 skipped += 1
-                fixes.append(f"{inc.get('organization')} / {inc.get('title')}: slug {guess} is in takedowns.txt, skipped")
+                fixes.append(f"{inc.get('organization')} / {inc.get('title')}: slug {guess} is in takedowns.txt or out-of-scope.txt, skipped")
                 continue
             inc = {k: v for k, v in inc.items() if k in COLUMNS}
             label = f"{inc.get('organization') or inc.get('slug')!s} / {inc.get('title') or inc.get('slug')!s}"[:90]
@@ -229,7 +253,7 @@ def main() -> int:
 
     offers.sort(key=lambda o: (norm(o["organization"]), o["slug"]))
     offers = [o for o in offers if o["slug"] not in takedowns]
-    print(f"{added} added, {updated} merged, {skipped} skipped (takedowns), {len(offers)} total")
+    print(f"{added} added, {updated} merged, {skipped} skipped (takedowns, out of scope), {len(offers)} total")
     if fixes:
         print(f"Corrected automatically ({len(fixes)}), no need to fix these by hand:")
         for line in fixes:
